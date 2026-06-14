@@ -1,0 +1,14 @@
+dataset,failure_type,num_queries
+NF-Corpus,falha_bm25_sem_relevantes_no_top100,73
+NF-Corpus,falha_ou_piora_do_reranker,91
+NF-Corpus,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10,16
+NF-Corpus,sem_mudanca_relevante,56
+NF-Corpus,sucesso_do_reranker,87
+SciFact,falha_bm25_sem_relevantes_no_top100,35
+SciFact,falha_ou_piora_do_reranker,29
+SciFact,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10,13
+SciFact,sem_mudanca_relevante,160
+SciFact,sucesso_do_reranker,63
+TREC-COVID,falha_ou_piora_do_reranker,17
+TREC-COVID,sem_mudanca_relevante,2
+TREC-COVID,sucesso_do_reranker,31

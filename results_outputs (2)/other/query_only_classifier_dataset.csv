@@ -1,0 +1,674 @@
+dataset,query_id,query_text,delta_nDCG@10,rerank_beneficial,query_char_count,query_word_count,query_unique_ratio,query_avg_word_length,query_digit_ratio,query_punctuation_ratio
+SciFact,1,0-dimensional biomaterials show inductive properties.,0.0,0,53,6,1.0,7.833333333333333,0.018867924528301886,0.03773584905660377
+SciFact,3,"1,000 genomes project enables mapping of genetic sequence variation consisting of rare variants with larger penetrance effects than common variants.",0.0,0,148,21,0.9047619047619048,6.0476190476190474,0.02702702702702703,0.013513513513513514
+SciFact,5,1/2000 in UK have abnormal PrP positivity.,0.0,0,42,8,1.0,4.25,0.11904761904761904,0.047619047619047616
+SciFact,13,5% of perinatal mortality is due to low birth weight.,0.0,0,53,10,1.0,4.2,0.018867924528301886,0.03773584905660377
+SciFact,36,A deficiency of vitamin B12 increases blood levels of homocysteine.,0.01879027595113203,1,67,10,0.9,5.7,0.029850746268656716,0.014925373134328358
+SciFact,42,A high microerythrocyte count raises vulnerability to severe anemia in homozygous alpha (+)- thalassemia trait subjects.,0.0,0,120,15,1.0,6.666666666666667,0.0,0.041666666666666664
+SciFact,48,"A total of 1,000 people in the UK are asymptomatic carriers of vCJD infection.",0.0,0,78,15,0.9333333333333333,4.2,0.05128205128205128,0.02564102564102564
+SciFact,49,ADAR1 binds to Dicer to cleave pre-miRNA.,0.0,0,41,8,0.875,4.125,0.024390243902439025,0.04878048780487805
+SciFact,50,AIRE is expressed in some skin tumors.,0.0,0,38,7,1.0,4.428571428571429,0.0,0.02631578947368421
+SciFact,51,ALDH1 expression is associated with better breast cancer outcomes.,0.0,0,66,9,1.0,6.333333333333333,0.015151515151515152,0.015151515151515152
+SciFact,53,ALDH1 expression is associated with poorer prognosis in breast cancer.,0.0,0,70,10,1.0,6.0,0.014285714285714285,0.014285714285714285
+SciFact,54,AMP-activated protein kinase (AMPK) activation increases inflammation-related fibrosis in the lungs.,0.14379281289197782,1,100,13,1.0,6.538461538461538,0.0,0.05
+SciFact,56,APOE4 expression in iPSC-derived neurons increases AlphaBeta production and tau phosphorylation causing GABA neuron degeneration.,0.0,0,129,16,1.0,7.0625,0.007751937984496124,0.015503875968992248
+SciFact,57,"APOE4 expression in iPSC-derived neurons increases AlphaBeta production and tau phosphorylation, delaying GABA neuron degeneration.",0.0,0,131,16,1.0,7.125,0.007633587786259542,0.022900763358778626
+SciFact,70,Activation of PPM1D suppresses p53 function.,-0.5315494798389231,0,44,6,1.0,6.333333333333333,0.06818181818181818,0.022727272727272728
+SciFact,72,Activator-inhibitor pairs are provided dorsally by Admpchordin.,0.6989700043360187,1,63,8,1.0,6.875,0.0,0.031746031746031744
+SciFact,75,"Active H. pylori urease has a polymeric structure that compromises two subunits, UreA and UreB.",0.36907024642854247,1,95,15,1.0,5.2,0.0,0.031578947368421054
+SciFact,94,Albendazole is used to treat lymphatic filariasis.,0.0,0,50,7,1.0,6.142857142857143,0.0,0.02
+SciFact,99,Alizarin forms hydrogen bonds with residues involved in PGAM1 substrate binding.,0.0,0,80,11,1.0,6.2727272727272725,0.0125,0.0125
+SciFact,100,All hematopoietic stem cells segregate their chromosomes randomly.,0.0,0,66,8,1.0,7.25,0.0,0.015151515151515152
+SciFact,113,Angiotensin converting enzyme inhibitors are associated with increased risk for functional renal insufficiency.,0.0,0,111,13,1.0,7.538461538461538,0.0,0.009009009009009009
+SciFact,115,Anthrax spores can be disposed of easily after they are dispersed.,0.0,0,66,11,1.0,5.0,0.0,0.015151515151515152
+SciFact,118,Antibiotic induced alterations in the gut microbiome reduce resistance against Clostridium difficile,0.0,0,100,12,1.0,7.416666666666667,0.0,0.0
+SciFact,124,Antiretroviral therapy reduces rates of tuberculosis across a broad range of CD4 strata.,0.0,0,88,13,0.9230769230769231,5.769230769230769,0.011363636363636364,0.011363636363636364
+SciFact,127,Arginine 90 in p150n is important for interaction with EB1.,0.5,1,59,10,1.0,4.9,0.1016949152542373,0.01694915254237288
+SciFact,128,Arterioles have a larger lumen diameter than venules.,0.13092975357145753,1,53,8,1.0,5.625,0.0,0.018867924528301886
+SciFact,129,Articles published in open access format are less likely to be cited than traditional journals.,0.0,0,95,15,1.0,5.333333333333333,0.0,0.010526315789473684
+SciFact,130,Articles published in open access format are more likely to be cited than traditional journals.,0.0,0,95,15,1.0,5.333333333333333,0.0,0.010526315789473684
+SciFact,132,Aspirin inhibits the production of PGE2.,0.0,0,40,6,1.0,5.666666666666667,0.025,0.025
+SciFact,133,"Assembly of invadopodia is triggered by focal generation of phosphatidylinositol-3,4-biphosphate and the activation of the nonreceptor tyrosine kinase Src.",0.22595595991959372,1,155,22,0.8636363636363636,6.045454545454546,0.012903225806451613,0.025806451612903226
+SciFact,137,Asymptomatic visual impairment screening in elderly populations does not lead to improved vision.,0.0,0,97,13,1.0,6.461538461538462,0.0,0.010309278350515464
+SciFact,141,Auditory entrainment is strengthened when people see congruent visual and auditory information.,-0.1227846846619507,0,95,12,0.9166666666666666,6.916666666666667,0.0,0.010526315789473684
+SciFact,142,Autologous transplantation of mesenchymal stem cells causes a higher rate of opportunistic infections than induction therapy with anti-interleukin-2 receptor antibodies.,0.0,0,169,22,0.9545454545454546,6.681818181818182,0.005917159763313609,0.01775147928994083
+SciFact,143,Autologous transplantation of mesenchymal stem cells causes fewer opportunistic infections than induction therapy with anti-interleukin-2 receptor antibodies.,0.0,0,158,19,1.0,7.315789473684211,0.006329113924050633,0.0189873417721519
+SciFact,146,Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies.,0.0,0,149,20,0.95,6.45,0.006711409395973154,0.020134228187919462
+SciFact,148,Autophagy declines in aged organisms.,0.0,0,37,5,1.0,6.4,0.0,0.02702702702702703
+SciFact,163,Bariatric surgery has a positive impact on mental health.,-0.36907024642854247,0,57,9,1.0,5.333333333333333,0.0,0.017543859649122806
+SciFact,171,Basophils counteract disease development in patients with systemic lupus erythematosus (SLE).,0.0,0,93,11,1.0,7.2727272727272725,0.0,0.03225806451612903
+SciFact,179,Birth-weight is positively associated with breast cancer.,0.16812753627111754,1,57,8,1.0,6.125,0.0,0.03508771929824561
+SciFact,180,Blocking the interaction between TDP-43 and respiratory complex I proteins ND3 and ND6 leads to increased TDP-43-induced neuronal loss.,0.0,0,135,22,0.8636363636363636,5.136363636363637,0.044444444444444446,0.02962962962962963
+SciFact,183,Bone marrow cells contribute to adult macrophage compartments.,0.11521168128766429,1,62,8,1.0,6.75,0.0,0.016129032258064516
+SciFact,185,Breast cancer development is determined exclusively by genetic factors.,-0.13092975357145753,0,71,9,1.0,6.888888888888889,0.0,0.014084507042253521
+SciFact,198,CCL19 is absent within dLNs.,-0.11314719276545837,0,28,5,1.0,4.6,0.07142857142857142,0.03571428571428571
+SciFact,208,CHEK2 is not associated with breast cancer.,0.0,0,43,7,1.0,5.142857142857143,0.023255813953488372,0.023255813953488372
+SciFact,212,CR is associated with higher methylation age.,-0.36907024642854247,0,45,7,1.0,5.428571428571429,0.0,0.022222222222222223
+SciFact,213,CRP is not predictive of postoperative mortality following Coronary Artery Bypass Graft (CABG) surgery.,-0.3562071871080222,0,103,14,1.0,6.214285714285714,0.0,0.02912621359223301
+SciFact,216,CX3CR1 on the Th2 cells impairs T cell survival,0.0,0,47,9,1.0,4.333333333333333,0.06382978723404255,0.0
+SciFact,217,CX3CR1 on the Th2 cells promotes T cell survival,0.0,0,48,9,1.0,4.444444444444445,0.0625,0.0
+SciFact,218,CX3CR1 on the Th2 cells promotes airway inflammation.,0.0,0,53,8,1.0,5.625,0.05660377358490566,0.018867924528301886
+SciFact,219,CX3CR1 on the Th2 cells suppresses airway inflammation.,0.0,0,55,8,1.0,5.875,0.05454545454545454,0.01818181818181818
+SciFact,230,Carriers of the alcohol aldehyde dehydrogenase deficiency mutation drink less that non-carries.,0.0,0,95,13,1.0,6.3076923076923075,0.0,0.021052631578947368
+SciFact,232,Cataract and trachoma are the primary cause of blindness in Southern Sudan.,0.0,0,75,12,1.0,5.25,0.0,0.013333333333333334
+SciFact,233,Cell autonomous sex determination in somatic cells does not occur in Galliformes.,0.0,0,81,12,0.9166666666666666,5.75,0.0,0.012345679012345678
+SciFact,236,Cell autonomous sex determination in somatic cells occurs in Passeriformes.,0.0,0,75,10,0.9,6.5,0.0,0.013333333333333334
+SciFact,237,Cells lacking clpC have a defect in sporulation efficiency in Bacillus subtilis.,0.0,0,80,12,0.9166666666666666,5.666666666666667,0.0,0.0125
+SciFact,238,Cells undergoing methionine restriction may activate miRNAs.,0.5,1,60,7,1.0,7.571428571428571,0.0,0.016666666666666666
+SciFact,239,Cellular aging closely links to an older appearance.,0.0,0,52,8,1.0,5.5,0.0,0.019230769230769232
+SciFact,248,Chenodeosycholic acid treatment increases whole-body energy expenditure.,0.0,0,72,8,1.0,8.0,0.0,0.027777777777777776
+SciFact,249,Chenodeosycholic acid treatment reduces whole-body energy expenditure.,0.36907024642854247,1,70,8,1.0,7.75,0.0,0.02857142857142857
+SciFact,261,"Chronic aerobic exercise alters endothelial function, improving vasodilating mechanisms mediated by NO.",-0.07064171895532007,0,103,12,1.0,7.5,0.0,0.019417475728155338
+SciFact,268,Cold exposure increases BAT recruitment.,0.36907024642854247,1,40,5,1.0,7.0,0.0,0.025
+SciFact,269,Cold exposure reduces BAT recruitment.,0.36907024642854247,1,38,5,1.0,6.6,0.0,0.02631578947368421
+SciFact,274,Combination nicotine replacement therapies with varenicline or bupropion lead to significantly higher long-term abstinence rates at 52 weeks than varenicline monotherapy.,0.0,0,170,22,0.9545454545454546,6.7272727272727275,0.011764705882352941,0.011764705882352941
+SciFact,275,Combining phosphatidylinositide 3-kinase and MEK 1/2 inhibitors is effective at treating KRAS mutant tumors.,0.0,0,108,16,1.0,5.75,0.027777777777777776,0.027777777777777776
+SciFact,279,Commelina yellow mottle virus' (ComYMV) genome consists of 7489 baise pairs.,0.0,0,76,11,1.0,5.636363636363637,0.05263157894736842,0.05263157894736842
+SciFact,294,Crossover hot spots are not found within gene promoters in Saccharomyces cerevisiae.,-1.0,0,84,12,1.0,6.0,0.0,0.011904761904761904
+SciFact,295,Crosstalk between dendritic cells (DCs) and innate lymphoid cells (ILCs) is important in the regulation of intestinal homeostasis.,0.0,0,130,18,0.9444444444444444,6.0,0.0,0.038461538461538464
+SciFact,298,Cytochrome c is released from the mitochondrial intermembrane space to cytosol during apoptosis.,0.0,0,96,13,1.0,6.384615384615385,0.0,0.010416666666666666
+SciFact,300,Cytosolic proteins bind to iron-responsive elements on mRNAs coding for DMT1. Cytosolic proteins bind to iron-responsive elements on mRNAs coding for proteins involved in iron uptake.,0.06932344192660694,1,183,28,0.5357142857142857,5.5,0.00546448087431694,0.02185792349726776
+SciFact,303,DMRT1 is a sex-determining gene that is epigenetically regulated by the MHM region.,-0.2975964202381242,0,83,14,0.9285714285714286,4.928571428571429,0.012048192771084338,0.024096385542168676
+SciFact,312,De novo assembly of sequence data has more specific contigs than unassembled sequence data.,0.0,0,91,14,0.8571428571428571,5.5,0.0,0.01098901098901099
+SciFact,314,Deamination of cytidine to uridine on the minus strand of viral DNA results in catastrophic G-to-A mutations in the viral genome.,0.0,0,129,23,0.782608695652174,4.608695652173913,0.0,0.023255813953488372
+SciFact,324,Deleting Raptor reduces G-CSF levels.,-0.14161173175550518,0,37,6,1.0,5.166666666666667,0.0,0.05405405405405406
+SciFact,327,Deletion of αvβ8 does not result in a spontaneous inflammatory phenotype.,0.0,0,73,11,1.0,5.636363636363637,0.0136986301369863,0.0136986301369863
+SciFact,338,Dexamethasone decreases risk of postoperative bleeding.,0.0,0,55,6,1.0,8.166666666666666,0.0,0.01818181818181818
+SciFact,343,Diabetic patients with acute coronary syndrome experience increased short-term and long-term risk for bleeding events.,-0.12593989660623928,0,118,17,0.9411764705882353,5.9411764705882355,0.0,0.025423728813559324
+SciFact,350,Discrimination between the initiator and elongation tRNAs depends on the translation initiation factor IF3.,0.0,0,107,14,0.9285714285714286,6.642857142857143,0.009345794392523364,0.009345794392523364
+SciFact,354,Downregulation and mislocalization of Scribble prevents cell transformation and mammary tumorigenesis.,0.0,0,102,11,0.9090909090909091,8.272727272727273,0.0,0.00980392156862745
+SciFact,362,During the primary early antibody response activated B cells migrate toward the inner-and outer paracortical areas where oxysterol accumulation is generated by stromal cells.,0.0,0,174,25,0.92,5.96,0.0,0.011494252873563218
+SciFact,380,Enhanced early production of inflammatory chemokines improves viral control in the lung.,0.0,0,88,12,1.0,6.333333333333333,0.0,0.011363636363636364
+SciFact,384,Epidemiological disease burden from noncommunicable diseases is more prevalent in low economic settings.,0.0,0,104,13,1.0,7.0,0.0,0.009615384615384616
+SciFact,385,Epigenetic modulating agents (EMAs) modulate antitumor immune response in a cancer model system.,0.0,0,96,13,1.0,6.230769230769231,0.0,0.03125
+SciFact,386,Errors in peripheral IV drug administration are most common during bolus administration and multiple-step medicine preparations.,0.0,0,128,17,0.9411764705882353,6.529411764705882,0.0,0.015625
+SciFact,388,Ethanol stress decreases the expression of IBP in bacteria.,-0.5,0,59,9,1.0,5.555555555555555,0.0,0.01694915254237288
+SciFact,399,Exposure to fine particulate air pollution is relate to anxiety prevalence.,0.0,0,75,11,0.9090909090909091,5.818181818181818,0.0,0.013333333333333334
+SciFact,410,Febrile seizures increase the threshold for development of epilepsy.,0.0,0,68,9,1.0,6.555555555555555,0.0,0.014705882352941176
+SciFact,411,Febrile seizures reduce the threshold for development of epilepsy.,0.0,0,66,9,1.0,6.333333333333333,0.0,0.015151515151515152
+SciFact,415,Female carriers of the Apolipoprotein E4 (APOE4) allele have increased risk for dementia.,0.11314719276545837,1,89,13,1.0,5.6923076923076925,0.02247191011235955,0.033707865168539325
+SciFact,421,Flexible molecules experience greater steric hindrance in the tumor microenviroment than rigid molecules.,0.0,0,105,13,0.9230769230769231,7.076923076923077,0.0,0.009523809523809525
+SciFact,431,FoxO3a activation in neuronal death is mediated by reactive oxygen species (ROS).,0.0,0,81,12,1.0,5.583333333333333,0.012345679012345678,0.037037037037037035
+SciFact,436,Free histones are degraded by a Rad53-dependent mechanism once DNA has been replicated.,0.0,0,87,14,1.0,5.214285714285714,0.022988505747126436,0.022988505747126436
+SciFact,437,Functional consequences of genomic alterations due to Myelodysplastic syndrome (MDS) are poorly understood due to the lack of an animal model.,0.0,0,142,21,0.8571428571428571,5.666666666666667,0.0,0.02112676056338028
+SciFact,439,Fz/PCP-dependent Pk localizes to the anterior membrane of neuroectoderm cells during zebrafish neuralation,0.36907024642854247,1,106,15,1.0,6.133333333333334,0.0,0.018867924528301886
+SciFact,440,Fz/PCP-dependent Pk localizes to the anterior membrane of notochord cells during zebrafish neuralation.,0.36907024642854247,1,103,15,1.0,5.866666666666666,0.0,0.02912621359223301
+SciFact,443,GATA-3 is important for hematopoietic stem cell (HSC) function.,0.0,0,63,10,1.0,5.1,0.015873015873015872,0.06349206349206349
+SciFact,452,Gene expression does not vary appreciably across genetically identical cells.,0.37594947999616213,1,77,10,1.0,6.7,0.0,0.012987012987012988
+SciFact,475,Glycolysis is one of the primary glycometabolic pathways in cells.,0.0,0,66,10,1.0,5.6,0.0,0.015151515151515152
+SciFact,478,Golli-deficient T-cells prefer to differentiate into an anergic phenotype in the adaptive immune response when there are increased levels of Ca2+ in the cytosol.,0.36907024642854247,1,161,26,0.9230769230769231,5.153846153846154,0.006211180124223602,0.024844720496894408
+SciFact,491,HNF4A mutations can cause diabetes in mutant carriers by the age of 14 years,0.0,0,76,14,1.0,4.5,0.039473684210526314,0.0
+SciFact,501,Headaches are not correlated with cognitive impairment.,0.36907024642854247,1,55,7,1.0,6.857142857142857,0.0,0.01818181818181818
+SciFact,502,"Healthcare delivery efficiency in crowded delivery centers is impaired by improving structural, logistical, and interpersonal elements.",0.0,0,135,16,0.9375,7.3125,0.0,0.022222222222222223
+SciFact,507,Helminths interfere with immune system control of macrophages activated by IL-4 favor Mycobacterium tuberculosis replication.,-0.5,0,125,16,1.0,6.8125,0.008,0.016
+SciFact,508,Hematopoietic Stem Cell purification reaches purity rate of up to 50%.,0.0,0,70,11,1.0,5.2727272727272725,0.02857142857142857,0.02857142857142857
+SciFact,513,High cardiopulmonary fitness causes increased mortality rate.,-1.0,0,61,7,1.0,7.714285714285714,0.0,0.01639344262295082
+SciFact,514,High dietary calcium intakes are unnecessary for prevention of secondary hyperparathyroidism in subjects with 25(OH)D levels above 75 nmol/liter.,0.3333333333333333,1,145,22,1.0,5.590909090909091,0.027586206896551724,0.027586206896551724
+SciFact,516,High levels of CRP reduces the risk of exacerbations in chronic obstructive pulmonary disease (COPD).,0.0,0,101,15,0.9333333333333333,5.6,0.0,0.0297029702970297
+SciFact,517,High levels of copeptin decrease risk of diabetes.,0.3333333333333333,1,50,8,0.875,5.25,0.0,0.02
+SciFact,521,High-sensitivity cardiac troponin T (HSCT-T) dosage may not be diagnostic if the onset of symptoms occurs less than 3 hours before acute myocardial injury (AMI).,-0.6131471927654584,0,161,27,0.9629629629629629,4.814814814814815,0.006211180124223602,0.043478260869565216
+SciFact,525,Histone demethylase recruitment and a transient decrease in histone methylation is necessary for ligand-dependent induction of transcription by nuclear receptors.,0.0,0,162,21,0.9523809523809523,6.714285714285714,0.0,0.012345679012345678
+SciFact,527,Homozygous deletion of murine Sbds gene from osterix-expressing mesenchymal stem and progenitor cells (MPCs) prevents oxidative stress.,0.0,0,135,18,1.0,6.388888888888889,0.0,0.02962962962962963
+SciFact,528,Human T-lymphotropic virus type-I-associated myelopathy / tropical spastic paraparesis (HAM/TSP) patients produce Immunoglobulin G (IgG) antibodies which cross-react with an immunodominant epitope in Tax.,0.0,0,204,28,1.0,6.071428571428571,0.0,0.05392156862745098
+SciFact,532,Hyperfibrinogenemia decreases rates of femoropopliteal bypass thrombosis.,0.0,0,73,7,1.0,9.428571428571429,0.0,0.0136986301369863
+SciFact,533,Hyperfibrinogenemia increases rates of femoropopliteal bypass thrombosis.,0.0,0,73,7,1.0,9.428571428571429,0.0,0.0136986301369863
+SciFact,535,Hypertension is frequently observed in type 1 diabetes patients.,0.0,0,64,9,1.0,6.111111111111111,0.015625,0.015625
+SciFact,536,Hypocretin neurones induce panicprone state in rats.,0.0,0,52,7,1.0,6.428571428571429,0.0,0.019230769230769232
+SciFact,539,Hypoglycemia increases the risk of dementia.,0.0,0,44,6,1.0,6.333333333333333,0.0,0.022727272727272728
+SciFact,540,Hypothalamic glutamate neurotransmission is crucial to energy balance.,-0.0328153151808101,0,70,8,1.0,7.75,0.0,0.014285714285714285
+SciFact,544,IFIT1 restricts viral replication by sequestrating mis-capped viral RNAs.,0.0,0,73,10,0.9,6.3,0.0136986301369863,0.0273972602739726
+SciFact,549,IRG1 has antiviral effects against neurotropic viruses.,0.0,0,55,7,1.0,6.857142857142857,0.01818181818181818,0.01818181818181818
+SciFact,551,ITAM phosphorylation prevents the transfer of the T cell receptor (TCR) signal from the echo-domain to the cytoplasmic tail of the T cell receptor (TCR).,-0.43067655807339306,0,153,26,0.6538461538461539,4.730769230769231,0.0,0.0392156862745098
+SciFact,552,IgA plasma cells that are specific for transglutaminase 2 accumulate in the duodenal mucosa on commencement of a gluten-free diet.,0.0,0,130,21,1.0,5.190476190476191,0.007692307692307693,0.015384615384615385
+SciFact,554,Immune complex triggered cell death leads to extracellular release of neutrophil protein HMGB1.,-0.01786845654760455,0,95,13,1.0,6.3076923076923075,0.010526315789473684,0.010526315789473684
+SciFact,560,Immune responses result in the development of inflammatory Th17 cells and anti-inflammatory iTregs.,0.0,0,99,14,0.9285714285714286,6.071428571428571,0.020202020202020204,0.020202020202020204
+SciFact,569,"In adult tissue, most T cells are memory T cells.",0.0,0,49,10,0.8,3.8,0.0,0.04081632653061224
+SciFact,575,"In domesticated populations of Saccharomyces cerevisiae, whole chromosome aneuploidy is very uncommon.",1.0,1,102,12,1.0,7.416666666666667,0.0,0.0196078431372549
+SciFact,577,"In mice, P. chabaudi parasites are able to proliferate faster early in infection when inoculated at lower numbers than when inoculated at high numbers.",0.0,0,151,24,0.7916666666666666,5.208333333333333,0.0,0.019867549668874173
+SciFact,578,"In mouse models, the loss of CSF1R facilitates MOZ-TIF2-induced leuekmogenesis.",0.0,0,79,12,1.0,5.5,0.02531645569620253,0.05063291139240506
+SciFact,587,"In transgenic mice harboring green florescent protein under the control of the Sox2 promoter, less than ten percent of the cells with green florescent colocalize with cell proliferation markers.",0.20025319549806447,1,194,29,0.7931034482758621,5.655172413793103,0.005154639175257732,0.010309278350515464
+SciFact,589,"In young and middle-aged adults, current or remote uses of ADHD medications do not increase the risk of serious cardiovascular events.",0.0,0,134,22,0.9545454545454546,5.045454545454546,0.0,0.022388059701492536
+SciFact,593,Incidence of heart failure decreased by 10% in women since 1979.,0.0,0,64,11,1.0,4.7272727272727275,0.09375,0.03125
+SciFact,597,Incidence rates of cervical cancer have decreased.,0.0,0,50,7,1.0,6.142857142857143,0.0,0.02
+SciFact,598,Incidence rates of cervical cancer have increased due to nationwide screening programs based primarily on cytology to detect uterine cervical cancer.,-0.04074231032229342,0,149,21,0.8571428571428571,6.095238095238095,0.0,0.006711409395973154
+SciFact,613,Increased microtubule acetylation repairs LRRK2 Roc-COR domain mutation induced locomotor deficits.,0.0,0,99,12,1.0,7.25,0.010101010101010102,0.020202020202020204
+SciFact,619,Increased vessel density along with a reduction in fibrosis decreases the efficacy of chemotherapy treatments.,-0.23719771276929622,0,110,15,1.0,6.333333333333333,0.0,0.00909090909090909
+SciFact,623,Individuals with low serum vitamin D concentrations have increased risk of multiple sclerosis.,0.38685280723454163,1,94,13,1.0,6.230769230769231,0.0,0.010638297872340425
+SciFact,628,Infection of human T-cell lymphotropic virus type 1 is most frequent in individuals of African origin.,0.0,0,102,17,0.9411764705882353,5.0,0.00980392156862745,0.0196078431372549
+SciFact,636,"Inositol lipid 3-phosphatase PTEN converts Ptdlns(3,4)P 2 into phosphatidylinositol 4-phosphate.",0.5,1,96,15,0.8666666666666667,5.4,0.052083333333333336,0.0625
+SciFact,637,Input from  mental and physical health care professionals is effective at decreasing homelessness.,0.21093517368211212,1,98,13,1.0,6.461538461538462,0.0,0.01020408163265306
+SciFact,641,Insomnia can be effectively treated with cognitive behavioral therapy.,0.26406812257259094,1,70,9,1.0,6.777777777777778,0.0,0.014285714285714285
+SciFact,644,Insulin increases risk of severe kidney failure.,0.36907024642854247,1,48,7,1.0,5.857142857142857,0.0,0.020833333333333332
+SciFact,649,Integrating classroom-based collaborative learning with Web-based collaborative learning leads to subpar class performance,-0.36907024642854247,0,122,15,0.8,7.2,0.0,0.01639344262295082
+SciFact,659,Ivermectin is used to treat lymphatic filariasis.,0.0,0,49,7,1.0,6.0,0.0,0.02040816326530612
+SciFact,660,Ivermectin is used to treat onchocerciasis.,0.6131471927654584,1,43,6,1.0,6.166666666666667,0.0,0.023255813953488372
+SciFact,674,LDL cholesterol has no involvement in the development of cardiovascular disease.,0.0,0,80,11,1.0,6.2727272727272725,0.0,0.0125
+SciFact,684,Lack of clpC does not affect sporulation efficiency in Bacillus subtilis cells.,0.0,0,79,12,1.0,5.583333333333333,0.0,0.012658227848101266
+SciFact,690,Less than 10% of the gabonese children with Schimmelpenning-Feuerstein-Mims syndrome (SFM) had a plasma lactate of more than 5mmol/L.,0.5,1,133,22,0.9090909090909091,4.909090909090909,0.022556390977443608,0.05263157894736842
+SciFact,691,Leukemia associated Rho guanine nucleotide-exchange factor represses RhoA in response to SRC activation.,0.0,0,104,14,1.0,6.428571428571429,0.0,0.019230769230769232
+SciFact,692,Leuko-increased blood increases infectious complications in red blood cell transfusion.,0.36907024642854247,1,87,11,0.9090909090909091,6.909090909090909,0.0,0.022988505747126436
+SciFact,693,Leuko-reduced blood reduces infectious complications in red blood cell transfusion.,0.0,0,83,11,0.9090909090909091,6.545454545454546,0.0,0.024096385542168676
+SciFact,700,Localization of PIN1 in the Arabidopsis embryo does not require VPS9a,0.0,0,69,11,1.0,5.363636363636363,0.028985507246376812,0.0
+SciFact,702,Localization of PIN1 in the roots of Arabidopsis does not require VPS9a,0.13092975357145753,1,71,12,0.9166666666666666,5.0,0.028169014084507043,0.0
+SciFact,715,Low expression of miR7a does represses target genes and exerts a biological function in ovaries.,0.0,0,96,15,1.0,5.4,0.010416666666666666,0.010416666666666666
+SciFact,716,Low expression of miR7a exerts a biological function in testis.,0.0,0,63,10,1.0,5.3,0.015873015873015872,0.015873015873015872
+SciFact,718,Low nucleosome occupancy correlates with low methylation levels across species.,0.36907024642854247,1,79,10,0.9,6.9,0.0,0.012658227848101266
+SciFact,721,Lupus-prone mice infected with curliproducing bacteria have higher autoantibody titers compared to controls.,0.0,0,108,14,1.0,6.714285714285714,0.0,0.018518518518518517
+SciFact,723,Ly49Q directs the organization of neutrophil migration to inflammation sites by regulating membrane raft functions.,0.0,0,115,15,1.0,6.666666666666667,0.017391304347826087,0.008695652173913044
+SciFact,727,Ly6C hi monocytes have a lower inflammatory capacity compared to their Ly6C lo counterparts.,-0.2440769463369159,0,92,14,0.9285714285714286,5.571428571428571,0.021739130434782608,0.010869565217391304
+SciFact,728,Ly6C hi monocytes have a lower inflammatory capacity than Ly6C lo monocytes.,0.2719550712853436,1,76,12,0.8333333333333334,5.333333333333333,0.02631578947368421,0.013157894736842105
+SciFact,729,Lymphadenopathy is observed in knockin mouse lacking the SHP-2 MAPK pathway.,0.36907024642854247,1,76,12,1.0,5.333333333333333,0.013157894736842105,0.02631578947368421
+SciFact,742,Macrolides have no protective effect against myocardial infarction.,0.0,0,67,8,1.0,7.375,0.0,0.014925373134328358
+SciFact,743,Macrolides protect against myocardial infarction.,0.0,0,49,5,1.0,8.8,0.0,0.02040816326530612
+SciFact,744,Macropinocytosis contributes to a cell's supply of amino acids via the intracellular uptake of protein.,0.0,0,103,16,0.9375,5.4375,0.0,0.019417475728155338
+SciFact,756,Many proteins in human cells can be post-translationally modified at lysine residues via acetylation.,0.1989700043360188,1,101,15,1.0,5.733333333333333,0.0,0.019801980198019802
+SciFact,759,Mathematical models predict that using Artemisinin-based combination therapy over nongametocytocidal drugs have a dramatic impact in reducing malaria transmission.,0.0,0,163,20,1.0,7.15,0.0,0.012269938650306749
+SciFact,768,Mercaptopurine is anabolized into the inactive methylmercaptopurine by thiopurine methyltrasnferase (TPMT).,0.43067655807339306,1,107,11,1.0,8.545454545454545,0.0,0.028037383177570093
+SciFact,770,Metastatic colorectal cancer treated with a single agent fluoropyrimidines resulted in reduced efficacy and lower quality of life when compared with oxaliplatin-based chemotherapy in elderly patients.,0.0,0,200,27,0.9259259259259259,6.407407407407407,0.0,0.01
+SciFact,775,Mice defective for deoxyribonucleic acid (DNA) polymerase I (polI) reveal increased sensitivity to ionizing radiation (IR).,0.0,0,123,16,1.0,6.3125,0.0,0.056910569105691054
+SciFact,781,Mice that lack Interferon-γ or its receptor exhibit high resistance to experimental autoimmune myocarditis.,0.0,0,107,15,1.0,6.133333333333334,0.0,0.018691588785046728
+SciFact,783,Mice without IFN-γ or its receptor are resistant to EAM induced with α-MyHC/CFA.,0.0,0,80,16,1.0,4.0,0.0,0.05
+SciFact,784,MicroRNA is involved in the regulation of Neural Stem Cell (NSC) differentiation and proliferation dynamic homeostasis,0.5693234419266069,1,118,16,1.0,6.3125,0.0,0.01694915254237288
+SciFact,785,Microarray results from culture-amplified mixtures of serotypes correlate poorly with microarray results from uncultured mixtures.,0.0,0,130,16,0.75,7.125,0.0,0.015384615384615385
+SciFact,793,Mitochondria are uninvolved in apoptosis.,0.0,0,41,5,1.0,7.2,0.0,0.024390243902439025
+SciFact,800,Modifying the epigenome in the brain affects the normal human aging process by affecting certain genes related to neurogenesis.,0.0,0,127,19,0.8947368421052632,5.684210526315789,0.0,0.007874015748031496
+SciFact,805,Monoclonal antibody targeting of N-cadherin inhibits metastasis.,0.0,0,64,8,1.0,7.0,0.0,0.03125
+SciFact,808,Most termination events in Okazaki fragments are sequence specific.,0.0,0,67,9,1.0,6.444444444444445,0.0,0.014925373134328358
+SciFact,811,Mutant mice lacking SVCT2 have greatly increased ascorbic acid levels in both brain and adrenals.,0.0,0,97,15,1.0,5.466666666666667,0.010309278350515464,0.010309278350515464
+SciFact,814,"Mutations in G-Beta protein GNB2 are present in many cancers, resulting in loss of interaction with G-alpha subunits and concomitant activation of AKT pathway.",0.0,0,159,26,0.8461538461538461,5.076923076923077,0.006289308176100629,0.025157232704402517
+SciFact,820,N-terminal cleavage increases success identifying transcription start sites.,0.0,0,76,9,1.0,7.444444444444445,0.0,0.02631578947368421
+SciFact,821,N-terminal cleavage reduces success identifying transcription start sites.,0.0,0,74,9,1.0,7.222222222222222,0.0,0.02702702702702703
+SciFact,823,N348I mutations cause resistance to zidovudine (AZT).,0.0,0,53,7,1.0,6.285714285714286,0.05660377358490566,0.05660377358490566
+SciFact,830,NF2 (Merlin) causes phosphorylation and subsequent cytoplasmic sequestration of YAP in Drosophila by activating LATS1/2 kinases.,0.0,0,128,17,1.0,6.411764705882353,0.0234375,0.03125
+SciFact,831,NF2 (Merlin) prevents phosphorylation and subsequent cytoplasmic sequestration of YAP in Drosophila.,0.0,0,100,12,1.0,7.166666666666667,0.01,0.03
+SciFact,832,NFAT4 activation requires IP3R-mediated Ca2+ mobilization.,0.0,0,58,7,1.0,7.142857142857143,0.05172413793103448,0.05172413793103448
+SciFact,834,NOX2-independent pathways can generate peroxynitrite by reacting with nitrogen intermediates.,0.5,1,93,11,1.0,7.454545454545454,0.010752688172043012,0.021505376344086023
+SciFact,837,NR5A2 is important in development of endometrial tissues.,0.0,0,57,8,1.0,6.125,0.03508771929824561,0.017543859649122806
+SciFact,839,Nanoparticles can be targeted against specific cell types by incorporating aptamers into lipid nanoparticles.,0.0,0,109,14,0.9285714285714286,6.785714285714286,0.0,0.009174311926605505
+SciFact,845,Neutrophil extracellular traps (NETs) are released by ANCA-stimulated neutrophils.,0.0,0,82,10,1.0,7.0,0.0,0.04878048780487805
+SciFact,847,New drugs for tuberculosis often do not penetrate the necrotic portion of a tuberculosis lesion in high concentrations.,0.0,0,119,18,0.9444444444444444,5.611111111111111,0.0,0.008403361344537815
+SciFact,852,Non-invasive ventilation use should be decreased if there is inadequate response to conventional treatment.,0.0,0,107,15,1.0,6.133333333333334,0.0,0.018691588785046728
+SciFact,859,Normal expression of RUNX1 has tumor-promoting effects.,-0.2975964202381242,0,55,8,1.0,5.875,0.01818181818181818,0.03636363636363636
+SciFact,870,Obesity decreases life quality.,0.0,0,31,4,1.0,6.75,0.0,0.03225806451612903
+SciFact,873,Obesity is determined solely by environmental factors.,0.10699313236726378,1,54,7,1.0,6.714285714285714,0.0,0.018518518518518517
+SciFact,879,Occupancy of ribosomes by IncRNAs do not make functional peptides.,0.0,0,66,10,1.0,5.6,0.0,0.015151515151515152
+SciFact,880,Occupancy of ribosomes by IncRNAs mirror 5 0-UTRs,0.0,0,49,9,1.0,4.555555555555555,0.04081632653061224,0.02040816326530612
+SciFact,882,Omnivores produce less trimethylamine N-oxide from dietary I-carnitine than vegetarians.,0.0,0,88,12,1.0,6.333333333333333,0.0,0.03409090909090909
+SciFact,887,Only a minority of cells survive development after differentiation into stress-resistant spores.,0.0,0,96,13,1.0,6.384615384615385,0.0,0.020833333333333332
+SciFact,903,PD-1 triggering on monocytes reduces IL-10 production by monocytes.,0.0,0,67,11,0.9090909090909091,5.090909090909091,0.04477611940298507,0.04477611940298507
+SciFact,904,PDPN promotes efficient motility along stromal surfaces by activating the C-type lectin receptor to rearrange the actin cytoskeleton in dendritic cells.,0.0,0,152,22,0.9545454545454546,5.909090909090909,0.0,0.013157894736842105
+SciFact,907,PGE 2 promotes intestinal tumor growth by altering the expression of tumor suppressing and DNA repair genes.,0.0,0,108,17,0.9411764705882353,5.352941176470588,0.009259259259259259,0.009259259259259259
+SciFact,911,PKG-la plays an essential role in expression of pain hypersensitivity in PGK-la knockout mice.,0.0,0,94,16,0.875,4.875,0.0,0.031914893617021274
+SciFact,913,PPAR-RXRs are inhibited by PPAR ligands.,0.0,0,40,7,0.8571428571428571,4.714285714285714,0.0,0.05
+SciFact,914,PPAR-RXRs can be activated by PPAR ligands.,0.0,0,43,8,0.875,4.375,0.0,0.046511627906976744
+SciFact,921,Participating in six months of physical activity improves cognitive functioning.,0.36907024642854247,1,80,10,1.0,7.0,0.0,0.0125
+SciFact,922,Patients in stable partnerships have a faster progression from HIV to AIDS.,0.0,0,75,12,1.0,5.25,0.0,0.013333333333333334
+SciFact,936,Peroxynitrite is required for nitration of TCR/CD8.,0.0,0,51,8,1.0,5.375,0.0196078431372549,0.0392156862745098
+SciFact,956,Pleiotropic coupling of GLP-1R to intracellular effectors promotes distinct profiles of cellular signaling.,0.0,0,107,14,0.9285714285714286,6.642857142857143,0.009345794392523364,0.018691588785046728
+SciFact,957,Podocytes are motile and migrate in the presence of injury.,0.36907024642854247,1,59,10,1.0,4.9,0.0,0.01694915254237288
+SciFact,960,Polymeal nutrition reduces cardiovascular mortality.,0.0,0,52,5,1.0,9.4,0.0,0.019230769230769232
+SciFact,967,Pretreatment with the Arp2/3 inhibitor CK-666 affects lamelliopodia formation.,0.0,0,78,11,1.0,6.090909090909091,0.0641025641025641,0.038461538461538464
+SciFact,971,Primary cervical cancer screening with HPV detection has higher longitudinal sensitivity than conventional cytology to detect cervical intraepithelial neoplasia grade 2.,0.19519002499605076,1,169,21,0.9523809523809523,7.0476190476190474,0.005917159763313609,0.005917159763313609
+SciFact,975,Primary pro-inflammatory cytokines induce secondary pro- and anti-inflammatory mediators.,0.0,0,89,11,0.8181818181818182,7.0,0.0,0.0449438202247191
+SciFact,982,Proteins synthesized at the growth cone are ubiquitinated at a higher rate than proteins from the cell body.,0.0,0,108,18,0.8333333333333334,5.0,0.0,0.009259259259259259
+SciFact,985,Pseudogene PTENP1 regulates the expression of PTEN by functioning as an miRNA decoy.,0.0,0,84,13,1.0,5.461538461538462,0.011904761904761904,0.011904761904761904
+SciFact,993,Pyridostatin destabilizes the G - quadruplex in the telomeric region.,0.36907024642854247,1,69,9,0.8888888888888888,6.444444444444445,0.0,0.028985507246376812
+SciFact,1012,Radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.,0.0,0,78,10,1.0,6.8,0.0,0.02564102564102564
+SciFact,1014,Rapamycin decreases the concentration of triacylglycerols in fruit flies.,0.0,0,73,9,1.0,7.111111111111111,0.0,0.0136986301369863
+SciFact,1019,Rapid phosphotransfer rates govern fidelity in two component systems,0.0,0,68,9,1.0,6.666666666666667,0.0,0.0
+SciFact,1020,Rapid up-regulation and higher basal expression of interferon-induced genes increase survival of granule cell neurons that are infected by West Nile virus.,0.13092975357145753,1,155,24,0.9583333333333334,5.458333333333333,0.0,0.01935483870967742
+SciFact,1021,Rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus.,0.13092975357145753,1,153,24,0.9583333333333334,5.375,0.0,0.0196078431372549
+SciFact,1024,Recurrent mutations occur frequently within CTCF anchor sites adjacent to oncogenes.,0.0,0,84,11,1.0,6.636363636363637,0.0,0.011904761904761904
+SciFact,1029,Reduced responsiveness to interleukin-2 in regulatory T cells is associated with greater resistance to autoimmune diseases such as Type 1 Diabetes.,0.0,0,147,22,0.9545454545454546,5.681818181818182,0.013605442176870748,0.013605442176870748
+SciFact,1041,Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes.,-0.018517574949988347,0,100,16,0.9375,5.1875,0.03,0.03
+SciFact,1049,Ribosomopathies have a low degree of cell and tissue specific pathology.,0.0,0,72,11,1.0,5.545454545454546,0.0,0.013888888888888888
+SciFact,1062,S-nitrosylated GAPDH physiologically transnitrosylates histone deacetylases.,0.0,0,76,7,1.0,9.857142857142858,0.0,0.02631578947368421
+SciFact,1086,Sildenafil improves erectile function in men who experience sexual dysfunction as a result of the use of SSRI antidepressants.,0.0,0,126,19,0.9473684210526315,5.631578947368421,0.0,0.007936507936507936
+SciFact,1088,Silencing of Bcl2 is important for the maintenance and progression of tumors.,0.0,0,77,12,0.9166666666666666,5.416666666666667,0.012987012987012988,0.012987012987012988
+SciFact,1089,Smc5/6 engagment drives the activation of SUMO E3 ligase Mms21 by ATP-dependent remolding.,0.0,0,90,15,1.0,5.0,0.05555555555555555,0.03333333333333333
+SciFact,1099,Statins decrease blood cholesterol.,0.0,0,35,4,1.0,7.75,0.0,0.02857142857142857
+SciFact,1100,Statins increase blood cholesterol.,0.0,0,35,4,1.0,7.75,0.0,0.02857142857142857
+SciFact,1104,Stroke patients with prior use of direct oral anticoagulants have a lower risk of in-hospital mortality than stroke patients with prior use of warfarin.,0.0,0,152,25,0.72,5.08,0.0,0.013157894736842105
+SciFact,1107,Subcutaneous fat depots undergo extensive browning processes after cold exposure.,0.0,0,81,10,1.0,7.1,0.0,0.012345679012345678
+SciFact,1110,Suboptimal nutrition is not predictive of chronic disease,0.0,0,57,8,1.0,6.25,0.0,0.0
+SciFact,1121,Synaptic activity enhances local release of brain derived neurotrophic factor from postsynaptic dendrites.,0.0,0,106,13,1.0,7.153846153846154,0.0,0.009433962264150943
+SciFact,1130,T regulatory cells (tTregs) lacking αvβ8 are more adept at suppressing pathogenic T-cell responses during active inflammation.,0.0,0,126,18,0.9444444444444444,5.888888888888889,0.007936507936507936,0.031746031746031744
+SciFact,1132,TCR/CD3 microdomains are a required to induce the immunologic synapse to activate T cells.,0.026870409803294665,1,90,15,0.9333333333333333,5.0,0.011111111111111112,0.022222222222222223
+SciFact,1137,TNFAIP3 is a tumor suppressor in glioblastoma.,0.0,0,46,7,1.0,5.571428571428571,0.021739130434782608,0.021739130434782608
+SciFact,1140,Taking 400mg of α-tocopheryl acetate helps to prevent prostate cancer.,1.0,1,70,11,1.0,5.363636363636363,0.04285714285714286,0.02857142857142857
+SciFact,1144,Taxation of sugar-sweetened beverages had no effect on the incidence rate of type II diabetes in India.,0.0,0,103,18,0.9444444444444444,4.722222222222222,0.0,0.019417475728155338
+SciFact,1146,Teaching hospitals do not provide better care than non-teaching hospitals.,0.0,0,74,11,0.8181818181818182,5.7272727272727275,0.0,0.02702702702702703
+SciFact,1150,Tetraspanin-3 is a causative factor in the development of acute myelogenous leukemia,0.0,0,84,13,1.0,5.538461538461538,0.011904761904761904,0.011904761904761904
+SciFact,1163,The DdrB protein from Deinococcus radiodurans is an alternative SSB.,0.0,0,68,10,1.0,5.8,0.0,0.014705882352941176
+SciFact,1175,The PPR MDA5 has two N-terminal CARD domains.,0.0,0,45,9,1.0,4.0,0.022222222222222223,0.044444444444444446
+SciFact,1179,The PRR MDA5 has a central DExD/H RNA helices domain.,0.03230333766935212,1,53,11,1.0,3.8181818181818183,0.018867924528301886,0.03773584905660377
+SciFact,1180,The PRR MDA5 is a sensor of RNA virus infection.,0.06932344192660694,1,48,10,1.0,3.8,0.020833333333333332,0.020833333333333332
+SciFact,1185,The US health care system can save up to $750 million if 7% of patients waiting for kidney transplants participate in the optimized national kidney paired donation program.,0.0,0,172,28,0.9285714285714286,5.071428571428571,0.023255813953488372,0.01744186046511628
+SciFact,1187,The YAP1 and TEAD complex tanslocates into the nucleus where it interacts with transcription factors and DNA-binding proteins that modulate target gene transcription.,0.0,0,166,24,0.875,5.916666666666667,0.006024096385542169,0.012048192771084338
+SciFact,1191,The amount of publicly available DNA data doubles every 10 years.,0.0,0,65,11,1.0,4.909090909090909,0.03076923076923077,0.015384615384615385
+SciFact,1194,The arm density of TatAd complexes is due to structural rearrangements within Class1 TatAd complexes such as the 'charge zipper mechanism'.,0.6845351232142712,1,139,21,0.8571428571428571,5.523809523809524,0.007194244604316547,0.02158273381294964
+SciFact,1196,The availability of safe places to study is effective at decreasing homelessness.,0.0,0,81,12,1.0,5.75,0.0,0.012345679012345678
+SciFact,1197,The availability of safe places to study is not effective at decreasing homelessness.,0.0,0,85,13,1.0,5.538461538461538,0.0,0.011764705882352941
+SciFact,1199,The benefits of colchicine were achieved with effective widespread use of secondary prevention strategies such as high-dose statins.,0.0,0,132,19,0.9473684210526315,5.947368421052632,0.0,0.015151515151515152
+SciFact,1200,The binding orientation of the ML-SA1 activator at hTRPML2 is different from the binding orientation of the ML-SA1 activator at hTRPML1.,0.0,0,136,23,0.5652173913043478,4.913043478260869,0.029411764705882353,0.022058823529411766
+SciFact,1202,The center of the granuloma in an immune cell induces a pro-inflammatory immune response.,0.0,0,89,15,0.8666666666666667,4.933333333333334,0.0,0.02247191011235955
+SciFact,1204,The combination of H3K4me3 and H3K79me2 is found in quiescent hair follicle stem cells.,-0.5,0,87,14,1.0,5.214285714285714,0.08045977011494253,0.011494252873563218
+SciFact,1207,The composition of myosin-II isoform switches from the polarizable B isoform to the more homogenous A isoform during hematopoietic differentiation.,0.5693234419266069,1,147,21,0.8095238095238095,6.0,0.0,0.013605442176870748
+SciFact,1213,The deregulated and prolonged activation of monocytes has deleterious effects in inflammatory diseases.,0.0,0,103,13,1.0,6.923076923076923,0.0,0.009708737864077669
+SciFact,1216,The extracellular domain of TMEM27 is cleaved in human beta cells.,0.0,0,66,11,1.0,5.0,0.030303030303030304,0.015151515151515152
+SciFact,1221,The genomic aberrations found in matasteses are very similar to those found in the primary tumor.,0.0,0,97,16,0.8125,5.0625,0.0,0.010309278350515464
+SciFact,1225,The locus rs647161 is associated with colorectal carcinoma.,0.0,0,59,8,1.0,6.375,0.1016949152542373,0.01694915254237288
+SciFact,1226,"The loss of the TET protein functions may have dire biological consequences, such as myeloid cancers.",0.0,0,101,16,0.9375,5.25,0.0,0.019801980198019802
+SciFact,1232,The minor G allele of FOXO3 is related to more severe symptoms of Crohn's Disease.,0.0,0,82,16,0.9375,4.125,0.012195121951219513,0.024390243902439025
+SciFact,1241,The myocardial lineage develops from cardiac progenitors of mesodermal origin.,0.0,0,78,10,1.0,6.8,0.0,0.01282051282051282
+SciFact,1245,The one-child policy has been successful in lowering population growth.,0.6845351232142712,1,71,11,1.0,5.454545454545454,0.0,0.028169014084507043
+SciFact,1259,The relationship between a breast cancer patient's capacity to metabolize tamoxifen and treatment outcome is dependent on the patient's genetic make-up.,0.0,0,152,24,0.875,5.333333333333333,0.0,0.02631578947368421
+SciFact,1262,The repair of Cas9-induced double strand breaks in human DNA is error-prone.,0.0,0,76,14,1.0,4.428571428571429,0.013157894736842105,0.039473684210526314
+SciFact,1266,"The risk of breast cancer among parous women increases with placental weight of pregnancies, and this association is strongest for premenopausal breast cancer.",0.5,1,159,23,0.8695652173913043,5.869565217391305,0.0,0.012578616352201259
+SciFact,1270,The risk of male prisoners harming themselves is ten times that of female prisoners.,0.0,0,84,14,0.8571428571428571,5.0,0.0,0.011904761904761904
+SciFact,1271,The severity of cardiac involvement in amyloidosis can be described by the degree of transmurality of late gadolinium enhancement in MRI.,0.0,0,137,21,0.8095238095238095,5.523809523809524,0.0,0.0072992700729927005
+SciFact,1272,The single flash-evoked ERG b-wave is generated by activity of ON-bipolar cells.,-0.11314719276545837,0,80,15,1.0,4.333333333333333,0.0,0.05
+SciFact,1273,The sliding activity of kinesin-8 protein Kip3 promotes bipolar spindle assembly.,0.0,0,81,12,1.0,5.75,0.024691358024691357,0.024691358024691357
+SciFact,1274,The tip of the inner tube of the toxic type VI secretion system (T6SS) antibacterial effector in Escherichia coli (E. coli) carries toxic effector proteins.,0.18302815606146927,1,156,25,0.76,5.04,0.00641025641025641,0.038461538461538464
+SciFact,1278,The treatment of cancer patients with co-IR blockade does not cause any adverse autoimmune events.,0.0,0,98,16,1.0,5.125,0.0,0.02040816326530612
+SciFact,1279,The treatment of cancer patients with co-IR blockade precipitates adverse autoimmune events.,0.0,0,92,13,1.0,6.076923076923077,0.0,0.021739130434782608
+SciFact,1280,"The ureABIEFGH gene cluster encodes urease maturation proteins : UreD/UreH, UreE, UreF, and UreG.",0.3562071871080222,1,97,14,1.0,5.571428571428571,0.0,0.061855670103092786
+SciFact,1281,The ureABIEFGH gene cluster is induced by nickel (II) ion.,0.0,0,58,10,1.0,4.6,0.0,0.05172413793103448
+SciFact,1282,Therapeutic use of the drug Dapsone to treat pyoderma gangrenous is based on anecdotal evidence.,0.0,0,96,15,1.0,5.4,0.0,0.010416666666666666
+SciFact,1290,There is an inverse relationship between hip fractures and statin use.,0.0,0,70,11,1.0,5.363636363636363,0.0,0.014285714285714285
+SciFact,1292,There is no association between HNF4A mutations and diabetes risks.,0.0,0,67,10,1.0,5.7,0.014925373134328358,0.014925373134328358
+SciFact,1298,Thigh-length graduated compression stockings (GCS) did not reduce deep vein thrombosis in patients admitted to hospital who are immobile because of acute stroke.,0.0,0,161,24,1.0,5.625,0.0,0.024844720496894408
+SciFact,1303,Tirasemtiv has no effect on fast-twitch muscle.,-0.6666666666666667,0,47,8,1.0,4.875,0.0,0.0425531914893617
+SciFact,1316,Transferred UCB T cells acquire a memory-like phenotype in recipients.,0.0,0,70,11,1.0,5.363636363636363,0.0,0.02857142857142857
+SciFact,1319,Transplanted human glial cells can differentiate within the host animal.,0.20025319549806447,1,72,10,1.0,6.2,0.0,0.013888888888888888
+SciFact,1320,Transplanted human glial progenitor cells are incapable of forming a neural network with host animals' neurons.,-0.36907024642854247,0,111,16,1.0,5.875,0.0,0.018018018018018018
+SciFact,1332,Tumor necrosis factor alpha (TNF-α) and interleukin-1 (IL-1) are pro-inflammatory cytokines that inhibit IL-6 and IL-10.,0.0,0,120,22,0.8181818181818182,4.2727272727272725,0.041666666666666664,0.09166666666666666
+SciFact,1335,UCB T cells maintain high TCR diversity after transplantation.,0.0,0,62,9,1.0,5.888888888888889,0.0,0.016129032258064516
+SciFact,1336,UCB T cells reduce TCR diversity after transplantation.,0.0,0,55,8,1.0,5.875,0.0,0.01818181818181818
+SciFact,1337,Ubiquitin ligase UBC13 generates a K63-linked polyubiquitin moiety at PCNA K164.,0.0,0,80,12,1.0,5.666666666666667,0.0875,0.025
+SciFact,1339,Ultrasound guidance significantly raises the number of traumatic procedures when attempting needle insertion.,0.0,0,109,13,1.0,7.384615384615385,0.0,0.009174311926605505
+SciFact,1344,Up-regulation of the p53 pathway and related molecular events casues cancer resistance and results in a significantly shortened lifespan marked by senescent cells and accelerated organismal aging.,0.0,0,196,28,0.9285714285714286,6.0,0.01020408163265306,0.01020408163265306
+SciFact,1352,Upregulation of mosGCTL-1 is induced upon infection with West Nile virus.,0.0,0,73,12,1.0,5.083333333333333,0.0136986301369863,0.0273972602739726
+SciFact,1359,Varenicline monotherapy is more effective after 12 weeks of treatment compared to combination nicotine replacement therapies with varenicline or bupropion.,0.0,0,155,20,0.95,6.75,0.012903225806451613,0.0064516129032258064
+SciFact,1362,Venules have a larger lumen diameter than arterioles.,0.5,1,53,8,1.0,5.625,0.0,0.018867924528301886
+SciFact,1363,Venules have a thinner or absent smooth layer compared to arterioles.,0.0,0,69,11,1.0,5.2727272727272725,0.0,0.014492753623188406
+SciFact,1368,Vitamin D deficiency effects the term of delivery.,0.43067655807339306,1,50,8,1.0,5.25,0.0,0.02
+SciFact,1370,Vitamin D deficiency is unrelated to birth weight.,0.11314719276545837,1,50,8,1.0,5.25,0.0,0.02
+SciFact,1379,Women with a higher birth weight are more likely to develop breast cancer later in life.,0.5322965481013788,1,88,16,1.0,4.5,0.0,0.011363636363636364
+SciFact,1382,aPKCz causes tumour enhancement by affecting glutamine metabolism.,1.0,1,66,8,1.0,7.25,0.0,0.015151515151515152
+SciFact,1385,cSMAC formation enhances weak ligand signalling.,0.0,0,48,6,1.0,7.0,0.0,0.020833333333333332
+SciFact,1389,mTORC2 regulates intracellular cysteine levels through xCT inhibition.,0.0,0,70,8,1.0,7.75,0.014285714285714285,0.014285714285714285
+SciFact,1395,p16INK4A accumulation is  linked to an abnormal wound response caused by the microinvasive step of advanced Oral Potentially Malignant Lesions (OPMLs).,0.0,0,151,21,1.0,6.0476190476190474,0.019867549668874173,0.019867549668874173
+TREC-COVID,1,what is the origin of COVID-19,0.2674663034209539,1,30,7,1.0,3.4285714285714284,0.06666666666666667,0.03333333333333333
+TREC-COVID,2,how does the coronavirus respond to changes in the weather,0.329922578536134,1,58,10,0.9,4.9,0.0,0.0
+TREC-COVID,3,will SARS-CoV2 infected people develop immunity? Is cross protection possible?,-0.33427943517700565,0,78,11,1.0,6.0,0.01282051282051282,0.038461538461538464
+TREC-COVID,4,what causes death from Covid-19?,0.10423544941121451,1,32,6,1.0,4.333333333333333,0.0625,0.0625
+TREC-COVID,5,what drugs have been active against SARS-CoV or SARS-CoV-2 in animal studies?,-0.23047170211485568,0,77,15,0.8666666666666667,4.133333333333334,0.012987012987012988,0.05194805194805195
+TREC-COVID,6,what types of rapid testing for Covid-19 have been developed?,0.2505854427698374,1,61,11,1.0,4.545454545454546,0.03278688524590164,0.03278688524590164
+TREC-COVID,7,are there serological tests that detect antibodies to coronavirus?,0.08010877076230571,1,66,9,1.0,6.333333333333333,0.0,0.015151515151515152
+TREC-COVID,8,how has lack of testing availability led to underreporting of true incidence of Covid-19?,0.15609576520707913,1,89,15,0.8666666666666667,4.933333333333334,0.02247191011235955,0.02247191011235955
+TREC-COVID,9,how has COVID-19 affected Canada,0.21517125576163673,1,32,6,1.0,4.5,0.0625,0.03125
+TREC-COVID,10,has social distancing had an impact on slowing the spread of COVID-19?,-0.0030333244884570565,0,70,13,1.0,4.384615384615385,0.02857142857142857,0.02857142857142857
+TREC-COVID,11,what are the guidelines for triaging patients infected with coronavirus?,0.4690000933206748,1,72,10,1.0,6.2,0.0,0.013888888888888888
+TREC-COVID,12,what are best practices in hospitals and at home in maintaining quarantine?,0.1116200096865016,1,75,12,0.9166666666666666,5.25,0.0,0.013333333333333334
+TREC-COVID,13,what are the transmission routes of coronavirus?,0.07502894742581134,1,48,7,1.0,5.857142857142857,0.0,0.020833333333333332
+TREC-COVID,14,what evidence is there related to COVID-19 super spreaders,-0.7681486832215605,0,58,10,1.0,4.9,0.034482758620689655,0.017241379310344827
+TREC-COVID,15,how long can the coronavirus live outside the body,-0.17853823829819593,0,50,9,0.8888888888888888,4.666666666666667,0.0,0.0
+TREC-COVID,16,how long does coronavirus remain stable  on surfaces?,-0.004684791523750453,0,53,8,1.0,5.5,0.0,0.018867924528301886
+TREC-COVID,17,are there any clinical trials available for the coronavirus,0.05651263172050769,1,59,9,1.0,5.666666666666667,0.0,0.0
+TREC-COVID,18,what are the best masks for preventing infection by Covid-19?,0.057946261338807425,1,61,11,1.0,4.545454545454546,0.03278688524590164,0.03278688524590164
+TREC-COVID,19,what type of hand sanitizer is needed to destroy Covid-19?,-0.10007292283790675,0,58,11,1.0,4.2727272727272725,0.034482758620689655,0.034482758620689655
+TREC-COVID,20,are patients taking Angiotensin-converting enzyme inhibitors (ACE) at increased risk for COVID-19?,0.06625422345438903,1,98,14,1.0,5.857142857142857,0.02040816326530612,0.05102040816326531
+TREC-COVID,21,what are the mortality rates overall and in specific populations,-0.35492797327201453,0,64,10,1.0,5.5,0.0,0.0
+TREC-COVID,22,are cardiac complications likely in patients with COVID-19?,0.13765179547245776,1,59,9,1.0,5.555555555555555,0.03389830508474576,0.03389830508474576
+TREC-COVID,23,what kinds of complications related to COVID-19 are associated with hypertension?,0.02273143567723901,1,81,12,1.0,5.75,0.024691358024691357,0.024691358024691357
+TREC-COVID,24,what kinds of complications related to COVID-19 are associated with diabetes,0.10029409882600082,1,76,12,1.0,5.416666666666667,0.02631578947368421,0.013157894736842105
+TREC-COVID,25,which biomarkers predict the severe clinical course of 2019-nCOV infection?,0.18095660264264724,1,75,11,1.0,5.818181818181818,0.05333333333333334,0.02666666666666667
+TREC-COVID,26,what are the initial symptoms of Covid-19?,0.41272967731050964,1,42,8,1.0,4.25,0.047619047619047616,0.047619047619047616
+TREC-COVID,27,what is known about those infected with Covid-19 but are asymptomatic?,-0.2823847223574273,0,70,12,1.0,4.833333333333333,0.02857142857142857,0.02857142857142857
+TREC-COVID,28,what evidence is there for the value of hydroxychloroquine in treating Covid-19?,0.015823807085182273,1,80,13,1.0,5.153846153846154,0.025,0.025
+TREC-COVID,29,which SARS-CoV-2 proteins-human proteins interactions indicate potential for drug targets. Are there approved drugs that can be repurposed based on this information?,-0.00641112260515897,0,165,25,0.96,5.56,0.006060606060606061,0.030303030303030304
+TREC-COVID,30,is remdesivir an effective treatment for COVID-19,0.0,0,49,8,1.0,5.25,0.04081632653061224,0.02040816326530612
+TREC-COVID,31,How does the coronavirus differ from seasonal flu?,0.0342439516433273,1,50,8,1.0,5.25,0.0,0.02
+TREC-COVID,32,"Does SARS-CoV-2 have any subtypes, and if so what are they?",0.42492601381667106,1,59,13,1.0,3.4615384615384617,0.01694915254237288,0.06779661016949153
+TREC-COVID,33,What vaccine candidates are being tested for Covid-19?,0.1499048426811086,1,54,9,1.0,5.0,0.037037037037037035,0.037037037037037035
+TREC-COVID,34,What are the longer-term complications of those who recover from COVID-19?,0.2069904793428713,1,74,13,1.0,4.6923076923076925,0.02702702702702703,0.04054054054054054
+TREC-COVID,35,What new public datasets are available related to COVID-19?,0.12137070176594661,1,59,10,1.0,4.9,0.03389830508474576,0.03389830508474576
+TREC-COVID,36,What is the protein structure of the SARS-CoV-2 spike?,-0.08157526746106358,0,54,11,0.9090909090909091,3.909090909090909,0.018518518518518517,0.05555555555555555
+TREC-COVID,37,What is the result of phylogenetic analysis of SARS-CoV-2 genome sequence?,0.43994197142975056,1,74,13,0.9230769230769231,4.6923076923076925,0.013513513513513514,0.04054054054054054
+TREC-COVID,38,What is the mechanism of inflammatory response and pathogenesis of COVID-19 cases?,0.12864872444612407,1,82,13,0.9230769230769231,5.3076923076923075,0.024390243902439025,0.024390243902439025
+TREC-COVID,39,What is the mechanism of cytokine storm syndrome on the COVID-19?,-0.015823807085182384,0,65,12,0.9166666666666666,4.416666666666667,0.03076923076923077,0.03076923076923077
+TREC-COVID,40,What are the observed mutations in the SARS-CoV-2 genome and how often do the mutations occur?,0.0,0,94,18,0.8333333333333334,4.222222222222222,0.010638297872340425,0.031914893617021274
+TREC-COVID,41,What are the impacts of COVID-19 among African-Americans that differ from the rest of the U.S. population?,0.04696127385679538,1,106,20,0.85,4.25,0.018867924528301886,0.04716981132075472
+TREC-COVID,42,Does Vitamin D impact COVID-19 prevention and treatment?,0.1186437297734717,1,56,9,1.0,5.222222222222222,0.03571428571428571,0.03571428571428571
+TREC-COVID,43,"How has the COVID-19 pandemic impacted violence in society, including violent crimes?",0.08344324614681009,1,85,13,1.0,5.461538461538462,0.023529411764705882,0.03529411764705882
+TREC-COVID,44,How much impact do masks have on preventing the spread of the COVID-19?,0.00981284546096961,1,71,14,0.9285714285714286,4.071428571428571,0.028169014084507043,0.028169014084507043
+TREC-COVID,45,How has the COVID-19 pandemic impacted mental health?,-0.026747751735628267,0,53,9,1.0,4.888888888888889,0.03773584905660377,0.03773584905660377
+TREC-COVID,46,what evidence is there for dexamethasone as a treatment for COVID-19?,0.29635237471633724,1,69,12,0.9166666666666666,4.75,0.028985507246376812,0.028985507246376812
+TREC-COVID,47,what are the health outcomes for children who contract COVID-19?,0.5796415632997458,1,64,11,1.0,4.818181818181818,0.03125,0.03125
+TREC-COVID,48,what are the benefits and risks of re-opening schools in the midst of the COVID-19 pandemic?,-0.32610706211205887,0,92,18,0.8333333333333334,4.111111111111111,0.021739130434782608,0.03260869565217391
+TREC-COVID,49,"do individuals who recover from COVID-19 show sufficient immune response, including antibody levels and T-cell mediated immunity, to prevent re-infection?",-0.032616701405051796,0,154,23,1.0,5.608695652173913,0.012987012987012988,0.03896103896103896
+TREC-COVID,50,what is known about an mRNA vaccine for the SARS-CoV-2 virus?,0.32610706211205887,1,61,13,1.0,3.6923076923076925,0.01639344262295082,0.04918032786885246
+NF-Corpus,PLAIN-2,Do Cholesterol Statin Drugs Cause Breast Cancer?,-0.23940117971445074,0,48,7,1.0,5.857142857142857,0.0,0.020833333333333332
+NF-Corpus,PLAIN-12,Exploiting Autophagy to Live Longer,0.0,0,35,5,1.0,6.2,0.0,0.0
+NF-Corpus,PLAIN-23,How to Reduce Exposure to Alkylphenols Through Your Diet,-0.16894312882715992,0,56,9,0.8888888888888888,5.333333333333333,0.0,0.0
+NF-Corpus,PLAIN-33,What’s Driving America’s Obesity Problem?,0.0757743335109691,1,41,7,0.8571428571428571,4.857142857142857,0.0,0.07317073170731707
+NF-Corpus,PLAIN-44,Who Should be Careful About Curcumin?,0.04019569404504287,1,37,6,1.0,5.166666666666667,0.0,0.02702702702702703
+NF-Corpus,PLAIN-56,Foods for Glaucoma,-0.18584651493134396,0,18,3,1.0,5.333333333333333,0.0,0.0
+NF-Corpus,PLAIN-68,What is Actually in Chicken Nuggets?,0.0,0,36,6,1.0,5.0,0.0,0.027777777777777776
+NF-Corpus,PLAIN-78,What Do Meat Purge and Cola Have in Common?,0.024806428651433954,1,43,9,1.0,3.7777777777777777,0.0,0.023255813953488372
+NF-Corpus,PLAIN-91,Chronic Headaches and Pork Parasites,0.11768826558093262,1,36,5,1.0,6.4,0.0,0.0
+NF-Corpus,PLAIN-102,Stopping Heart Disease in Childhood,0.1986066162441416,1,35,5,1.0,6.2,0.0,0.0
+NF-Corpus,PLAIN-112,Food Dyes and ADHD,0.019513532926346333,1,18,4,1.0,3.75,0.0,0.0
+NF-Corpus,PLAIN-123,How Citrus Might Help Keep Your Hands Warm,0.03791894292218333,1,42,8,1.0,4.375,0.0,0.0
+NF-Corpus,PLAIN-133,Starving Tumors of Their Blood Supply,0.04210679386305298,1,37,6,1.0,5.333333333333333,0.0,0.0
+NF-Corpus,PLAIN-143,Are Dental X-Rays Safe?,0.08898633146328411,1,23,5,1.0,3.6,0.0,0.08695652173913043
+NF-Corpus,PLAIN-153,How Should I Take Probiotics?,-0.15843994079392104,0,29,5,1.0,4.8,0.0,0.034482758620689655
+NF-Corpus,PLAIN-165,Breast Cancer & Alcohol: How Much is Safe?,0.31530948274877846,1,42,7,1.0,4.571428571428571,0.0,0.07142857142857142
+NF-Corpus,PLAIN-175,Diet and Cellulite,-0.1876199755925062,0,18,3,1.0,5.333333333333333,0.0,0.0
+NF-Corpus,PLAIN-186,Best Treatment for Constipation,0.0,0,31,4,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-196,Should We Avoid Titanium Dioxide?,-0.1804808646300713,0,33,5,1.0,5.6,0.0,0.030303030303030304
+NF-Corpus,PLAIN-207,Avoiding Cooked Meat Carcinogens,0.31799360392283404,1,32,4,1.0,7.25,0.0,0.0
+NF-Corpus,PLAIN-217,Plant-Based Diets for Psoriasis,0.0,0,31,5,1.0,5.4,0.0,0.03225806451612903
+NF-Corpus,PLAIN-227,Increasing Muscle Strength with Fenugreek,-0.09478836436955078,0,41,5,1.0,7.4,0.0,0.0
+NF-Corpus,PLAIN-238,How Chemically Contaminated Are We?,0.08514311764162098,1,35,5,1.0,6.0,0.0,0.02857142857142857
+NF-Corpus,PLAIN-248,Treating an Enlarged Prostate With Diet,0.040614661212262815,1,39,6,1.0,5.666666666666667,0.0,0.0
+NF-Corpus,PLAIN-259,Optimal Phytosterol Dose and Source,-0.13886244387355454,0,35,5,1.0,6.2,0.0,0.0
+NF-Corpus,PLAIN-270,Is Caffeinated Tea Really Dehydrating?,0.15557809912265216,1,38,5,1.0,6.6,0.0,0.02631578947368421
+NF-Corpus,PLAIN-280,Mercury Testing Recommended Before Pregnancy,0.03385090760382975,1,44,5,1.0,8.0,0.0,0.0
+NF-Corpus,PLAIN-291,Stool Size and Breast Cancer Risk,0.0,0,33,6,1.0,4.666666666666667,0.0,0.0
+NF-Corpus,PLAIN-307,Vitamin D: Shedding some light on the new recommendations,0.02515585957395855,1,57,9,1.0,5.333333333333333,0.0,0.017543859649122806
+NF-Corpus,PLAIN-320,Breast Cancer and Diet,0.0,0,22,4,1.0,4.75,0.0,0.0
+NF-Corpus,PLAIN-332,Can antioxidant-rich spices counteract the effects of a high-fat meal?,-0.22629438553091674,0,70,12,1.0,4.833333333333333,0.0,0.04285714285714286
+NF-Corpus,PLAIN-344,Dioxins Stored in Our Own Fat May Increase Diabetes Risk,0.051188492093692334,1,56,10,1.0,4.7,0.0,0.0
+NF-Corpus,PLAIN-358,Didn't another study show carnitine was good for the heart?,0.0,0,59,11,1.0,4.363636363636363,0.0,0.03389830508474576
+NF-Corpus,PLAIN-371,Any update on the scary in vitro avocado data?,0.03699955295572502,1,46,9,1.0,4.111111111111111,0.0,0.021739130434782608
+NF-Corpus,PLAIN-383,What do you think of Dr. Jenkins' take on paleolithic diets?,0.23216707290635236,1,60,11,1.0,4.2727272727272725,0.0,0.05
+NF-Corpus,PLAIN-395,What about pepper plus turmeric in V8 juice?,0.0,0,44,8,1.0,4.5,0.022727272727272728,0.022727272727272728
+NF-Corpus,PLAIN-407,Is annatto food coloring safe?,0.0,0,30,5,1.0,5.0,0.0,0.03333333333333333
+NF-Corpus,PLAIN-418,Fresh fruit versus frozen--which is better?,-0.06892684969401042,0,43,7,1.0,5.0,0.0,0.06976744186046512
+NF-Corpus,PLAIN-430,Are krill oil supplements better than fish oil capsules?,-0.26968613600874725,0,56,9,0.8888888888888888,5.222222222222222,0.0,0.017857142857142856
+NF-Corpus,PLAIN-441,Is apple cider vinegar good for you?,-0.24676477474869862,0,36,7,1.0,4.142857142857143,0.0,0.027777777777777776
+NF-Corpus,PLAIN-457,How can you believe in any scientific study?,0.0,0,44,8,1.0,4.5,0.0,0.022727272727272728
+NF-Corpus,PLAIN-468,Is vitamin D3 (cholecalciferol) preferable to D2 (ergocalciferol)?,0.014901583367428806,1,66,8,1.0,6.75,0.030303030303030304,0.07575757575757576
+NF-Corpus,PLAIN-478,accidents,0.0,0,9,1,1.0,9.0,0.0,0.0
+NF-Corpus,PLAIN-488,adenovirus 36,-0.007109698644970908,0,13,2,1.0,6.0,0.15384615384615385,0.0
+NF-Corpus,PLAIN-499,African-American,-0.4053793051217231,0,16,2,1.0,7.5,0.0,0.0625
+NF-Corpus,PLAIN-510,airport scanners,0.0,0,16,2,1.0,7.5,0.0,0.0
+NF-Corpus,PLAIN-520,Alli,0.0,0,4,1,1.0,4.0,0.0,0.0
+NF-Corpus,PLAIN-531,alternative medicine,0.03791242483354473,1,20,2,1.0,9.5,0.0,0.0
+NF-Corpus,PLAIN-541,American Dental Association,-0.11799504447532705,0,27,3,1.0,8.333333333333334,0.0,0.0
+NF-Corpus,PLAIN-551,amnesia,0.0,0,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-561,aneurysm,0.0,0,8,1,1.0,8.0,0.0,0.0
+NF-Corpus,PLAIN-571,anisakis,-0.031101485426915598,0,8,1,1.0,8.0,0.0,0.0
+NF-Corpus,PLAIN-583,antinutrients,0.0,0,13,1,1.0,13.0,0.0,0.0
+NF-Corpus,PLAIN-593,apnea,0.0,0,5,1,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-603,Arkansas,0.0,0,8,1,1.0,8.0,0.0,0.0
+NF-Corpus,PLAIN-613,ascorbic acid,0.15647097809912847,1,13,2,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-623,Atkins diet,0.0,0,11,2,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-634,avocados,0.0,0,8,1,1.0,8.0,0.0,0.0
+NF-Corpus,PLAIN-645,bagels,0.0,0,6,1,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-660,beans,0.0,0,5,1,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-671,benzene,0.0,0,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-681,betel nuts,0.0,0,10,2,1.0,4.5,0.0,0.0
+NF-Corpus,PLAIN-691,bioavailability,0.0,0,15,1,1.0,15.0,0.0,0.0
+NF-Corpus,PLAIN-701,black raspberries,0.23938361568734456,1,17,2,1.0,8.0,0.0,0.0
+NF-Corpus,PLAIN-711,blood clots,0.0,0,11,2,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-721,BMAA,0.0,0,4,1,1.0,4.0,0.0,0.0
+NF-Corpus,PLAIN-731,bone fractures,0.0670303103128993,1,14,2,1.0,6.5,0.0,0.0
+NF-Corpus,PLAIN-741,BPH,-0.11734011443088532,0,3,1,1.0,3.0,0.0,0.0
+NF-Corpus,PLAIN-751,BRCA genes,0.0,0,10,2,1.0,4.5,0.0,0.0
+NF-Corpus,PLAIN-761,breast pain,0.15130120674940672,1,11,2,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-771,bronchiolitis obliterans,0.0,0,24,2,1.0,11.5,0.0,0.0
+NF-Corpus,PLAIN-782,Bush administration,0.0,0,19,2,1.0,9.0,0.0,0.0
+NF-Corpus,PLAIN-792,cadaverine,0.0,0,10,1,1.0,10.0,0.0,0.0
+NF-Corpus,PLAIN-806,caloric restriction,-0.019023530646312792,0,19,2,1.0,9.0,0.0,0.0
+NF-Corpus,PLAIN-817,canker sores,0.0,0,12,2,1.0,5.5,0.0,0.0
+NF-Corpus,PLAIN-827,carcinogens,0.4230482802414282,1,11,1,1.0,11.0,0.0,0.0
+NF-Corpus,PLAIN-838,carrageenan,0.0,0,11,1,1.0,11.0,0.0,0.0
+NF-Corpus,PLAIN-850,cauliflower,0.0,0,11,1,1.0,11.0,0.0,0.0
+NF-Corpus,PLAIN-872,chanterelle mushrooms,0.0,0,21,2,1.0,10.0,0.0,0.0
+NF-Corpus,PLAIN-882,Chernobyl,0.0,0,9,1,1.0,9.0,0.0,0.0
+NF-Corpus,PLAIN-892,chickpeas,0.06625422345438903,1,9,1,1.0,9.0,0.0,0.0
+NF-Corpus,PLAIN-902,chlorophyll,-0.0511123637446792,0,11,1,1.0,11.0,0.0,0.0
+NF-Corpus,PLAIN-913,cinnamon,0.0,0,8,1,1.0,8.0,0.0,0.0
+NF-Corpus,PLAIN-924,cocaine,0.0,0,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-934,coffee,-0.20483424751859092,0,6,1,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-946,coma,-0.11969112987696987,0,4,1,1.0,4.0,0.0,0.0
+NF-Corpus,PLAIN-956,cooking methods,0.17883819552358876,1,15,2,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-966,cortisol,0.15481493810603625,1,8,1,1.0,8.0,0.0,0.0
+NF-Corpus,PLAIN-977,crib death,0.15481493810603625,1,10,2,1.0,4.5,0.0,0.0
+NF-Corpus,PLAIN-987,cumin,0.23463936301137822,1,5,1,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-997,Czechoslovakia,0.0,0,14,1,1.0,14.0,0.0,0.0
+NF-Corpus,PLAIN-1008,deafness,0.0,0,8,1,1.0,8.0,0.0,0.0
+NF-Corpus,PLAIN-1018,DHA,0.013078460449406415,1,3,1,1.0,3.0,0.0,0.0
+NF-Corpus,PLAIN-1028,dietary scoring,0.0,0,15,2,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-1039,domoic acid,0.0,0,11,2,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-1050,Dr. Dean Ornish,-0.06362078819895171,0,15,3,1.0,4.0,0.0,0.06666666666666667
+NF-Corpus,PLAIN-1066,Dr. Walter Willett,0.0,0,18,3,1.0,5.0,0.0,0.05555555555555555
+NF-Corpus,PLAIN-1088,ECMO,0.0,0,4,1,1.0,4.0,0.0,0.0
+NF-Corpus,PLAIN-1098,eggnog,0.0,0,6,1,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-1109,endocrine disruptors,-0.012758719983132827,0,20,2,1.0,9.5,0.0,0.0
+NF-Corpus,PLAIN-1119,energy drinks,0.0,0,13,2,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-1130,ergothioneine,0.0,0,13,1,1.0,13.0,0.0,0.0
+NF-Corpus,PLAIN-1141,Evidence-based medicine,0.0,0,23,3,1.0,7.0,0.0,0.043478260869565216
+NF-Corpus,PLAIN-1151,factory farming practices,0.06362078819895173,1,25,3,1.0,7.666666666666667,0.0,0.0
+NF-Corpus,PLAIN-1161,fava beans,0.0,0,10,2,1.0,4.5,0.0,0.0
+NF-Corpus,PLAIN-1172,fenugreek,0.0,0,9,1,1.0,9.0,0.0,0.0
+NF-Corpus,PLAIN-1183,Finland,-0.1525382779365457,0,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-1193,flax oil,0.07524165567460282,1,8,2,1.0,3.5,0.0,0.0
+NF-Corpus,PLAIN-1203,folic acid,0.0,0,10,2,1.0,4.5,0.0,0.0
+NF-Corpus,PLAIN-1214,Fosamax,0.0,0,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-1225,fructose,0.1445487858686373,1,8,1,1.0,8.0,0.0,0.0
+NF-Corpus,PLAIN-1236,galactosemia,0.0,0,12,1,1.0,12.0,0.0,0.0
+NF-Corpus,PLAIN-1249,genetic manipulation,0.0,0,20,2,1.0,9.5,0.0,0.0
+NF-Corpus,PLAIN-1262,Global Burden of Disease Study,0.260706427510343,1,30,5,1.0,5.2,0.0,0.0
+NF-Corpus,PLAIN-1275,goji berries,-0.09478836436955079,0,12,2,1.0,5.5,0.0,0.0
+NF-Corpus,PLAIN-1288,grapes,-0.03939622237756424,0,6,1,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-1299,growth promoters,-0.085143117641621,0,16,2,1.0,7.5,0.0,0.0
+NF-Corpus,PLAIN-1309,halibut,0.0,0,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-1320,Harvard Physicians’ Study II,-0.23443291840383038,0,28,4,1.0,6.0,0.0,0.03571428571428571
+NF-Corpus,PLAIN-1331,hearing,0.0,0,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-1342,heme iron,-0.09355790058568608,0,9,2,1.0,4.0,0.0,0.0
+NF-Corpus,PLAIN-1353,hernia,0.0,0,6,1,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-1363,Hiroshima,0.0,0,9,1,1.0,9.0,0.0,0.0
+NF-Corpus,PLAIN-1374,hormonal dysfunction,-0.08514311764162098,0,20,2,1.0,9.5,0.0,0.0
+NF-Corpus,PLAIN-1387,hyperactivity,-0.22392657928818444,0,13,1,1.0,13.0,0.0,0.0
+NF-Corpus,PLAIN-1398,IGF-1,0.0,0,5,2,1.0,2.0,0.2,0.2
+NF-Corpus,PLAIN-1409,industrial toxins,0.3335714066644499,1,17,2,1.0,8.0,0.0,0.0
+NF-Corpus,PLAIN-1419,insects,0.04407407950400377,1,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-1429,Iowa Women’s Health Study,0.0,0,25,5,1.0,4.2,0.0,0.04
+NF-Corpus,PLAIN-1441,Japan,0.42239628512566096,1,5,1,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-1453,junk food,0.07589947018231885,1,9,2,1.0,4.0,0.0,0.0
+NF-Corpus,PLAIN-1463,kidney beans,-0.15459324452388565,0,12,2,1.0,5.5,0.0,0.0
+NF-Corpus,PLAIN-1473,kohlrabi,0.0,0,8,1,1.0,8.0,0.0,0.0
+NF-Corpus,PLAIN-1485,lard,0.0,0,4,1,1.0,4.0,0.0,0.0
+NF-Corpus,PLAIN-1496,leeks,0.0,0,5,1,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-1506,leucine,-0.06483922703365017,0,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-1516,Lindane,0.0,0,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-1527,liver disease,-0.06362078819895167,0,13,2,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-1537,low-carb diets,0.5481351590340573,1,14,3,1.0,4.0,0.0,0.07142857142857142
+NF-Corpus,PLAIN-1547,lyme disease,0.0,0,12,2,1.0,5.5,0.0,0.0
+NF-Corpus,PLAIN-1557,magnesium,-0.08300916882728984,0,9,1,1.0,9.0,0.0,0.0
+NF-Corpus,PLAIN-1568,maple syrup,0.0,0,11,2,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-1579,mastitis,-0.12517394053908856,0,8,1,1.0,8.0,0.0,0.0
+NF-Corpus,PLAIN-1590,medical ethics,-0.08122932242452563,0,14,2,1.0,6.5,0.0,0.0
+NF-Corpus,PLAIN-1601,memory,0.034349850549082794,1,6,1,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-1611,mesquite,0.0,0,8,1,1.0,8.0,0.0,0.0
+NF-Corpus,PLAIN-1621,Mevacor,0.0,0,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-1635,milk,0.4249260138166713,1,4,1,1.0,4.0,0.0,0.0
+NF-Corpus,PLAIN-1645,molasses,0.0,0,8,1,1.0,8.0,0.0,0.0
+NF-Corpus,PLAIN-1656,mouth cancer,0.015257518779489304,1,12,2,1.0,5.5,0.0,0.0
+NF-Corpus,PLAIN-1667,muscle health,-0.10416664828793365,0,13,2,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-1679,myelopathy,0.0,0,10,1,1.0,10.0,0.0,0.0
+NF-Corpus,PLAIN-1690,National Academy of Sciences,0.0,0,28,4,1.0,6.25,0.0,0.0
+NF-Corpus,PLAIN-1700,Native Americans,0.0,0,16,2,1.0,7.5,0.0,0.0
+NF-Corpus,PLAIN-1710,neurocysticercosis,0.0,0,18,1,1.0,18.0,0.0,0.0
+NF-Corpus,PLAIN-1721,NIH-AARP study,0.0031769984823882824,1,14,3,1.0,4.0,0.0,0.07142857142857142
+NF-Corpus,PLAIN-1731,norovirus,0.0,0,9,1,1.0,9.0,0.0,0.0
+NF-Corpus,PLAIN-1741,nuts,0.0,0,4,1,1.0,4.0,0.0,0.0
+NF-Corpus,PLAIN-1752,okra,0.0,0,4,1,1.0,4.0,0.0,0.0
+NF-Corpus,PLAIN-1762,oral intraepithelial neoplasia,0.14400621014990123,1,30,3,1.0,9.333333333333334,0.0,0.0
+NF-Corpus,PLAIN-1772,organotins,0.0,0,10,1,1.0,10.0,0.0,0.0
+NF-Corpus,PLAIN-1784,oxen meat,0.0,0,9,2,1.0,4.0,0.0,0.0
+NF-Corpus,PLAIN-1794,Panama,0.0,0,6,1,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-1805,Parkinson's disease,-0.025357142432773427,0,19,3,1.0,5.666666666666667,0.0,0.05263157894736842
+NF-Corpus,PLAIN-1817,peanut butter,0.008967047041898102,1,13,2,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-1827,Peoria,0.0,0,6,1,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-1837,pesticides,0.0,0,10,1,1.0,10.0,0.0,0.0
+NF-Corpus,PLAIN-1847,philippines,-0.08122932242452566,0,11,1,1.0,11.0,0.0,0.0
+NF-Corpus,PLAIN-1857,phytic acid,0.009743133900408374,1,11,2,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-1867,pineapples,0.0,0,10,1,1.0,10.0,0.0,0.0
+NF-Corpus,PLAIN-1877,plant-based diet,0.0,0,16,3,1.0,4.666666666666667,0.0,0.0625
+NF-Corpus,PLAIN-1887,poisonous plants,0.0,0,16,2,1.0,7.5,0.0,0.0
+NF-Corpus,PLAIN-1897,polypropylene plastic,0.0,0,21,2,1.0,10.0,0.0,0.0
+NF-Corpus,PLAIN-1909,pork,-0.14279514403613724,0,4,1,1.0,4.0,0.0,0.0
+NF-Corpus,PLAIN-1919,poultry workers,0.0031769984823882824,1,15,2,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-1929,prenatal vitamins,0.0,0,17,2,1.0,8.0,0.0,0.0
+NF-Corpus,PLAIN-1940,prolactin,-0.02881656072451444,0,9,1,1.0,9.0,0.0,0.0
+NF-Corpus,PLAIN-1950,prunes,0.0,0,6,1,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-1962,pumpkin,0.0,0,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-1972,quinine,0.0,0,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-1983,rapamycin,0.0,0,9,1,1.0,9.0,0.0,0.0
+NF-Corpus,PLAIN-1995,red tea,0.0,0,7,2,1.0,3.0,0.0,0.0
+NF-Corpus,PLAIN-2009,rhabdomyolysis,0.0,0,14,1,1.0,14.0,0.0,0.0
+NF-Corpus,PLAIN-2019,rickets,0.0,0,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-2030,Rutin,-0.11168154731987878,0,5,1,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-2040,salmon,0.10563314498669163,1,6,1,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-2051,saturated fat,-0.17442237302818642,0,13,2,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-2061,seafood,0.06625422345438903,1,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-2071,serotonin,-0.1427951440361374,0,9,1,1.0,9.0,0.0,0.0
+NF-Corpus,PLAIN-2081,shelf life,0.0,0,10,2,1.0,4.5,0.0,0.0
+NF-Corpus,PLAIN-2092,sirtuins,0.0,0,8,1,1.0,8.0,0.0,0.0
+NF-Corpus,PLAIN-2102,smoking,0.17130889977298325,1,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-2113,soil health,0.0,0,11,2,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-2124,spearmint,0.0,0,9,1,1.0,9.0,0.0,0.0
+NF-Corpus,PLAIN-2134,Splenda,0.0,0,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-2145,St. John's wort,-0.03077445586290642,0,15,4,1.0,2.75,0.0,0.13333333333333333
+NF-Corpus,PLAIN-2156,stevia,0.0,0,6,1,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-2167,subsidies,0.0,0,9,1,1.0,9.0,0.0,0.0
+NF-Corpus,PLAIN-2177,sulfur,9.788717247855017e-05,1,6,1,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-2187,suppositories,0.0,0,13,1,1.0,13.0,0.0,0.0
+NF-Corpus,PLAIN-2197,sweeteners,-0.016390095390875437,0,10,1,1.0,10.0,0.0,0.0
+NF-Corpus,PLAIN-2209,taro,0.0,0,4,1,1.0,4.0,0.0,0.0
+NF-Corpus,PLAIN-2220,tempeh,0.0,0,6,1,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-2230,thiamine,0.0,0,8,1,1.0,8.0,0.0,0.0
+NF-Corpus,PLAIN-2240,titanium dioxide,0.06549852177419457,1,16,2,1.0,7.5,0.0,0.0
+NF-Corpus,PLAIN-2250,tongue worm,0.0,0,11,2,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-2261,trans fats,0.2665168612481686,1,10,2,1.0,4.5,0.0,0.0
+NF-Corpus,PLAIN-2271,Tufts,0.0,0,5,1,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-2281,turnips,0.0,0,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-2291,ultra-processed foods,-0.11305340175787204,0,21,3,1.0,6.333333333333333,0.0,0.047619047619047616
+NF-Corpus,PLAIN-2301,uterine health,0.0,0,14,2,1.0,6.5,0.0,0.0
+NF-Corpus,PLAIN-2311,veal,0.0,0,4,1,1.0,4.0,0.0,0.0
+NF-Corpus,PLAIN-2321,veggie chicken,0.0,0,14,2,1.0,6.5,0.0,0.0
+NF-Corpus,PLAIN-2332,viral infections,-0.21661344306085173,0,16,2,1.0,7.5,0.0,0.0
+NF-Corpus,PLAIN-2343,vitamin K,0.0,0,9,2,1.0,4.0,0.0,0.0
+NF-Corpus,PLAIN-2354,walnut oil,0.044406162097719526,1,10,2,1.0,4.5,0.0,0.0
+NF-Corpus,PLAIN-2364,weight gain,0.0,0,11,2,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-2375,whiting,0.0,0,7,1,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-2386,worms,0.0,0,5,1,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-2396,Yale,0.0,0,4,1,1.0,4.0,0.0,0.0
+NF-Corpus,PLAIN-2408,Zoloft,0.0,0,6,1,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-2430,Preventing Brain Loss with B Vitamins?,-0.11106836583246765,0,38,6,1.0,5.333333333333333,0.0,0.02631578947368421
+NF-Corpus,PLAIN-2440,More Than an Apple a Day: Combating Common Diseases,0.0,0,51,9,1.0,4.666666666666667,0.0,0.0196078431372549
+NF-Corpus,PLAIN-2450,Are Organic Foods Safer?,-0.10265376469471635,0,24,4,1.0,5.0,0.0,0.041666666666666664
+NF-Corpus,PLAIN-2460,Diabetes as a Disease of Fat Toxicity,-0.11496943328345773,0,37,7,1.0,4.428571428571429,0.0,0.0
+NF-Corpus,PLAIN-2470,Is Milk Good for Our Bones?,-0.09375358373665316,0,27,6,1.0,3.5,0.0,0.037037037037037035
+NF-Corpus,PLAIN-2480,Preventing Ulcerative Colitis with Diet,0.03128220470182619,1,39,5,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-2490,The Actual Benefit of Diet vs. Drugs,-0.4544349947341837,0,36,7,1.0,4.142857142857143,0.0,0.027777777777777776
+NF-Corpus,PLAIN-2500,The Saturated Fat Studies: Buttering Up the Public,-0.059872671137193724,0,50,8,0.875,5.25,0.0,0.02
+NF-Corpus,PLAIN-2510,Coffee and Artery Function,-0.13688927926756744,0,26,4,1.0,5.75,0.0,0.0
+NF-Corpus,PLAIN-2520,Caloric Restriction vs. Plant-Based Diets,-0.08799939092429448,0,41,6,1.0,5.833333333333333,0.0,0.04878048780487805
+NF-Corpus,PLAIN-2530,Infectobesity: Adenovirus 36 and Childhood Obesity,0.033127111727194514,1,50,6,1.0,7.333333333333333,0.04,0.02
+NF-Corpus,PLAIN-2540,Does Cholesterol Size Matter?,-0.00639160402075073,0,29,4,1.0,6.25,0.0,0.034482758620689655
+NF-Corpus,PLAIN-2550,Barriers to Heart Disease Prevention,-0.11918532507629645,0,36,5,1.0,6.4,0.0,0.0
+NF-Corpus,PLAIN-2560,Childhood Constipation and Cow’s Milk,0.15457433957839828,1,37,6,1.0,5.333333333333333,0.0,0.02702702702702703
+NF-Corpus,PLAIN-2570,Diabetics Should Take Their Pulses,-0.03200606484240487,0,34,5,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-2580,Academy of Nutrition and Dietetics Conflicts of Interest,-0.010386329346650791,0,56,8,0.875,6.125,0.0,0.0
+NF-Corpus,PLAIN-2590,Do Vegetarians Get Enough Protein?,0.07292655201988812,1,34,5,1.0,5.8,0.0,0.029411764705882353
+NF-Corpus,PLAIN-2600,Eggs and Arterial Function,0.26139068822021266,1,26,4,1.0,5.75,0.0,0.0
+NF-Corpus,PLAIN-2610,Treating Asthma With Plants vs. Supplements?,0.015711895704843715,1,44,6,1.0,6.166666666666667,0.0,0.045454545454545456
+NF-Corpus,PLAIN-2620,Phytates for the Treatment of Cancer,-0.16787496074933989,0,36,6,1.0,5.166666666666667,0.0,0.0
+NF-Corpus,PLAIN-2630,Alkylphenol Endocrine Disruptors and Allergies,0.0249027655074191,1,46,5,1.0,8.4,0.0,0.0
+NF-Corpus,PLAIN-2640,Chicken Salmonella Thanks to Meat Industry Lawsuit,-0.03594933206145212,0,50,7,1.0,6.285714285714286,0.0,0.0
+NF-Corpus,PLAIN-2650,Turmeric Curcumin and Osteoarthritis,-0.1321175952106089,0,36,4,1.0,8.25,0.0,0.0
+NF-Corpus,PLAIN-2660,How Long to Detox From Fish Before Pregnancy?,0.059049178474140374,1,45,8,1.0,4.625,0.0,0.022222222222222223
+NF-Corpus,PLAIN-2670,Is Caramel Color Carcinogenic?,0.14982420171299154,1,30,4,1.0,6.5,0.0,0.03333333333333333
+NF-Corpus,PLAIN-2680,Counteracting the Effects of Dioxins Through Diet,0.18210369776815222,1,49,7,1.0,6.142857142857143,0.0,0.0
+NF-Corpus,PLAIN-2690,Chronic Headaches and Pork Tapeworms,0.2200917662980802,1,36,5,1.0,6.4,0.0,0.0
+NF-Corpus,PLAIN-2700,Heart Disease Starts in Childhood,0.1605327106653441,1,33,5,1.0,5.8,0.0,0.0
+NF-Corpus,PLAIN-2710,Artificial Food Colors and ADHD,0.08661734426551171,1,31,5,1.0,5.4,0.0,0.0
+NF-Corpus,PLAIN-2720,Keeping Your Hands Warm With Citrus,0.13211759521060887,1,35,6,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-2730,Anti-Angiogenesis: Cutting Off Tumor Supply Lines,0.4087982744859299,1,49,7,1.0,6.0,0.0,0.04081632653061224
+NF-Corpus,PLAIN-2740,Cancer Risk From CT Scan Radiation,0.20090200410073256,1,34,6,1.0,4.833333333333333,0.0,0.0
+NF-Corpus,PLAIN-2750,Preventing the Common Cold with Probiotics?,-0.08698451916692779,0,43,6,1.0,6.166666666666667,0.0,0.023255813953488372
+NF-Corpus,PLAIN-2760,Eating Healthy on a Budget,0.0,0,26,5,1.0,4.4,0.0,0.0
+NF-Corpus,PLAIN-2770,Flaxseeds & Breast Cancer Survival: Clinical Evidence,-0.3820564381065627,0,53,6,1.0,7.5,0.0,0.03773584905660377
+NF-Corpus,PLAIN-2780,Do Fruit & Nut Bars Cause Weight Gain?,0.02666352696971208,1,38,7,1.0,4.142857142857143,0.0,0.05263157894736842
+NF-Corpus,PLAIN-2790,Titanium Dioxide & Inflammatory Bowel Disease,0.006744848662945557,1,45,5,1.0,7.8,0.0,0.022222222222222223
+NF-Corpus,PLAIN-2800,Prolonged Liver Function Enhancement From Broccoli,-0.049783113561611234,0,50,6,1.0,7.5,0.0,0.0
+NF-Corpus,PLAIN-2810,Apple Juice May Be Worse Than Sugar Water,-0.05854439592831931,0,41,8,1.0,4.25,0.0,0.0
+NF-Corpus,PLAIN-2820,Preventing Strokes with Diet,0.11671218210122507,1,28,4,1.0,6.25,0.0,0.0
+NF-Corpus,PLAIN-2830,Neurobiology of Artificial Sweeteners,0.0,0,37,4,1.0,8.5,0.0,0.0
+NF-Corpus,PLAIN-2840,Benefits of Fenugreek Seeds,0.0,0,27,4,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-2850,More Antibiotics In White Meat or Dark Meat?,0.0,0,44,8,0.875,4.5,0.0,0.022727272727272728
+NF-Corpus,PLAIN-2860,BPA Plastic and Male Sexual Dysfunction,0.0,0,39,6,1.0,5.666666666666667,0.0,0.0
+NF-Corpus,PLAIN-2870,Filled Full of Lead,-0.07623986638854101,0,19,4,1.0,4.0,0.0,0.0
+NF-Corpus,PLAIN-2880,The Answer to the Pritikin Puzzle,0.0,0,33,6,0.8333333333333334,4.666666666666667,0.0,0.0
+NF-Corpus,PLAIN-2890,To Snack or Not to Snack?,-0.04156595943551104,0,25,6,0.6666666666666666,3.1666666666666665,0.0,0.04
+NF-Corpus,PLAIN-2900,Boosting Good Bacteria in the Colon Without Probiotics,0.1926866049182051,1,54,8,1.0,5.875,0.0,0.0
+NF-Corpus,PLAIN-2910,Optimal Phytosterol Dose,0.0,0,24,3,1.0,7.333333333333333,0.0,0.0
+NF-Corpus,PLAIN-2920,Human Neurotransmitters in Plants,0.0,0,33,4,1.0,7.5,0.0,0.0
+NF-Corpus,PLAIN-2930,Kiwifruit for Irritable Bowel Syndrome,0.0,0,38,5,1.0,6.8,0.0,0.0
+NF-Corpus,PLAIN-2940,Dietary Treatment of Crohn's Disease,0.0,0,36,6,1.0,5.166666666666667,0.0,0.027777777777777776
+NF-Corpus,PLAIN-2950,Unsafe at Any Feed,0.0,0,18,4,1.0,3.75,0.0,0.0
+NF-Corpus,PLAIN-2960,Pharmacists Versus Health Food Store Employees: Who Gives Better Advice?,0.0,0,72,10,1.0,6.1,0.0,0.027777777777777776
+NF-Corpus,PLAIN-2970,Preventing Cataracts with Diet,0.0,0,30,4,1.0,6.75,0.0,0.0
+NF-Corpus,PLAIN-2981,Cheese Mites and Maggots,-0.07187006452250416,0,24,4,1.0,5.25,0.0,0.0
+NF-Corpus,PLAIN-2991,Cholesterol and Lower Back Pain,0.08027921085181244,1,31,5,1.0,5.4,0.0,0.0
+NF-Corpus,PLAIN-3001,EPIC Findings on Lymphoma,-0.20438239758848611,0,25,4,1.0,5.5,0.0,0.0
+NF-Corpus,PLAIN-3014,Sometimes the Enzyme Myth Is True,0.0,0,33,6,1.0,4.666666666666667,0.0,0.0
+NF-Corpus,PLAIN-3026,Vitamin C-Enriched Bacon,-0.3010299956639812,0,24,4,1.0,5.25,0.0,0.041666666666666664
+NF-Corpus,PLAIN-3037,Out of the Lab Onto the Track,0.0,0,29,7,0.8571428571428571,3.2857142857142856,0.0,0.0
+NF-Corpus,PLAIN-3053,Dragon's Blood,0.0,0,14,3,1.0,4.0,0.0,0.07142857142857142
+NF-Corpus,PLAIN-3063,Better Than Goji Berries,0.0,0,24,4,1.0,5.25,0.0,0.0
+NF-Corpus,PLAIN-3074,How to Help Prevent Abdominal Aortic Aneurysms,-0.6989700043360187,0,46,7,1.0,5.714285714285714,0.0,0.0
+NF-Corpus,PLAIN-3085,The Difficulty of Arriving at a Vitamin D Recommendation,-0.12278468466195075,0,56,9,1.0,5.333333333333333,0.0,0.0
+NF-Corpus,PLAIN-3097,Amyloid and Apple Juice,0.0,0,23,4,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-3116,Dietary Guidelines: From Dairies to Berries,0.0,0,43,6,1.0,6.166666666666667,0.0,0.023255813953488372
+NF-Corpus,PLAIN-3131,Are Avocados Good for You?,0.016124726840871212,1,26,5,1.0,4.2,0.0,0.038461538461538464
+NF-Corpus,PLAIN-3141,Relieving Yourself of Excess Estrogen,0.1333769321014654,1,37,5,1.0,6.6,0.0,0.0
+NF-Corpus,PLAIN-3151,Too Much Iodine Can Be as Bad as Too Little,0.6140091041223233,1,43,10,0.8,3.4,0.0,0.0
+NF-Corpus,PLAIN-3161,Is Milk and Mucus a Myth?,-0.04757463375562648,0,25,6,1.0,3.1666666666666665,0.0,0.04
+NF-Corpus,PLAIN-3171,Convergence of Evidence,0.09125965040647843,1,23,3,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-3181,Is Dragon Fruit Good For You?,0.22400556151517553,1,29,6,1.0,3.8333333333333335,0.0,0.034482758620689655
+NF-Corpus,PLAIN-3191,Is Distilled Fish Oil Toxin-Free?,-0.042367766003497065,0,33,6,1.0,4.5,0.0,0.06060606060606061
+NF-Corpus,PLAIN-3201,Acne & Cancer Connection,0.10417425704168615,1,24,3,1.0,6.666666666666667,0.0,0.041666666666666664
+NF-Corpus,PLAIN-3211,Overdosing on Greens,0.0,0,20,3,1.0,6.0,0.0,0.0
+NF-Corpus,PLAIN-3221,Dietary Theory of Alzheimer's,0.0,0,29,5,1.0,5.0,0.0,0.034482758620689655
+NF-Corpus,PLAIN-3231,Meat & Multiple Myeloma,0.0,0,23,3,1.0,6.333333333333333,0.0,0.043478260869565216
+NF-Corpus,PLAIN-3241,Apthous Ulcer Mystery Solved,0.0,0,28,4,1.0,6.25,0.0,0.0
+NF-Corpus,PLAIN-3251,EPIC Study,0.01755969744406629,1,10,2,1.0,4.5,0.0,0.0
+NF-Corpus,PLAIN-3261,Update on Herbalife®,0.006854113763784919,1,20,3,1.0,5.666666666666667,0.0,0.05
+NF-Corpus,PLAIN-3271,Saturated Fat & Cancer Progression,0.0,0,34,4,1.0,7.25,0.0,0.029411764705882353
+NF-Corpus,PLAIN-3281,Aluminum in Vaccines vs. Food,-0.12755478454853666,0,29,5,1.0,4.8,0.0,0.034482758620689655
+NF-Corpus,PLAIN-3292,Are Multivitamins Good For You?,-0.11889931614133659,0,31,5,1.0,5.2,0.0,0.03225806451612903
+NF-Corpus,PLAIN-3302,Fish Fog,-0.29420263302058774,0,8,2,1.0,3.5,0.0,0.0
+NF-Corpus,PLAIN-3312,Sexually Transmitted Fish Toxin,0.16166836532571668,1,31,4,1.0,7.0,0.0,0.0
+NF-Corpus,PLAIN-3322,Veggies vs. Cancer,0.07589947018231881,1,18,3,1.0,5.0,0.0,0.05555555555555555
+NF-Corpus,PLAIN-3332,Alcohol Risks vs. Benefits,0.012295225617264038,1,26,4,1.0,5.5,0.0,0.038461538461538464
+NF-Corpus,PLAIN-3342,Is Coconut Milk Good For You?,-0.4800129389813732,0,29,6,1.0,3.8333333333333335,0.0,0.034482758620689655
+NF-Corpus,PLAIN-3352,Boosting Heart Nerve Control,0.16195671984435944,1,28,4,1.0,6.25,0.0,0.0
+NF-Corpus,PLAIN-3362,Kuna Indian Secret,0.0,0,18,3,1.0,5.333333333333333,0.0,0.0
+NF-Corpus,PLAIN-3372,The Healthiest Sweetener,0.0,0,24,3,1.0,7.333333333333333,0.0,0.0
+NF-Corpus,PLAIN-3382,Are Artificial Colors Bad for You?,0.3084253774851065,1,34,6,1.0,4.666666666666667,0.0,0.029411764705882353
+NF-Corpus,PLAIN-3392,Healthiest Airplane Beverage,0.0,0,28,3,1.0,8.666666666666666,0.0,0.0
+NF-Corpus,PLAIN-3402,Antioxidant Content of 300 Foods,0.08514311764162098,1,32,5,1.0,5.6,0.09375,0.0
+NF-Corpus,PLAIN-3412,Plant vs. Cow Calcium,-0.10644397828150137,0,21,4,1.0,4.25,0.0,0.047619047619047616
+NF-Corpus,PLAIN-3422,Vitamin Supplements Worth Taking,0.27250304536248027,1,32,4,1.0,7.25,0.0,0.0
+NF-Corpus,PLAIN-3432,Healthy Chocolate Milkshakes,-0.18844415212771537,0,28,3,1.0,8.666666666666666,0.0,0.0
+NF-Corpus,PLAIN-3442,The Healthiest Vegetables,0.08879873949105598,1,25,3,1.0,7.666666666666667,0.0,0.0
+NF-Corpus,PLAIN-3452,Bowel Movement Frequency,-0.026992786640726574,0,24,3,1.0,7.333333333333333,0.0,0.0
+NF-Corpus,PLAIN-3462,Olive Oil and Artery Function,-0.13298229857516786,0,29,5,1.0,5.0,0.0,0.0
+NF-Corpus,PLAIN-3472,How Doctors Responded to Being Named a Leading Killer,0.0,0,53,9,1.0,5.0,0.0,0.0

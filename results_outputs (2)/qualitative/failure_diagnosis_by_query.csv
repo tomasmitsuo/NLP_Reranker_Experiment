@@ -1,0 +1,674 @@
+dataset,query_id,query,candidate_recall@100,num_relevant_qrels,num_bm25_relevant_top10,num_bge_relevant_top10,bm25_relevant_top10,bge_relevant_top10,delta_nDCG@10,failure_type
+SciFact,1,0-dimensional biomaterials show inductive properties.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,3,"1,000 genomes project enables mapping of genetic sequence variation consisting of rare variants with larger penetrance effects than common variants.",1.0,1,1,1,['14717500'],['14717500'],0.0,sem_mudanca_relevante
+SciFact,5,1/2000 in UK have abnormal PrP positivity.,1.0,1,1,1,['13734012'],['13734012'],0.0,sem_mudanca_relevante
+SciFact,13,5% of perinatal mortality is due to low birth weight.,1.0,1,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+SciFact,36,A deficiency of vitamin B12 increases blood levels of homocysteine.,1.0,2,1,1,['11705328'],['11705328'],0.01879027595113203,sucesso_do_reranker
+SciFact,42,A high microerythrocyte count raises vulnerability to severe anemia in homozygous alpha (+)- thalassemia trait subjects.,1.0,1,1,1,['18174210'],['18174210'],0.0,sem_mudanca_relevante
+SciFact,48,"A total of 1,000 people in the UK are asymptomatic carriers of vCJD infection.",1.0,1,1,1,['13734012'],['13734012'],0.0,sem_mudanca_relevante
+SciFact,49,ADAR1 binds to Dicer to cleave pre-miRNA.,1.0,1,1,1,['5953485'],['5953485'],0.0,sem_mudanca_relevante
+SciFact,50,AIRE is expressed in some skin tumors.,1.0,1,1,1,['12580014'],['12580014'],0.0,sem_mudanca_relevante
+SciFact,51,ALDH1 expression is associated with better breast cancer outcomes.,1.0,1,1,1,['45638119'],['45638119'],0.0,sem_mudanca_relevante
+SciFact,53,ALDH1 expression is associated with poorer prognosis in breast cancer.,1.0,1,1,1,['45638119'],['45638119'],0.0,sem_mudanca_relevante
+SciFact,54,AMP-activated protein kinase (AMPK) activation increases inflammation-related fibrosis in the lungs.,1.0,1,1,1,['49556906'],['49556906'],0.14379281289197782,sucesso_do_reranker
+SciFact,56,APOE4 expression in iPSC-derived neurons increases AlphaBeta production and tau phosphorylation causing GABA neuron degeneration.,1.0,1,1,1,['4709641'],['4709641'],0.0,sem_mudanca_relevante
+SciFact,57,"APOE4 expression in iPSC-derived neurons increases AlphaBeta production and tau phosphorylation, delaying GABA neuron degeneration.",1.0,1,1,1,['4709641'],['4709641'],0.0,sem_mudanca_relevante
+SciFact,70,Activation of PPM1D suppresses p53 function.,1.0,2,2,2,"['5956380', '4414547']","['4414547', '5956380']",-0.5315494798389231,falha_ou_piora_do_reranker
+SciFact,72,Activator-inhibitor pairs are provided dorsally by Admpchordin.,1.0,1,1,1,['6076903'],['6076903'],0.6989700043360187,sucesso_do_reranker
+SciFact,75,"Active H. pylori urease has a polymeric structure that compromises two subunits, UreA and UreB.",1.0,1,1,1,['4387784'],['4387784'],0.36907024642854247,sucesso_do_reranker
+SciFact,94,Albendazole is used to treat lymphatic filariasis.,1.0,1,1,1,['1215116'],['1215116'],0.0,sem_mudanca_relevante
+SciFact,99,Alizarin forms hydrogen bonds with residues involved in PGAM1 substrate binding.,1.0,1,1,1,['18810195'],['18810195'],0.0,sem_mudanca_relevante
+SciFact,100,All hematopoietic stem cells segregate their chromosomes randomly.,1.0,1,1,1,['4381486'],['4381486'],0.0,sem_mudanca_relevante
+SciFact,113,Angiotensin converting enzyme inhibitors are associated with increased risk for functional renal insufficiency.,1.0,1,1,1,['6157837'],['6157837'],0.0,sem_mudanca_relevante
+SciFact,115,Anthrax spores can be disposed of easily after they are dispersed.,1.0,1,1,1,['33872649'],['33872649'],0.0,sem_mudanca_relevante
+SciFact,118,Antibiotic induced alterations in the gut microbiome reduce resistance against Clostridium difficile,1.0,1,1,1,['6372244'],['6372244'],0.0,sem_mudanca_relevante
+SciFact,124,Antiretroviral therapy reduces rates of tuberculosis across a broad range of CD4 strata.,1.0,1,1,1,['4883040'],['4883040'],0.0,sem_mudanca_relevante
+SciFact,127,Arginine 90 in p150n is important for interaction with EB1.,1.0,1,1,1,['21598000'],['21598000'],0.5,sucesso_do_reranker
+SciFact,128,Arterioles have a larger lumen diameter than venules.,1.0,1,1,1,['8290953'],['8290953'],0.13092975357145753,sucesso_do_reranker
+SciFact,129,Articles published in open access format are less likely to be cited than traditional journals.,1.0,1,1,1,['27768226'],['27768226'],0.0,sem_mudanca_relevante
+SciFact,130,Articles published in open access format are more likely to be cited than traditional journals.,1.0,1,1,1,['27768226'],['27768226'],0.0,sem_mudanca_relevante
+SciFact,132,Aspirin inhibits the production of PGE2.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,133,"Assembly of invadopodia is triggered by focal generation of phosphatidylinositol-3,4-biphosphate and the activation of the nonreceptor tyrosine kinase Src.",0.8,5,1,3,['16280642'],"['16280642', '12640810', '17934082']",0.22595595991959372,sucesso_do_reranker
+SciFact,137,Asymptomatic visual impairment screening in elderly populations does not lead to improved vision.,1.0,1,1,1,['26016929'],['26016929'],0.0,sem_mudanca_relevante
+SciFact,141,Auditory entrainment is strengthened when people see congruent visual and auditory information.,1.0,2,2,2,"['14437255', '6955746']","['14437255', '6955746']",-0.1227846846619507,falha_ou_piora_do_reranker
+SciFact,142,Autologous transplantation of mesenchymal stem cells causes a higher rate of opportunistic infections than induction therapy with anti-interleukin-2 receptor antibodies.,1.0,1,1,1,['10582939'],['10582939'],0.0,sem_mudanca_relevante
+SciFact,143,Autologous transplantation of mesenchymal stem cells causes fewer opportunistic infections than induction therapy with anti-interleukin-2 receptor antibodies.,1.0,1,1,1,['10582939'],['10582939'],0.0,sem_mudanca_relevante
+SciFact,146,Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies.,1.0,1,1,1,['10582939'],['10582939'],0.0,sem_mudanca_relevante
+SciFact,148,Autophagy declines in aged organisms.,1.0,1,1,1,['1084345'],['1084345'],0.0,sem_mudanca_relevante
+SciFact,163,Bariatric surgery has a positive impact on mental health.,1.0,1,1,1,['18872233'],['18872233'],-0.36907024642854247,falha_ou_piora_do_reranker
+SciFact,171,Basophils counteract disease development in patients with systemic lupus erythematosus (SLE).,1.0,1,1,1,['12670680'],['12670680'],0.0,sem_mudanca_relevante
+SciFact,179,Birth-weight is positively associated with breast cancer.,0.75,4,2,3,"['16322674', '17450673']","['16322674', '17450673', '23557241']",0.16812753627111754,sucesso_do_reranker
+SciFact,180,Blocking the interaction between TDP-43 and respiratory complex I proteins ND3 and ND6 leads to increased TDP-43-induced neuronal loss.,1.0,1,1,1,['16966326'],['16966326'],0.0,sem_mudanca_relevante
+SciFact,183,Bone marrow cells contribute to adult macrophage compartments.,1.0,1,1,1,['12827098'],['12827098'],0.11521168128766429,sucesso_do_reranker
+SciFact,185,Breast cancer development is determined exclusively by genetic factors.,1.0,1,1,1,['18340282'],['18340282'],-0.13092975357145753,falha_ou_piora_do_reranker
+SciFact,198,CCL19 is absent within dLNs.,1.0,1,1,1,['2177022'],['2177022'],-0.11314719276545837,falha_ou_piora_do_reranker
+SciFact,208,CHEK2 is not associated with breast cancer.,1.0,1,1,1,['13519661'],['13519661'],0.0,sem_mudanca_relevante
+SciFact,212,CR is associated with higher methylation age.,1.0,1,1,1,['22038539'],['22038539'],-0.36907024642854247,falha_ou_piora_do_reranker
+SciFact,213,CRP is not predictive of postoperative mortality following Coronary Artery Bypass Graft (CABG) surgery.,1.0,1,1,0,['13625993'],[],-0.3562071871080222,falha_ou_piora_do_reranker
+SciFact,216,CX3CR1 on the Th2 cells impairs T cell survival,1.0,1,1,1,['21366394'],['21366394'],0.0,sem_mudanca_relevante
+SciFact,217,CX3CR1 on the Th2 cells promotes T cell survival,1.0,1,1,1,['21366394'],['21366394'],0.0,sem_mudanca_relevante
+SciFact,218,CX3CR1 on the Th2 cells promotes airway inflammation.,1.0,1,1,1,['21366394'],['21366394'],0.0,sem_mudanca_relevante
+SciFact,219,CX3CR1 on the Th2 cells suppresses airway inflammation.,1.0,1,1,1,['21366394'],['21366394'],0.0,sem_mudanca_relevante
+SciFact,230,Carriers of the alcohol aldehyde dehydrogenase deficiency mutation drink less that non-carries.,1.0,1,1,1,['3067015'],['3067015'],0.0,sem_mudanca_relevante
+SciFact,232,Cataract and trachoma are the primary cause of blindness in Southern Sudan.,1.0,1,1,1,['10536636'],['10536636'],0.0,sem_mudanca_relevante
+SciFact,233,Cell autonomous sex determination in somatic cells does not occur in Galliformes.,1.0,1,1,1,['4388470'],['4388470'],0.0,sem_mudanca_relevante
+SciFact,236,Cell autonomous sex determination in somatic cells occurs in Passeriformes.,1.0,1,1,1,['4388470'],['4388470'],0.0,sem_mudanca_relevante
+SciFact,237,Cells lacking clpC have a defect in sporulation efficiency in Bacillus subtilis.,1.0,1,1,1,['4942718'],['4942718'],0.0,sem_mudanca_relevante
+SciFact,238,Cells undergoing methionine restriction may activate miRNAs.,1.0,1,0,1,[],['2251426'],0.5,sucesso_do_reranker
+SciFact,239,Cellular aging closely links to an older appearance.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,248,Chenodeosycholic acid treatment increases whole-body energy expenditure.,1.0,1,1,1,['1568684'],['1568684'],0.0,sem_mudanca_relevante
+SciFact,249,Chenodeosycholic acid treatment reduces whole-body energy expenditure.,1.0,1,1,1,['1568684'],['1568684'],0.36907024642854247,sucesso_do_reranker
+SciFact,261,"Chronic aerobic exercise alters endothelial function, improving vasodilating mechanisms mediated by NO.",0.5,2,1,1,['1122279'],['1122279'],-0.07064171895532007,falha_ou_piora_do_reranker
+SciFact,268,Cold exposure increases BAT recruitment.,1.0,1,1,1,['970012'],['970012'],0.36907024642854247,sucesso_do_reranker
+SciFact,269,Cold exposure reduces BAT recruitment.,1.0,1,1,1,['970012'],['970012'],0.36907024642854247,sucesso_do_reranker
+SciFact,274,Combination nicotine replacement therapies with varenicline or bupropion lead to significantly higher long-term abstinence rates at 52 weeks than varenicline monotherapy.,1.0,1,1,1,['11614737'],['11614737'],0.0,sem_mudanca_relevante
+SciFact,275,Combining phosphatidylinositide 3-kinase and MEK 1/2 inhibitors is effective at treating KRAS mutant tumors.,0.6666666666666666,3,1,1,['4961038'],['4961038'],0.0,sem_mudanca_relevante
+SciFact,279,Commelina yellow mottle virus' (ComYMV) genome consists of 7489 baise pairs.,1.0,1,1,1,['14376683'],['14376683'],0.0,sem_mudanca_relevante
+SciFact,294,Crossover hot spots are not found within gene promoters in Saccharomyces cerevisiae.,1.0,1,1,0,['10874408'],[],-1.0,falha_ou_piora_do_reranker
+SciFact,295,Crosstalk between dendritic cells (DCs) and innate lymphoid cells (ILCs) is important in the regulation of intestinal homeostasis.,1.0,1,1,1,['20310709'],['20310709'],0.0,sem_mudanca_relevante
+SciFact,298,Cytochrome c is released from the mitochondrial intermembrane space to cytosol during apoptosis.,1.0,1,1,1,['39381118'],['39381118'],0.0,sem_mudanca_relevante
+SciFact,300,Cytosolic proteins bind to iron-responsive elements on mRNAs coding for DMT1. Cytosolic proteins bind to iron-responsive elements on mRNAs coding for proteins involved in iron uptake.,1.0,1,1,1,['3553087'],['3553087'],0.06932344192660694,sucesso_do_reranker
+SciFact,303,DMRT1 is a sex-determining gene that is epigenetically regulated by the MHM region.,1.0,1,1,1,['4388470'],['4388470'],-0.2975964202381242,falha_ou_piora_do_reranker
+SciFact,312,De novo assembly of sequence data has more specific contigs than unassembled sequence data.,1.0,1,1,1,['6173523'],['6173523'],0.0,sem_mudanca_relevante
+SciFact,314,Deamination of cytidine to uridine on the minus strand of viral DNA results in catastrophic G-to-A mutations in the viral genome.,1.0,1,1,1,['4347374'],['4347374'],0.0,sem_mudanca_relevante
+SciFact,324,Deleting Raptor reduces G-CSF levels.,1.0,1,1,1,['2014909'],['2014909'],-0.14161173175550518,falha_ou_piora_do_reranker
+SciFact,327,Deletion of αvβ8 does not result in a spontaneous inflammatory phenotype.,1.0,1,1,1,['17997584'],['17997584'],0.0,sem_mudanca_relevante
+SciFact,338,Dexamethasone decreases risk of postoperative bleeding.,1.0,1,1,1,['23349986'],['23349986'],0.0,sem_mudanca_relevante
+SciFact,343,Diabetic patients with acute coronary syndrome experience increased short-term and long-term risk for bleeding events.,1.0,2,2,2,"['5884524', '7873737']","['5884524', '7873737']",-0.12593989660623928,falha_ou_piora_do_reranker
+SciFact,350,Discrimination between the initiator and elongation tRNAs depends on the translation initiation factor IF3.,1.0,1,1,1,['16927286'],['16927286'],0.0,sem_mudanca_relevante
+SciFact,354,Downregulation and mislocalization of Scribble prevents cell transformation and mammary tumorigenesis.,1.0,1,1,1,['8774475'],['8774475'],0.0,sem_mudanca_relevante
+SciFact,362,During the primary early antibody response activated B cells migrate toward the inner-and outer paracortical areas where oxysterol accumulation is generated by stromal cells.,1.0,1,1,1,['38587347'],['38587347'],0.0,sem_mudanca_relevante
+SciFact,380,Enhanced early production of inflammatory chemokines improves viral control in the lung.,1.0,1,1,1,['19005293'],['19005293'],0.0,sem_mudanca_relevante
+SciFact,384,Epidemiological disease burden from noncommunicable diseases is more prevalent in low economic settings.,1.0,1,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+SciFact,385,Epigenetic modulating agents (EMAs) modulate antitumor immune response in a cancer model system.,1.0,2,1,1,['9767444'],['9767444'],0.0,sem_mudanca_relevante
+SciFact,386,Errors in peripheral IV drug administration are most common during bolus administration and multiple-step medicine preparations.,1.0,1,1,1,['16495649'],['16495649'],0.0,sem_mudanca_relevante
+SciFact,388,Ethanol stress decreases the expression of IBP in bacteria.,1.0,1,1,0,['1148122'],[],-0.5,falha_ou_piora_do_reranker
+SciFact,399,Exposure to fine particulate air pollution is relate to anxiety prevalence.,1.0,1,1,1,['791050'],['791050'],0.0,sem_mudanca_relevante
+SciFact,410,Febrile seizures increase the threshold for development of epilepsy.,1.0,1,1,1,['14924526'],['14924526'],0.0,sem_mudanca_relevante
+SciFact,411,Febrile seizures reduce the threshold for development of epilepsy.,1.0,1,1,1,['14924526'],['14924526'],0.0,sem_mudanca_relevante
+SciFact,415,Female carriers of the Apolipoprotein E4 (APOE4) allele have increased risk for dementia.,1.0,1,1,1,['6309659'],['6309659'],0.11314719276545837,sucesso_do_reranker
+SciFact,421,Flexible molecules experience greater steric hindrance in the tumor microenviroment than rigid molecules.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,431,FoxO3a activation in neuronal death is mediated by reactive oxygen species (ROS).,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,436,Free histones are degraded by a Rad53-dependent mechanism once DNA has been replicated.,1.0,1,1,1,['14637235'],['14637235'],0.0,sem_mudanca_relevante
+SciFact,437,Functional consequences of genomic alterations due to Myelodysplastic syndrome (MDS) are poorly understood due to the lack of an animal model.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,439,Fz/PCP-dependent Pk localizes to the anterior membrane of neuroectoderm cells during zebrafish neuralation,1.0,1,1,1,['4423559'],['4423559'],0.36907024642854247,sucesso_do_reranker
+SciFact,440,Fz/PCP-dependent Pk localizes to the anterior membrane of notochord cells during zebrafish neuralation.,1.0,1,1,1,['4423559'],['4423559'],0.36907024642854247,sucesso_do_reranker
+SciFact,443,GATA-3 is important for hematopoietic stem cell (HSC) function.,1.0,1,1,1,['10165258'],['10165258'],0.0,sem_mudanca_relevante
+SciFact,452,Gene expression does not vary appreciably across genetically identical cells.,0.5,2,1,1,['464511'],['464511'],0.37594947999616213,sucesso_do_reranker
+SciFact,475,Glycolysis is one of the primary glycometabolic pathways in cells.,1.0,1,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+SciFact,478,Golli-deficient T-cells prefer to differentiate into an anergic phenotype in the adaptive immune response when there are increased levels of Ca2+ in the cytosol.,1.0,1,1,1,['14767844'],['14767844'],0.36907024642854247,sucesso_do_reranker
+SciFact,491,HNF4A mutations can cause diabetes in mutant carriers by the age of 14 years,1.0,1,1,1,['56893404'],['56893404'],0.0,sem_mudanca_relevante
+SciFact,501,Headaches are not correlated with cognitive impairment.,1.0,1,1,1,['17930286'],['17930286'],0.36907024642854247,sucesso_do_reranker
+SciFact,502,"Healthcare delivery efficiency in crowded delivery centers is impaired by improving structural, logistical, and interpersonal elements.",0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,507,Helminths interfere with immune system control of macrophages activated by IL-4 favor Mycobacterium tuberculosis replication.,1.0,1,1,1,['30774694'],['30774694'],-0.5,falha_ou_piora_do_reranker
+SciFact,508,Hematopoietic Stem Cell purification reaches purity rate of up to 50%.,1.0,1,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+SciFact,513,High cardiopulmonary fitness causes increased mortality rate.,1.0,1,1,0,['13230773'],[],-1.0,falha_ou_piora_do_reranker
+SciFact,514,High dietary calcium intakes are unnecessary for prevention of secondary hyperparathyroidism in subjects with 25(OH)D levels above 75 nmol/liter.,1.0,1,0,1,[],['16256507'],0.3333333333333333,sucesso_do_reranker
+SciFact,516,High levels of CRP reduces the risk of exacerbations in chronic obstructive pulmonary disease (COPD).,1.0,1,1,1,['29564505'],['29564505'],0.0,sem_mudanca_relevante
+SciFact,517,High levels of copeptin decrease risk of diabetes.,1.0,1,0,1,[],['15663829'],0.3333333333333333,sucesso_do_reranker
+SciFact,521,High-sensitivity cardiac troponin T (HSCT-T) dosage may not be diagnostic if the onset of symptoms occurs less than 3 hours before acute myocardial injury (AMI).,1.0,1,1,1,['34873974'],['34873974'],-0.6131471927654584,falha_ou_piora_do_reranker
+SciFact,525,Histone demethylase recruitment and a transient decrease in histone methylation is necessary for ligand-dependent induction of transcription by nuclear receptors.,1.0,1,1,1,['13639330'],['13639330'],0.0,sem_mudanca_relevante
+SciFact,527,Homozygous deletion of murine Sbds gene from osterix-expressing mesenchymal stem and progenitor cells (MPCs) prevents oxidative stress.,1.0,1,1,1,['3863543'],['3863543'],0.0,sem_mudanca_relevante
+SciFact,528,Human T-lymphotropic virus type-I-associated myelopathy / tropical spastic paraparesis (HAM/TSP) patients produce Immunoglobulin G (IgG) antibodies which cross-react with an immunodominant epitope in Tax.,1.0,1,1,1,['5476778'],['5476778'],0.0,sem_mudanca_relevante
+SciFact,532,Hyperfibrinogenemia decreases rates of femoropopliteal bypass thrombosis.,1.0,1,1,1,['12991445'],['12991445'],0.0,sem_mudanca_relevante
+SciFact,533,Hyperfibrinogenemia increases rates of femoropopliteal bypass thrombosis.,1.0,1,1,1,['12991445'],['12991445'],0.0,sem_mudanca_relevante
+SciFact,535,Hypertension is frequently observed in type 1 diabetes patients.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,536,Hypocretin neurones induce panicprone state in rats.,1.0,1,1,1,['16056514'],['16056514'],0.0,sem_mudanca_relevante
+SciFact,539,Hypoglycemia increases the risk of dementia.,1.0,1,1,1,['13282296'],['13282296'],0.0,sem_mudanca_relevante
+SciFact,540,Hypothalamic glutamate neurotransmission is crucial to energy balance.,1.0,2,1,1,['11886686'],['11886686'],-0.0328153151808101,falha_ou_piora_do_reranker
+SciFact,544,IFIT1 restricts viral replication by sequestrating mis-capped viral RNAs.,1.0,1,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+SciFact,549,IRG1 has antiviral effects against neurotropic viruses.,1.0,1,1,1,['9433958'],['9433958'],0.0,sem_mudanca_relevante
+SciFact,551,ITAM phosphorylation prevents the transfer of the T cell receptor (TCR) signal from the echo-domain to the cytoplasmic tail of the T cell receptor (TCR).,1.0,1,1,0,['33499189'],[],-0.43067655807339306,falha_ou_piora_do_reranker
+SciFact,552,IgA plasma cells that are specific for transglutaminase 2 accumulate in the duodenal mucosa on commencement of a gluten-free diet.,1.0,1,1,1,['1471041'],['1471041'],0.0,sem_mudanca_relevante
+SciFact,554,Immune complex triggered cell death leads to extracellular release of neutrophil protein HMGB1.,1.0,1,1,1,['1049501'],['1049501'],-0.01786845654760455,falha_ou_piora_do_reranker
+SciFact,560,Immune responses result in the development of inflammatory Th17 cells and anti-inflammatory iTregs.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,569,"In adult tissue, most T cells are memory T cells.",1.0,1,1,1,['23460562'],['23460562'],0.0,sem_mudanca_relevante
+SciFact,575,"In domesticated populations of Saccharomyces cerevisiae, whole chromosome aneuploidy is very uncommon.",1.0,1,0,1,[],['10300888'],1.0,sucesso_do_reranker
+SciFact,577,"In mice, P. chabaudi parasites are able to proliferate faster early in infection when inoculated at lower numbers than when inoculated at high numbers.",0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,578,"In mouse models, the loss of CSF1R facilitates MOZ-TIF2-induced leuekmogenesis.",1.0,1,1,1,['8764879'],['8764879'],0.0,sem_mudanca_relevante
+SciFact,587,"In transgenic mice harboring green florescent protein under the control of the Sox2 promoter, less than ten percent of the cells with green florescent colocalize with cell proliferation markers.",1.0,1,1,1,['16999023'],['16999023'],0.20025319549806447,sucesso_do_reranker
+SciFact,589,"In young and middle-aged adults, current or remote uses of ADHD medications do not increase the risk of serious cardiovascular events.",1.0,1,1,1,['10984005'],['10984005'],0.0,sem_mudanca_relevante
+SciFact,593,Incidence of heart failure decreased by 10% in women since 1979.,1.0,1,1,1,['19675911'],['19675911'],0.0,sem_mudanca_relevante
+SciFact,597,Incidence rates of cervical cancer have decreased.,1.0,3,3,3,"['36355784', '25742130', '12779444']","['36355784', '25742130', '12779444']",0.0,sem_mudanca_relevante
+SciFact,598,Incidence rates of cervical cancer have increased due to nationwide screening programs based primarily on cytology to detect uterine cervical cancer.,1.0,1,1,1,['25742130'],['25742130'],-0.04074231032229342,falha_ou_piora_do_reranker
+SciFact,613,Increased microtubule acetylation repairs LRRK2 Roc-COR domain mutation induced locomotor deficits.,1.0,1,1,1,['9638032'],['9638032'],0.0,sem_mudanca_relevante
+SciFact,619,Increased vessel density along with a reduction in fibrosis decreases the efficacy of chemotherapy treatments.,0.5,2,1,0,['20888849'],[],-0.23719771276929622,falha_ou_piora_do_reranker
+SciFact,623,Individuals with low serum vitamin D concentrations have increased risk of multiple sclerosis.,1.0,1,0,1,[],['17000834'],0.38685280723454163,sucesso_do_reranker
+SciFact,628,Infection of human T-cell lymphotropic virus type 1 is most frequent in individuals of African origin.,1.0,1,1,1,['24512064'],['24512064'],0.0,sem_mudanca_relevante
+SciFact,636,"Inositol lipid 3-phosphatase PTEN converts Ptdlns(3,4)P 2 into phosphatidylinositol 4-phosphate.",1.0,1,1,1,['24294572'],['24294572'],0.5,sucesso_do_reranker
+SciFact,637,Input from  mental and physical health care professionals is effective at decreasing homelessness.,1.0,1,1,1,['25649714'],['25649714'],0.21093517368211212,sucesso_do_reranker
+SciFact,641,Insomnia can be effectively treated with cognitive behavioral therapy.,1.0,2,1,2,['5912283'],"['5912283', '31554917']",0.26406812257259094,sucesso_do_reranker
+SciFact,644,Insulin increases risk of severe kidney failure.,1.0,1,1,1,['13619127'],['13619127'],0.36907024642854247,sucesso_do_reranker
+SciFact,649,Integrating classroom-based collaborative learning with Web-based collaborative learning leads to subpar class performance,1.0,1,1,1,['12789595'],['12789595'],-0.36907024642854247,falha_ou_piora_do_reranker
+SciFact,659,Ivermectin is used to treat lymphatic filariasis.,1.0,1,1,1,['1215116'],['1215116'],0.0,sem_mudanca_relevante
+SciFact,660,Ivermectin is used to treat onchocerciasis.,1.0,1,1,1,['1215116'],['1215116'],0.6131471927654584,sucesso_do_reranker
+SciFact,674,LDL cholesterol has no involvement in the development of cardiovascular disease.,1.0,1,1,1,['2095573'],['2095573'],0.0,sem_mudanca_relevante
+SciFact,684,Lack of clpC does not affect sporulation efficiency in Bacillus subtilis cells.,1.0,1,1,1,['4942718'],['4942718'],0.0,sem_mudanca_relevante
+SciFact,690,Less than 10% of the gabonese children with Schimmelpenning-Feuerstein-Mims syndrome (SFM) had a plasma lactate of more than 5mmol/L.,1.0,1,0,1,[],['18750453'],0.5,sucesso_do_reranker
+SciFact,691,Leukemia associated Rho guanine nucleotide-exchange factor represses RhoA in response to SRC activation.,1.0,1,1,1,['10991183'],['10991183'],0.0,sem_mudanca_relevante
+SciFact,692,Leuko-increased blood increases infectious complications in red blood cell transfusion.,1.0,1,1,1,['24088502'],['24088502'],0.36907024642854247,sucesso_do_reranker
+SciFact,693,Leuko-reduced blood reduces infectious complications in red blood cell transfusion.,1.0,1,1,1,['24088502'],['24088502'],0.0,sem_mudanca_relevante
+SciFact,700,Localization of PIN1 in the Arabidopsis embryo does not require VPS9a,1.0,1,1,1,['4350400'],['4350400'],0.0,sem_mudanca_relevante
+SciFact,702,Localization of PIN1 in the roots of Arabidopsis does not require VPS9a,1.0,1,1,1,['4350400'],['4350400'],0.13092975357145753,sucesso_do_reranker
+SciFact,715,Low expression of miR7a does represses target genes and exerts a biological function in ovaries.,1.0,1,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+SciFact,716,Low expression of miR7a exerts a biological function in testis.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,718,Low nucleosome occupancy correlates with low methylation levels across species.,1.0,1,1,1,['17587795'],['17587795'],0.36907024642854247,sucesso_do_reranker
+SciFact,721,Lupus-prone mice infected with curliproducing bacteria have higher autoantibody titers compared to controls.,1.0,1,1,1,['1834762'],['1834762'],0.0,sem_mudanca_relevante
+SciFact,723,Ly49Q directs the organization of neutrophil migration to inflammation sites by regulating membrane raft functions.,1.0,1,1,1,['5531479'],['5531479'],0.0,sem_mudanca_relevante
+SciFact,727,Ly6C hi monocytes have a lower inflammatory capacity compared to their Ly6C lo counterparts.,1.0,1,1,1,['7521113'],['7521113'],-0.2440769463369159,falha_ou_piora_do_reranker
+SciFact,728,Ly6C hi monocytes have a lower inflammatory capacity than Ly6C lo monocytes.,1.0,2,2,2,"['7521113', '36444198']","['36444198', '7521113']",0.2719550712853436,sucesso_do_reranker
+SciFact,729,Lymphadenopathy is observed in knockin mouse lacking the SHP-2 MAPK pathway.,1.0,1,1,1,['26851674'],['26851674'],0.36907024642854247,sucesso_do_reranker
+SciFact,742,Macrolides have no protective effect against myocardial infarction.,1.0,1,1,1,['32159283'],['32159283'],0.0,sem_mudanca_relevante
+SciFact,743,Macrolides protect against myocardial infarction.,1.0,1,1,1,['32159283'],['32159283'],0.0,sem_mudanca_relevante
+SciFact,744,Macropinocytosis contributes to a cell's supply of amino acids via the intracellular uptake of protein.,1.0,1,1,1,['8460275'],['8460275'],0.0,sem_mudanca_relevante
+SciFact,756,Many proteins in human cells can be post-translationally modified at lysine residues via acetylation.,1.0,1,1,1,['2831620'],['2831620'],0.1989700043360188,sucesso_do_reranker
+SciFact,759,Mathematical models predict that using Artemisinin-based combination therapy over nongametocytocidal drugs have a dramatic impact in reducing malaria transmission.,1.0,1,1,1,['1805641'],['1805641'],0.0,sem_mudanca_relevante
+SciFact,768,Mercaptopurine is anabolized into the inactive methylmercaptopurine by thiopurine methyltrasnferase (TPMT).,1.0,1,0,1,[],['6421792'],0.43067655807339306,sucesso_do_reranker
+SciFact,770,Metastatic colorectal cancer treated with a single agent fluoropyrimidines resulted in reduced efficacy and lower quality of life when compared with oxaliplatin-based chemotherapy in elderly patients.,1.0,1,1,1,['15476777'],['15476777'],0.0,sem_mudanca_relevante
+SciFact,775,Mice defective for deoxyribonucleic acid (DNA) polymerase I (polI) reveal increased sensitivity to ionizing radiation (IR).,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,781,Mice that lack Interferon-γ or its receptor exhibit high resistance to experimental autoimmune myocarditis.,1.0,1,1,1,['24338780'],['24338780'],0.0,sem_mudanca_relevante
+SciFact,783,Mice without IFN-γ or its receptor are resistant to EAM induced with α-MyHC/CFA.,1.0,1,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+SciFact,784,MicroRNA is involved in the regulation of Neural Stem Cell (NSC) differentiation and proliferation dynamic homeostasis,1.0,1,1,1,['2356950'],['2356950'],0.5693234419266069,sucesso_do_reranker
+SciFact,785,Microarray results from culture-amplified mixtures of serotypes correlate poorly with microarray results from uncultured mixtures.,1.0,1,1,1,['12471115'],['12471115'],0.0,sem_mudanca_relevante
+SciFact,793,Mitochondria are uninvolved in apoptosis.,1.0,1,1,1,['8551160'],['8551160'],0.0,sem_mudanca_relevante
+SciFact,800,Modifying the epigenome in the brain affects the normal human aging process by affecting certain genes related to neurogenesis.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,805,Monoclonal antibody targeting of N-cadherin inhibits metastasis.,1.0,1,1,1,['22180793'],['22180793'],0.0,sem_mudanca_relevante
+SciFact,808,Most termination events in Okazaki fragments are sequence specific.,1.0,1,1,1,['36606083'],['36606083'],0.0,sem_mudanca_relevante
+SciFact,811,Mutant mice lacking SVCT2 have greatly increased ascorbic acid levels in both brain and adrenals.,1.0,1,1,1,['19799455'],['19799455'],0.0,sem_mudanca_relevante
+SciFact,814,"Mutations in G-Beta protein GNB2 are present in many cancers, resulting in loss of interaction with G-alpha subunits and concomitant activation of AKT pathway.",1.0,1,1,1,['33387953'],['33387953'],0.0,sem_mudanca_relevante
+SciFact,820,N-terminal cleavage increases success identifying transcription start sites.,1.0,1,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+SciFact,821,N-terminal cleavage reduces success identifying transcription start sites.,1.0,1,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+SciFact,823,N348I mutations cause resistance to zidovudine (AZT).,1.0,1,1,1,['15319019'],['15319019'],0.0,sem_mudanca_relevante
+SciFact,830,NF2 (Merlin) causes phosphorylation and subsequent cytoplasmic sequestration of YAP in Drosophila by activating LATS1/2 kinases.,1.0,1,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+SciFact,831,NF2 (Merlin) prevents phosphorylation and subsequent cytoplasmic sequestration of YAP in Drosophila.,1.0,1,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+SciFact,832,NFAT4 activation requires IP3R-mediated Ca2+ mobilization.,1.0,1,1,1,['30303335'],['30303335'],0.0,sem_mudanca_relevante
+SciFact,834,NOX2-independent pathways can generate peroxynitrite by reacting with nitrogen intermediates.,1.0,1,0,1,[],['5483793'],0.5,sucesso_do_reranker
+SciFact,837,NR5A2 is important in development of endometrial tissues.,1.0,1,1,1,['15928989'],['15928989'],0.0,sem_mudanca_relevante
+SciFact,839,Nanoparticles can be targeted against specific cell types by incorporating aptamers into lipid nanoparticles.,1.0,1,1,1,['1469751'],['1469751'],0.0,sem_mudanca_relevante
+SciFact,845,Neutrophil extracellular traps (NETs) are released by ANCA-stimulated neutrophils.,1.0,1,1,1,['17741440'],['17741440'],0.0,sem_mudanca_relevante
+SciFact,847,New drugs for tuberculosis often do not penetrate the necrotic portion of a tuberculosis lesion in high concentrations.,1.0,1,1,1,['16787954'],['16787954'],0.0,sem_mudanca_relevante
+SciFact,852,Non-invasive ventilation use should be decreased if there is inadequate response to conventional treatment.,1.0,1,1,1,['13843341'],['13843341'],0.0,sem_mudanca_relevante
+SciFact,859,Normal expression of RUNX1 has tumor-promoting effects.,1.0,1,1,1,['1982286'],['1982286'],-0.2975964202381242,falha_ou_piora_do_reranker
+SciFact,870,Obesity decreases life quality.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,873,Obesity is determined solely by environmental factors.,0.2,5,0,1,[],['1180972'],0.10699313236726378,sucesso_do_reranker
+SciFact,879,Occupancy of ribosomes by IncRNAs do not make functional peptides.,1.0,1,1,1,['8426046'],['8426046'],0.0,sem_mudanca_relevante
+SciFact,880,Occupancy of ribosomes by IncRNAs mirror 5 0-UTRs,1.0,1,1,1,['8426046'],['8426046'],0.0,sem_mudanca_relevante
+SciFact,882,Omnivores produce less trimethylamine N-oxide from dietary I-carnitine than vegetarians.,1.0,1,1,1,['14803797'],['14803797'],0.0,sem_mudanca_relevante
+SciFact,887,Only a minority of cells survive development after differentiation into stress-resistant spores.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,903,PD-1 triggering on monocytes reduces IL-10 production by monocytes.,1.0,1,1,1,['10648422'],['10648422'],0.0,sem_mudanca_relevante
+SciFact,904,PDPN promotes efficient motility along stromal surfaces by activating the C-type lectin receptor to rearrange the actin cytoskeleton in dendritic cells.,1.0,1,1,1,['7370282'],['7370282'],0.0,sem_mudanca_relevante
+SciFact,907,PGE 2 promotes intestinal tumor growth by altering the expression of tumor suppressing and DNA repair genes.,1.0,1,1,1,['6923961'],['6923961'],0.0,sem_mudanca_relevante
+SciFact,911,PKG-la plays an essential role in expression of pain hypersensitivity in PGK-la knockout mice.,1.0,1,1,1,['11254556'],['11254556'],0.0,sem_mudanca_relevante
+SciFact,913,PPAR-RXRs are inhibited by PPAR ligands.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,914,PPAR-RXRs can be activated by PPAR ligands.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,921,Participating in six months of physical activity improves cognitive functioning.,1.0,1,1,1,['1642727'],['1642727'],0.36907024642854247,sucesso_do_reranker
+SciFact,922,Patients in stable partnerships have a faster progression from HIV to AIDS.,1.0,1,1,1,['17077004'],['17077004'],0.0,sem_mudanca_relevante
+SciFact,936,Peroxynitrite is required for nitration of TCR/CD8.,1.0,1,1,1,['5483793'],['5483793'],0.0,sem_mudanca_relevante
+SciFact,956,Pleiotropic coupling of GLP-1R to intracellular effectors promotes distinct profiles of cellular signaling.,1.0,1,1,1,['12956194'],['12956194'],0.0,sem_mudanca_relevante
+SciFact,957,Podocytes are motile and migrate in the presence of injury.,1.0,1,1,1,['123859'],['123859'],0.36907024642854247,sucesso_do_reranker
+SciFact,960,Polymeal nutrition reduces cardiovascular mortality.,1.0,1,1,1,['8780599'],['8780599'],0.0,sem_mudanca_relevante
+SciFact,967,Pretreatment with the Arp2/3 inhibitor CK-666 affects lamelliopodia formation.,1.0,2,2,2,"['2119889', '8997410']","['8997410', '2119889']",0.0,sem_mudanca_relevante
+SciFact,971,Primary cervical cancer screening with HPV detection has higher longitudinal sensitivity than conventional cytology to detect cervical intraepithelial neoplasia grade 2.,1.0,4,4,4,"['46695481', '28617573', '27873158', '9764256']","['27873158', '46695481', '9764256', '28617573']",0.19519002499605076,sucesso_do_reranker
+SciFact,975,Primary pro-inflammatory cytokines induce secondary pro- and anti-inflammatory mediators.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,982,Proteins synthesized at the growth cone are ubiquitinated at a higher rate than proteins from the cell body.,1.0,1,1,1,['2988714'],['2988714'],0.0,sem_mudanca_relevante
+SciFact,985,Pseudogene PTENP1 regulates the expression of PTEN by functioning as an miRNA decoy.,1.0,1,1,1,['6828370'],['6828370'],0.0,sem_mudanca_relevante
+SciFact,993,Pyridostatin destabilizes the G - quadruplex in the telomeric region.,1.0,1,1,1,['16472469'],['16472469'],0.36907024642854247,sucesso_do_reranker
+SciFact,1012,Radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.,1.0,1,1,1,['9745001'],['9745001'],0.0,sem_mudanca_relevante
+SciFact,1014,Rapamycin decreases the concentration of triacylglycerols in fruit flies.,1.0,1,1,1,['6277638'],['6277638'],0.0,sem_mudanca_relevante
+SciFact,1019,Rapid phosphotransfer rates govern fidelity in two component systems,1.0,1,1,1,['11603066'],['11603066'],0.0,sem_mudanca_relevante
+SciFact,1020,Rapid up-regulation and higher basal expression of interferon-induced genes increase survival of granule cell neurons that are infected by West Nile virus.,1.0,1,1,1,['9433958'],['9433958'],0.13092975357145753,sucesso_do_reranker
+SciFact,1021,Rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus.,1.0,1,1,1,['9433958'],['9433958'],0.13092975357145753,sucesso_do_reranker
+SciFact,1024,Recurrent mutations occur frequently within CTCF anchor sites adjacent to oncogenes.,1.0,1,1,1,['5373138'],['5373138'],0.0,sem_mudanca_relevante
+SciFact,1029,Reduced responsiveness to interleukin-2 in regulatory T cells is associated with greater resistance to autoimmune diseases such as Type 1 Diabetes.,1.0,3,2,2,"['11899391', '13923140']","['11899391', '13923140']",0.0,sem_mudanca_relevante
+SciFact,1041,Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes.,1.0,2,2,2,"['25254425', '16626264']","['16626264', '25254425']",-0.018517574949988347,falha_ou_piora_do_reranker
+SciFact,1049,Ribosomopathies have a low degree of cell and tissue specific pathology.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,1062,S-nitrosylated GAPDH physiologically transnitrosylates histone deacetylases.,1.0,1,1,1,['20381484'],['20381484'],0.0,sem_mudanca_relevante
+SciFact,1086,Sildenafil improves erectile function in men who experience sexual dysfunction as a result of the use of SSRI antidepressants.,1.0,1,1,1,['39281140'],['39281140'],0.0,sem_mudanca_relevante
+SciFact,1088,Silencing of Bcl2 is important for the maintenance and progression of tumors.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,1089,Smc5/6 engagment drives the activation of SUMO E3 ligase Mms21 by ATP-dependent remolding.,1.0,1,1,1,['17628888'],['17628888'],0.0,sem_mudanca_relevante
+SciFact,1099,Statins decrease blood cholesterol.,1.0,1,1,1,['7662206'],['7662206'],0.0,sem_mudanca_relevante
+SciFact,1100,Statins increase blood cholesterol.,1.0,1,1,1,['7662206'],['7662206'],0.0,sem_mudanca_relevante
+SciFact,1104,Stroke patients with prior use of direct oral anticoagulants have a lower risk of in-hospital mortality than stroke patients with prior use of warfarin.,1.0,1,1,1,['3898784'],['3898784'],0.0,sem_mudanca_relevante
+SciFact,1107,Subcutaneous fat depots undergo extensive browning processes after cold exposure.,1.0,1,1,1,['20532591'],['20532591'],0.0,sem_mudanca_relevante
+SciFact,1110,Suboptimal nutrition is not predictive of chronic disease,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,1121,Synaptic activity enhances local release of brain derived neurotrophic factor from postsynaptic dendrites.,1.0,1,1,1,['4456756'],['4456756'],0.0,sem_mudanca_relevante
+SciFact,1130,T regulatory cells (tTregs) lacking αvβ8 are more adept at suppressing pathogenic T-cell responses during active inflammation.,1.0,1,1,1,['17997584'],['17997584'],0.0,sem_mudanca_relevante
+SciFact,1132,TCR/CD3 microdomains are a required to induce the immunologic synapse to activate T cells.,1.0,2,1,1,['33499189'],['33499189'],0.026870409803294665,sucesso_do_reranker
+SciFact,1137,TNFAIP3 is a tumor suppressor in glioblastoma.,1.0,1,1,1,['33370'],['33370'],0.0,sem_mudanca_relevante
+SciFact,1140,Taking 400mg of α-tocopheryl acetate helps to prevent prostate cancer.,1.0,1,0,1,[],['12009265'],1.0,sucesso_do_reranker
+SciFact,1144,Taxation of sugar-sweetened beverages had no effect on the incidence rate of type II diabetes in India.,1.0,1,1,1,['10071552'],['10071552'],0.0,sem_mudanca_relevante
+SciFact,1146,Teaching hospitals do not provide better care than non-teaching hospitals.,1.0,1,1,1,['13906581'],['13906581'],0.0,sem_mudanca_relevante
+SciFact,1150,Tetraspanin-3 is a causative factor in the development of acute myelogenous leukemia,1.0,1,1,1,['11369420'],['11369420'],0.0,sem_mudanca_relevante
+SciFact,1163,The DdrB protein from Deinococcus radiodurans is an alternative SSB.,1.0,1,1,1,['15305881'],['15305881'],0.0,sem_mudanca_relevante
+SciFact,1175,The PPR MDA5 has two N-terminal CARD domains.,1.0,1,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+SciFact,1179,The PRR MDA5 has a central DExD/H RNA helices domain.,1.0,1,1,1,['31272411'],['31272411'],0.03230333766935212,sucesso_do_reranker
+SciFact,1180,The PRR MDA5 is a sensor of RNA virus infection.,1.0,1,1,1,['31272411'],['31272411'],0.06932344192660694,sucesso_do_reranker
+SciFact,1185,The US health care system can save up to $750 million if 7% of patients waiting for kidney transplants participate in the optimized national kidney paired donation program.,1.0,1,1,1,['16737210'],['16737210'],0.0,sem_mudanca_relevante
+SciFact,1187,The YAP1 and TEAD complex tanslocates into the nucleus where it interacts with transcription factors and DNA-binding proteins that modulate target gene transcription.,1.0,1,1,1,['52873726'],['52873726'],0.0,sem_mudanca_relevante
+SciFact,1191,The amount of publicly available DNA data doubles every 10 years.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,1194,The arm density of TatAd complexes is due to structural rearrangements within Class1 TatAd complexes such as the 'charge zipper mechanism'.,1.0,1,1,1,['11419230'],['11419230'],0.6845351232142712,sucesso_do_reranker
+SciFact,1196,The availability of safe places to study is effective at decreasing homelessness.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,1197,The availability of safe places to study is not effective at decreasing homelessness.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,1199,The benefits of colchicine were achieved with effective widespread use of secondary prevention strategies such as high-dose statins.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,1200,The binding orientation of the ML-SA1 activator at hTRPML2 is different from the binding orientation of the ML-SA1 activator at hTRPML1.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,1202,The center of the granuloma in an immune cell induces a pro-inflammatory immune response.,1.0,1,1,1,['3475317'],['3475317'],0.0,sem_mudanca_relevante
+SciFact,1204,The combination of H3K4me3 and H3K79me2 is found in quiescent hair follicle stem cells.,1.0,1,1,1,['31141365'],['31141365'],-0.5,falha_ou_piora_do_reranker
+SciFact,1207,The composition of myosin-II isoform switches from the polarizable B isoform to the more homogenous A isoform during hematopoietic differentiation.,1.0,1,1,1,['18909530'],['18909530'],0.5693234419266069,sucesso_do_reranker
+SciFact,1213,The deregulated and prolonged activation of monocytes has deleterious effects in inflammatory diseases.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,1216,The extracellular domain of TMEM27 is cleaved in human beta cells.,1.0,1,1,1,['24142891'],['24142891'],0.0,sem_mudanca_relevante
+SciFact,1221,The genomic aberrations found in matasteses are very similar to those found in the primary tumor.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,1225,The locus rs647161 is associated with colorectal carcinoma.,1.0,1,1,1,['9650982'],['9650982'],0.0,sem_mudanca_relevante
+SciFact,1226,"The loss of the TET protein functions may have dire biological consequences, such as myeloid cancers.",0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,1232,The minor G allele of FOXO3 is related to more severe symptoms of Crohn's Disease.,1.0,1,1,1,['13905670'],['13905670'],0.0,sem_mudanca_relevante
+SciFact,1241,The myocardial lineage develops from cardiac progenitors of mesodermal origin.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,1245,The one-child policy has been successful in lowering population growth.,1.0,1,1,1,['7662395'],['7662395'],0.6845351232142712,sucesso_do_reranker
+SciFact,1259,The relationship between a breast cancer patient's capacity to metabolize tamoxifen and treatment outcome is dependent on the patient's genetic make-up.,1.0,1,1,1,['24341590'],['24341590'],0.0,sem_mudanca_relevante
+SciFact,1262,The repair of Cas9-induced double strand breaks in human DNA is error-prone.,1.0,1,1,1,['44172171'],['44172171'],0.0,sem_mudanca_relevante
+SciFact,1266,"The risk of breast cancer among parous women increases with placental weight of pregnancies, and this association is strongest for premenopausal breast cancer.",1.0,1,1,1,['37480103'],['37480103'],0.5,sucesso_do_reranker
+SciFact,1270,The risk of male prisoners harming themselves is ten times that of female prisoners.,1.0,1,1,1,['13900610'],['13900610'],0.0,sem_mudanca_relevante
+SciFact,1271,The severity of cardiac involvement in amyloidosis can be described by the degree of transmurality of late gadolinium enhancement in MRI.,1.0,1,1,1,['13768432'],['13768432'],0.0,sem_mudanca_relevante
+SciFact,1272,The single flash-evoked ERG b-wave is generated by activity of ON-bipolar cells.,1.0,1,1,1,['17081238'],['17081238'],-0.11314719276545837,falha_ou_piora_do_reranker
+SciFact,1273,The sliding activity of kinesin-8 protein Kip3 promotes bipolar spindle assembly.,1.0,1,1,1,['11041152'],['11041152'],0.0,sem_mudanca_relevante
+SciFact,1274,The tip of the inner tube of the toxic type VI secretion system (T6SS) antibacterial effector in Escherichia coli (E. coli) carries toxic effector proteins.,1.0,3,3,3,"['4406819', '27731651', '12428814']","['4406819', '27731651', '12428814']",0.18302815606146927,sucesso_do_reranker
+SciFact,1278,The treatment of cancer patients with co-IR blockade does not cause any adverse autoimmune events.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,1279,The treatment of cancer patients with co-IR blockade precipitates adverse autoimmune events.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,1280,"The ureABIEFGH gene cluster encodes urease maturation proteins : UreD/UreH, UreE, UreF, and UreG.",1.0,1,0,1,[],['4387784'],0.3562071871080222,sucesso_do_reranker
+SciFact,1281,The ureABIEFGH gene cluster is induced by nickel (II) ion.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,1282,Therapeutic use of the drug Dapsone to treat pyoderma gangrenous is based on anecdotal evidence.,1.0,1,1,1,['23649163'],['23649163'],0.0,sem_mudanca_relevante
+SciFact,1290,There is an inverse relationship between hip fractures and statin use.,1.0,1,1,1,['4687948'],['4687948'],0.0,sem_mudanca_relevante
+SciFact,1292,There is no association between HNF4A mutations and diabetes risks.,1.0,1,1,1,['56893404'],['56893404'],0.0,sem_mudanca_relevante
+SciFact,1298,Thigh-length graduated compression stockings (GCS) did not reduce deep vein thrombosis in patients admitted to hospital who are immobile because of acute stroke.,1.0,1,1,1,['11718220'],['11718220'],0.0,sem_mudanca_relevante
+SciFact,1303,Tirasemtiv has no effect on fast-twitch muscle.,1.0,1,1,1,['12631697'],['12631697'],-0.6666666666666667,falha_ou_piora_do_reranker
+SciFact,1316,Transferred UCB T cells acquire a memory-like phenotype in recipients.,1.0,1,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+SciFact,1319,Transplanted human glial cells can differentiate within the host animal.,1.0,1,1,1,['16284655'],['16284655'],0.20025319549806447,sucesso_do_reranker
+SciFact,1320,Transplanted human glial progenitor cells are incapable of forming a neural network with host animals' neurons.,1.0,1,1,1,['16284655'],['16284655'],-0.36907024642854247,falha_ou_piora_do_reranker
+SciFact,1332,Tumor necrosis factor alpha (TNF-α) and interleukin-1 (IL-1) are pro-inflammatory cytokines that inhibit IL-6 and IL-10.,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+SciFact,1335,UCB T cells maintain high TCR diversity after transplantation.,1.0,1,1,1,['27910499'],['27910499'],0.0,sem_mudanca_relevante
+SciFact,1336,UCB T cells reduce TCR diversity after transplantation.,1.0,1,1,1,['27910499'],['27910499'],0.0,sem_mudanca_relevante
+SciFact,1337,Ubiquitin ligase UBC13 generates a K63-linked polyubiquitin moiety at PCNA K164.,1.0,1,1,1,['20231138'],['20231138'],0.0,sem_mudanca_relevante
+SciFact,1339,Ultrasound guidance significantly raises the number of traumatic procedures when attempting needle insertion.,1.0,1,1,1,['15482274'],['15482274'],0.0,sem_mudanca_relevante
+SciFact,1344,Up-regulation of the p53 pathway and related molecular events casues cancer resistance and results in a significantly shortened lifespan marked by senescent cells and accelerated organismal aging.,1.0,1,1,1,['9559146'],['9559146'],0.0,sem_mudanca_relevante
+SciFact,1352,Upregulation of mosGCTL-1 is induced upon infection with West Nile virus.,1.0,1,1,1,['12885341'],['12885341'],0.0,sem_mudanca_relevante
+SciFact,1359,Varenicline monotherapy is more effective after 12 weeks of treatment compared to combination nicotine replacement therapies with varenicline or bupropion.,1.0,1,1,1,['11614737'],['11614737'],0.0,sem_mudanca_relevante
+SciFact,1362,Venules have a larger lumen diameter than arterioles.,1.0,1,1,1,['8290953'],['8290953'],0.5,sucesso_do_reranker
+SciFact,1363,Venules have a thinner or absent smooth layer compared to arterioles.,1.0,1,1,1,['8290953'],['8290953'],0.0,sem_mudanca_relevante
+SciFact,1368,Vitamin D deficiency effects the term of delivery.,1.0,1,0,1,[],['2425364'],0.43067655807339306,sucesso_do_reranker
+SciFact,1370,Vitamin D deficiency is unrelated to birth weight.,1.0,1,1,1,['2425364'],['2425364'],0.11314719276545837,sucesso_do_reranker
+SciFact,1379,Women with a higher birth weight are more likely to develop breast cancer later in life.,1.0,4,2,4,"['17450673', '16322674']","['27123743', '23557241', '17450673', '16322674']",0.5322965481013788,sucesso_do_reranker
+SciFact,1382,aPKCz causes tumour enhancement by affecting glutamine metabolism.,1.0,1,0,1,[],['17755060'],1.0,sucesso_do_reranker
+SciFact,1385,cSMAC formation enhances weak ligand signalling.,1.0,1,1,1,['306006'],['306006'],0.0,sem_mudanca_relevante
+SciFact,1389,mTORC2 regulates intracellular cysteine levels through xCT inhibition.,1.0,1,1,1,['23895668'],['23895668'],0.0,sem_mudanca_relevante
+SciFact,1395,p16INK4A accumulation is  linked to an abnormal wound response caused by the microinvasive step of advanced Oral Potentially Malignant Lesions (OPMLs).,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+TREC-COVID,1,what is the origin of COVID-19,0.03296703296703297,637,3,7,"['dv9m19yk', 'hmvo5b0q', 'fqs40ivc']","['4dtk1kyh', 'thg4fqi2', 'xuczplaf', 'sh7lrdou', 'e6h1qvdk', 'zd7smm8r', 'cniyembt']",0.2674663034209539,sucesso_do_reranker
+TREC-COVID,2,how does the coronavirus respond to changes in the weather,0.10509554140127389,314,6,8,"['526elsrf', 'w5kjmw88', 'qp77vl6h', 'w7ycc07b', 'r1yjphnn', 'gan10za0']","['w7ycc07b', '26gf4q1v', '04rbtmmi', 'fj3a2y1o', 'tyhtdawb', 'r1yjphnn', 'gan10za0', 'jc1k3fki']",0.329922578536134,sucesso_do_reranker
+TREC-COVID,3,will SARS-CoV2 infected people develop immunity? Is cross protection possible?,0.06050955414012739,628,7,5,"['eo4ehcjv', 'wfftfkam', '7dw32xby', 'yzffm05r', 'z62nt4jc', '8earvduw', '38mhmxvd']","['hechmemo', 'fi1ldwe8', '066rysjh', '8earvduw', 'yzffm05r']",-0.33427943517700565,falha_ou_piora_do_reranker
+TREC-COVID,4,what causes death from Covid-19?,0.022684310018903593,529,2,2,"['9yb9a9vz', 'dtlwjndn']","['9yb9a9vz', '8efdzlc0']",0.10423544941121451,sucesso_do_reranker
+TREC-COVID,5,what drugs have been active against SARS-CoV or SARS-CoV-2 in animal studies?,0.08306188925081433,614,7,6,"['w9mij6c6', '5f95gve3', 'n2tckfjq', 'puc13jf1', '1cc9ig04', 'hsc2x36j', '61nwk2sg']","['5f95gve3', '3pxc5wot', 'ai2zcke5', 'w9mij6c6', 'urpianz6', '7h3rrea7']",-0.23047170211485568,falha_ou_piora_do_reranker
+TREC-COVID,6,what types of rapid testing for Covid-19 have been developed?,0.04483837330552659,959,7,9,"['r7glmi7p', 'qexn0nuy', 'zyrzfm40', 'ile2md92', 'm8n2p55z', 'luifhy6g', 'hmt9ojvc']","['r7glmi7p', 'isswwnzn', 'hmt9ojvc', '5t38x587', '401tisd3', '1dr4r3n4', 'awy3aans', 'c5dm1d6t', 'b3wp314u']",0.2505854427698374,sucesso_do_reranker
+TREC-COVID,7,are there serological tests that detect antibodies to coronavirus?,0.14345114345114346,481,8,9,"['q2b4ig1h', '8hrjgcas', '82iy2prw', '84yjdlab', '9skvbk8m', '0jl6qu0i', '0yj3xp9s', 'jg0br2ro']","['01mo6yo9', 'ofd2ipvs', 'q2b4ig1h', '8hrjgcas', 'r356sn9t', 'oihyz5v7', '50chmcow', 'rl7vrv9i', 'fn9t38as']",0.08010877076230571,sucesso_do_reranker
+TREC-COVID,8,how has lack of testing availability led to underreporting of true incidence of Covid-19?,0.06962025316455696,632,6,8,"['dz1lfwzp', '79gozr1p', 'll2pnl81', 'kusqyumn', 'hnbatlj0', 'ckecol7i']","['kusqyumn', 'uzrxtgrg', '4i0gici7', 'glu5xlsd', '6f2nzvhz', 'szvb2gsf', 'i9ndb71n', 'gi3vfi68']",0.15609576520707913,sucesso_do_reranker
+TREC-COVID,9,how has COVID-19 affected Canada,0.11518324607329843,191,3,4,"['zzvmj5qy', 'wb32j7s0', 'qy66ih4m']","['y8ntig41', '54obt430', 'vwwt70mo', '8508n0ex']",0.21517125576163673,sucesso_do_reranker
+TREC-COVID,10,has social distancing had an impact on slowing the spread of COVID-19?,0.14526315789473684,475,9,9,"['pn02p843', 'cb5ebiiv', 'uwix8ftr', 'p1jeiljo', '6a6njt3u', 'qekxxsfy', 'xbuypaf6', '3nanf73b', 'ru0av4io']","['pn02p843', 'j1ma6r50', 'cb5ebiiv', 'qekxxsfy', '17wpnfao', '3nanf73b', 'ocwetgv6', '5296m6d8', 'sb45v082']",-0.0030333244884570565,falha_ou_piora_do_reranker
+TREC-COVID,11,what are the guidelines for triaging patients infected with coronavirus?,0.01927710843373494,415,0,3,[],"['eazqdlds', 'ba5x3ysq', 'h1z8rg9p']",0.4690000933206748,sucesso_do_reranker
+TREC-COVID,12,what are best practices in hospitals and at home in maintaining quarantine?,0.04383116883116883,616,4,5,"['agwhkfcb', '4vhlgqig', 'f6kaef4a', 'd0ccqrmu']","['hv7z11al', 'agwhkfcb', '0croajal', 'kkatc8ku', 'jt7ctj2z']",0.1116200096865016,sucesso_do_reranker
+TREC-COVID,13,what are the transmission routes of coronavirus?,0.06343713956170703,867,8,8,"['85vnyr36', '2yblpbwm', '2ftw85xw', 'lasv4e6a', 'wywldhr0', '2ewz8ok4', 'mfnzkvd0', '2e4gz2bo']","['2yblpbwm', '85vnyr36', '12sbikmx', 'ioo17gc3', 'ruk46455', '2e4gz2bo', '0a5fccio', '9of9gijc']",0.07502894742581134,sucesso_do_reranker
+TREC-COVID,14,what evidence is there related to COVID-19 super spreaders,0.15294117647058825,255,10,1,"['p48bw6s4', 'na3vrf5q', 's9dy7iyf', 'v0vjkwy9', 'cywjp5jh', 'j74wnaef', '8ngri1x0', '37katpp3', 'q9lfnu6s', '414grqif']",['8ngri1x0'],-0.7681486832215605,falha_ou_piora_do_reranker
+TREC-COVID,15,how long can the coronavirus live outside the body,0.014184397163120567,423,2,1,"['959w9sln', 'zpek8i5e']",['959w9sln'],-0.17853823829819593,falha_ou_piora_do_reranker
+TREC-COVID,16,how long does coronavirus remain stable  on surfaces?,0.09560723514211886,387,7,9,"['7ftq02ev', 'pdmfxssd', 'khpc9f98', 'ej93duxi', 'tjplc5j6', 'xbw72k4m', 'ou7w3zkv']","['khpc9f98', 'ou7w3zkv', 'gp3ib74q', 'ywusapij', '80dfqjql', '5gayhkxx', 'h9gj814e', 'tjplc5j6', 'zmaw9lbz']",-0.004684791523750453,falha_ou_piora_do_reranker
+TREC-COVID,17,are there any clinical trials available for the coronavirus,0.07634730538922156,668,9,9,"['iymmf4k6', 'z17knvts', 'vjg2auh7', 'gey0nidn', 'jd1b7asr', 'vxqdfiel', 'p36zubnf', 'bfui91w7', '4stz2t7s']","['f5tpz8ze', 'jwrheaph', 'iy0h2pyf', '6wszpqvx', 'vxqdfiel', 'iymmf4k6', 'gey0nidn', 'pftu5qea', 'p36zubnf']",0.05651263172050769,sucesso_do_reranker
+TREC-COVID,18,what are the best masks for preventing infection by Covid-19?,0.10031847133757962,628,8,9,"['g477u9k1', 'f4sd7vbi', '8khrecrf', '1aqf98e0', 'j0lpy07l', 'z70oduir', 'st7c4v9v', 'bf0p2i13']","['qi8x5yaq', '9uxfxry4', 'no8bgglk', '334hmwmj', 'tfrawa9z', 'f4sd7vbi', '7qj00qi9', '3ttcfhm3', '1q8tqeg7']",0.057946261338807425,sucesso_do_reranker
+TREC-COVID,19,what type of hand sanitizer is needed to destroy Covid-19?,0.17117117117117117,111,6,4,"['y777xosr', '47ema2dq', 'd26y5291', 'i0ll585x', 'u7pflnxk', '3tlpyw4s']","['eevs62xf', 'hma2kvn2', 'y777xosr', 'p5hvf569']",-0.10007292283790675,falha_ou_piora_do_reranker
+TREC-COVID,20,are patients taking Angiotensin-converting enzyme inhibitors (ACE) at increased risk for COVID-19?,0.10256410256410256,702,9,10,"['z3l6eden', '53107z56', 'ohj6misb', 'uu1jml2c', 'r426u5dz', '240jc7l4', 'nxrg9fi6', 'ux844b25', '6cxndab8']","['z3l6eden', 'i7scw9mu', '53107z56', 'aj1yup6a', 'fskfnmig', 'oapjfamm', '240jc7l4', 'nxrg9fi6', 'llzfc1r7', 'jyfcpsu6']",0.06625422345438903,sucesso_do_reranker
+TREC-COVID,21,what are the mortality rates overall and in specific populations,0.03650793650793651,630,8,4,"['2vxnmiyj', 'vpakh3jk', '0o3wjvpx', 'eet3v4cs', 'na4izro0', 'cysj93kv', 'gv8wlo06', 'haiuzuha']","['0ie6tkgm', '0o3wjvpx', 'eet3v4cs', 'vzmn6zep']",-0.35492797327201453,falha_ou_piora_do_reranker
+TREC-COVID,22,are cardiac complications likely in patients with COVID-19?,0.1227106227106227,546,9,10,"['1hvihwkz', 'p3fi4yej', 'ejsqsn59', 'lfjud2aq', 'wkp58iov', 'v3qgqfwr', 'ozy39172', 'q5p0ie3j', '8ysfaww2']","['wkp58iov', 'ejsqsn59', 'lfjud2aq', 'jg6v644y', 'xhum1ykr', 'rmio55bx', 'wvxybca4', '0ec1cu8q', 'dm9nefdg', 'umhj7nk7']",0.13765179547245776,sucesso_do_reranker
+TREC-COVID,23,what kinds of complications related to COVID-19 are associated with hypertension?,0.09973045822102426,371,7,8,"['gwefujal', 'n4dgqo73', 'qk0cyee2', '95wclabe', 'komx6t5h', 'ta9g9ceh', 'o6a30irm']","['7xqmuoye', '69qefbbo', '873txs85', 'y4h95kb4', 'io8hm94a', 'bwkad2s0', '254z62e4', '7kw9lws0']",0.02273143567723901,sucesso_do_reranker
+TREC-COVID,24,what kinds of complications related to COVID-19 are associated with diabetes,0.1707920792079208,404,8,10,"['hycd9zua', '3jolt83r', 'tsd6sjcx', 'kzoumf3k', '5zb96j4a', 'e5mf6qdo', '15hqzcig', 'nih2cnnz']","['phf2sgw5', 'wl1uihn3', '9uymi395', 'skknfc6h', 'pruvl2l4', 'lfdeowsl', '118x15od', 'c2jm0g88', '0tsefy6p', 'dgl7qapx']",0.10029409882600082,sucesso_do_reranker
+TREC-COVID,25,which biomarkers predict the severe clinical course of 2019-nCOV infection?,0.045368620037807186,529,5,8,"['aph6yf7n', 'r8mn4lzv', '9k8r18x7', 'pd70i3d8', 't996fbad']","['9k8r18x7', 't996fbad', 'pd70i3d8', '8ceabd6e', '7rjzontt', 'eiofivki', 'vcpo3qob', '3l2t9w9l']",0.18095660264264724,sucesso_do_reranker
+TREC-COVID,26,what are the initial symptoms of Covid-19?,0.05269922879177378,778,4,8,"['d3qgrjc4', '0fzwwluc', 'b4zwinh2', '6jiy0b55']","['pbqm2xrg', '0ylislv9', '1aqtqaod', 'dnv2xl0h', 'z5u32l0w', 'b4zwinh2', 'epk4uksu', 'zv45usvu']",0.41272967731050964,sucesso_do_reranker
+TREC-COVID,27,what is known about those infected with Covid-19 but are asymptomatic?,0.04004711425206125,849,6,4,"['nadzy6lm', 't0mqh9m0', '5j6uu16i', 'rs79r7kc', 'rsz7ch2a', 'f76ypfma']","['18q23z8l', 'tg5wbwf9', '6xy8bwfl', '998lscmk']",-0.2823847223574273,falha_ou_piora_do_reranker
+TREC-COVID,28,what evidence is there for the value of hydroxychloroquine in treating Covid-19?,0.11433756805807622,551,10,10,"['0lk8eujq', '9eo0leey', '1n6d1gco', 'rd766a4w', 'opbozg55', '98zpr960', 'b6aeu1ph', '86h5ptxm', 'e1otbzt3', 'sm0112e3']","['6bdzut3d', '0lk8eujq', '98zpr960', 'opbozg55', '1x9vqepb', '1n6d1gco', 't1vom8f3', '0u4ar3b5', '5gvdddeh', 'sm0112e3']",0.015823807085182273,sucesso_do_reranker
+TREC-COVID,29,which SARS-CoV-2 proteins-human proteins interactions indicate potential for drug targets. Are there approved drugs that can be repurposed based on this information?,0.10099337748344371,604,10,10,"['qrfx165d', '38d6gb7o', 'kc2r034w', '7qd8z5e7', 'djhnd8kq', 'i1lyno9g', 'k4dphhfh', '4yuw7jo3', 'rz205rqd', 'eje3i558']","['38d6gb7o', '7qd8z5e7', 'qrfx165d', 'eje3i558', 'uuy94dwa', '2cvvkrx9', 'rvzgut4w', 'hg9i6v26', '4tis2he4', 'zg2u7fwx']",-0.00641112260515897,falha_ou_piora_do_reranker
+TREC-COVID,30,is remdesivir an effective treatment for COVID-19,0.22162162162162163,370,10,10,"['2lwzhqer', '8n6eybze', 'aivub6mi', 'ygbfvjz8', 'bz1lz2ze', 'kq77whdx', 'r0znh1bi', '4178ui2c', 'lbnfqv77', '1cph1uij']","['7xc47la7', 'ygbfvjz8', 'bz1lz2ze', '4178ui2c', 'r0znh1bi', 'gqqdx2r5', 'qxsr3uii', '1eiw7bxh', 'dieaqxmi', '6tcwu832']",0.0,sem_mudanca_relevante
+TREC-COVID,31,How does the coronavirus differ from seasonal flu?,0.0679886685552408,353,2,3,"['ziujiigl', 'wtqwghon']","['ziujiigl', '5gj4lhdj', 'jitmsez2']",0.0342439516433273,sucesso_do_reranker
+TREC-COVID,32,"Does SARS-CoV-2 have any subtypes, and if so what are they?",0.027777777777777776,216,1,4,['1sbnewog'],"['h0q93in1', '1sbnewog', '9siu7wgs', '8s8gezpz']",0.42492601381667106,sucesso_do_reranker
+TREC-COVID,33,What vaccine candidates are being tested for Covid-19?,0.09608540925266904,281,5,6,"['khfiy0m2', 'y883anmp', '79yna07e', 'eeh2a0t8', 'p36zubnf']","['wxagjqbt', '79yna07e', 'p36zubnf', 'o8bkorjn', 'ievuxa6k', '2vevp0fg']",0.1499048426811086,sucesso_do_reranker
+TREC-COVID,34,What are the longer-term complications of those who recover from COVID-19?,0.06976744186046512,172,4,7,"['b999y89f', '0999t5x0', 'dvg0isgt', 'bhlp1acq']","['rhoo2k3r', 'q79r4dbl', '0999t5x0', 'bhlp1acq', 'yudrouue', 'b999y89f', '1242ggxm']",0.2069904793428713,sucesso_do_reranker
+TREC-COVID,35,What new public datasets are available related to COVID-19?,0.045871559633027525,218,3,3,"['tprgbl51', 'czvyk0rk', 'onipxf2z']","['ns628u21', 'o8b1rtux', 'tvmytgda']",0.12137070176594661,sucesso_do_reranker
+TREC-COVID,36,What is the protein structure of the SARS-CoV-2 spike?,0.12274959083469722,611,9,8,"['34ljq0qt', 'g81ylcxq', 'm0w0fl2u', '4nfxdppt', 'co27h1kj', 'jfq7820g', '2bz78yl1', 't4bqmgcl', 'nsp53lv6']","['ust578fc', '7axo7k51', 'm3j0kv0t', 'yl6seuht', 't4bqmgcl', '34ljq0qt', '296ilxyg', '2bz78yl1']",-0.08157526746106358,falha_ou_piora_do_reranker
+TREC-COVID,37,What is the result of phylogenetic analysis of SARS-CoV-2 genome sequence?,0.08888888888888889,450,3,9,"['oi2cm546', 'hze05jnf', 'dqyjdast']","['shn7vx3d', 'm3505b5w', 'zaxjj9q7', 'gygi11gk', '7u97in7o', 'bcx51aci', 'hze05jnf', 'dqyjdast', 'pov7oi1l']",0.43994197142975056,sucesso_do_reranker
+TREC-COVID,38,What is the mechanism of inflammatory response and pathogenesis of COVID-19 cases?,0.04265402843601896,1266,8,10,"['iaatjew2', 'fqlv35vo', 'xhr9i6gw', 'uxehz43v', 'xm0n9iu4', 'rn1t7612', '7i6wnto5', 'ehcqey3f']","['6hzlbpxg', 'ot5v8n0c', '9l5ajo4q', 'oj0zthe9', 'rn1t7612', 'cn3bpmwj', '3fp46sov', 'gkjb1y83', 'x1g9u1j2', 'x774jfpz']",0.12864872444612407,sucesso_do_reranker
+TREC-COVID,39,What is the mechanism of cytokine storm syndrome on the COVID-19?,0.11395348837209303,860,10,10,"['3d04p4xp', 'urr5iuy2', '5c9f4m2f', 'zukc3lvq', 'nqprluto', 'yaov2osz', 'iaatjew2', 'fqlv35vo', 'ne1qvf5g', 'ete5n5pw']","['s82qv18v', 'fozglfc8', 'ynrvowoc', '6f2xb5m7', '7ak53hto', 'urr5iuy2', '3fp46sov', 'e58nciq3', 'a8jt6rth', 'ne1qvf5g']",-0.015823807085182384,falha_ou_piora_do_reranker
+TREC-COVID,40,What are the observed mutations in the SARS-CoV-2 genome and how often do the mutations occur?,0.16007194244604317,556,10,10,"['ttbur07i', 'miujzgtd', '6f1y5hhv', 'j8sg5n5g', '02cfyuf4', 'msggi1p2', 'bsypo08l', 'fglghjy6', '3pribklz', '6dsx7pey']","['16lkzgtq', 'ow2aijmj', 'ttbur07i', 'miujzgtd', '4e3cn50u', 'lzrxdi6a', 'shn7vx3d', 'eri92ki6', '13tc3loo', '6f1y5hhv']",0.0,sem_mudanca_relevante
+TREC-COVID,41,What are the impacts of COVID-19 among African-Americans that differ from the rest of the U.S. population?,0.10289389067524116,311,7,8,"['fsid4a39', '753klfdp', 'bgpep5lc', '80w0wu9e', 'gxjsv896', 'miayce9l', 'jx8eb28j']","['80w0wu9e', 'bgpep5lc', '8yvu9xhw', 'miayce9l', 'yq7enzvm', '6wqxcshu', 'n3wbuxnv', '0ctlde8w']",0.04696127385679538,sucesso_do_reranker
+TREC-COVID,42,Does Vitamin D impact COVID-19 prevention and treatment?,0.2880658436213992,243,9,10,"['m22h669g', '4v71xohx', 'waujy98e', '67gsn4sy', 'x4ietehr', '8hvve871', 'bpfwcssk', '478wbtfb', 'jk0ysuy4']","['8hvve871', '46aln4tk', 'rvwxysvc', 'uz34fjyp', 'lj4mq31p', '8ceblnkz', 'fe7e60dl', 'rpmmadqc', 'vu7lwypg', 'yjx6ejrh']",0.1186437297734717,sucesso_do_reranker
+TREC-COVID,43,"How has the COVID-19 pandemic impacted violence in society, including violent crimes?",0.18972332015810275,253,7,6,"['daxggfj5', 'nidfrd6o', 'tydil7d7', '4jjuwc9r', 'uiezqa4p', '1h5a4bit', 'clt4l6wz']","['daxggfj5', 'ekajojon', '77dtxxd4', 'onxosato', 'gjdza9bh', 'miem1poh']",0.08344324614681009,falha_ou_piora_do_reranker
+TREC-COVID,44,How much impact do masks have on preventing the spread of the COVID-19?,0.10766045548654245,483,9,9,"['28utunid', 'qi1henyy', 'f9syysdw', 'sjenehbl', 'ugkxxaeb', '14x4uqq7', 'mfb2or98', 'f7rcijh4', 'st7c4v9v']","['yx9oa2ra', '28utunid', 'qi1henyy', 'f7rcijh4', 'x9sfgtim', 'sjenehbl', 'b4znk2wr', 'ropgq7tr', 've34oyz0']",0.00981284546096961,sucesso_do_reranker
+TREC-COVID,45,How has the COVID-19 pandemic impacted mental health?,0.08312655086848635,806,9,9,"['f6c7e0e4', 'tj3lmjx3', 'jcueu1xh', 'rhcvsqtk', 'hze88sr4', 'wbwd7m5w', 'mrhd4iph', 'svlllte0', 'ahdwjyz8']","['j7novgyb', 'y9vx7coj', 'qauaqwhl', 'rvrgdqsn', 'ex5unvr8', 'u46upe5l', 'pf1f9fhc', 'd7vo3l8e', '6yek4hg4']",-0.026747751735628267,falha_ou_piora_do_reranker
+TREC-COVID,46,what evidence is there for dexamethasone as a treatment for COVID-19?,0.08791208791208792,182,5,4,"['za3qypgg', 'ver7x3lx', '2697ts31', 'dgy7qbl5', 'b8p4l0yp']","['oqgw6ao6', 'ztd7awzv', 'fqh77aaa', '6q0y3ewu']",0.29635237471633724,falha_ou_piora_do_reranker
+TREC-COVID,47,what are the health outcomes for children who contract COVID-19?,0.05476190476190476,420,3,8,"['03vy3uaj', '18q23z8l', 'lbsacgr7']","['l5n0r5g9', 'sbfk60wy', 't9f080f5', 't67l14e6', '18q23z8l', '998lscmk', '6oaks0kl', 'bdvnwrd4']",0.5796415632997458,sucesso_do_reranker
+TREC-COVID,48,what are the benefits and risks of re-opening schools in the midst of the COVID-19 pandemic?,0.07657657657657657,444,9,5,"['22y5ewq6', '5eg7hf6r', 'q5efqr7r', 'rn3aw7wi', 'n1jmqx6m', 'njxqf8bn', 'rd8dqeot', 'ghrgj3e5', 'kdsbw4ji']","['x6x6a35w', 'xhyqg5u2', '22y5ewq6', '5eg7hf6r', 'uzdbibf5']",-0.32610706211205887,falha_ou_piora_do_reranker
+TREC-COVID,49,"do individuals who recover from COVID-19 show sufficient immune response, including antibody levels and T-cell mediated immunity, to prevent re-infection?",0.06072874493927125,247,2,2,"['dptgg05n', 'yzffm05r']","['nhkd88yv', 'dptgg05n']",-0.032616701405051796,falha_ou_piora_do_reranker
+TREC-COVID,50,what is known about an mRNA vaccine for the SARS-CoV-2 virus?,0.12408759124087591,137,3,4,"['q77da2y3', 'ptvsie6m', 'xbze5s3c']","['1v0f2dtx', 'q77da2y3', 'xbze5s3c', 'ywia2ok7']",0.32610706211205887,sucesso_do_reranker
+NF-Corpus,PLAIN-2,Do Cholesterol Statin Drugs Cause Breast Cancer?,0.6666666666666666,24,8,5,"['MED-14', 'MED-2429', 'MED-10', 'MED-2428', 'MED-2431', 'MED-4830', 'MED-2427', 'MED-4829']","['MED-2431', 'MED-2429', 'MED-14', 'MED-2440', 'MED-10']",-0.23940117971445074,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-12,Exploiting Autophagy to Live Longer,0.1,30,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+NF-Corpus,PLAIN-23,How to Reduce Exposure to Alkylphenols Through Your Diet,0.13333333333333333,90,4,2,"['MED-2643', 'MED-2658', 'MED-2650', 'MED-2661']","['MED-2658', 'MED-2643']",-0.16894312882715992,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-33,What’s Driving America’s Obesity Problem?,0.09375,32,1,2,['MED-2715'],"['MED-2717', 'MED-2718']",0.0757743335109691,sucesso_do_reranker
+NF-Corpus,PLAIN-44,Who Should be Careful About Curcumin?,0.20689655172413793,58,0,1,[],['MED-2800'],0.04019569404504287,sucesso_do_reranker
+NF-Corpus,PLAIN-56,Foods for Glaucoma,0.12,50,5,3,"['MED-2901', 'MED-2896', 'MED-2900', 'MED-4384', 'MED-2894']","['MED-2900', 'MED-4384', 'MED-2896']",-0.18584651493134396,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-68,What is Actually in Chicken Nuggets?,0.18181818181818182,55,2,2,"['MED-2991', 'MED-3095']","['MED-2991', 'MED-4972']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-78,What Do Meat Purge and Cola Have in Common?,0.0967741935483871,62,1,2,['MED-4318'],"['MED-334', 'MED-4318']",0.024806428651433954,sucesso_do_reranker
+NF-Corpus,PLAIN-91,Chronic Headaches and Pork Parasites,0.15625,64,2,2,"['MED-3171', 'MED-3288']","['MED-3175', 'MED-3288']",0.11768826558093262,sucesso_do_reranker
+NF-Corpus,PLAIN-102,Stopping Heart Disease in Childhood,0.041666666666666664,24,1,1,['MED-3253'],['MED-3253'],0.1986066162441416,sucesso_do_reranker
+NF-Corpus,PLAIN-112,Food Dyes and ADHD,0.10714285714285714,56,2,2,"['MED-3380', 'MED-3382']","['MED-3380', 'MED-3382']",0.019513532926346333,sucesso_do_reranker
+NF-Corpus,PLAIN-123,How Citrus Might Help Keep Your Hands Warm,0.09803921568627451,51,1,1,['MED-3483'],['MED-3483'],0.03791894292218333,sucesso_do_reranker
+NF-Corpus,PLAIN-133,Starving Tumors of Their Blood Supply,0.027777777777777776,36,0,1,[],['MED-3548'],0.04210679386305298,sucesso_do_reranker
+NF-Corpus,PLAIN-143,Are Dental X-Rays Safe?,0.0784313725490196,51,2,3,"['MED-3621', 'MED-3618']","['MED-3619', 'MED-3621', 'MED-3618']",0.08898633146328411,sucesso_do_reranker
+NF-Corpus,PLAIN-153,How Should I Take Probiotics?,0.23404255319148937,47,6,4,"['MED-3677', 'MED-3695', 'MED-3692', 'MED-3680', 'MED-3673', 'MED-3691']","['MED-3690', 'MED-3695', 'MED-3691', 'MED-3680']",-0.15843994079392104,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-165,Breast Cancer & Alcohol: How Much is Safe?,0.3055555555555556,36,3,5,"['MED-3766', 'MED-3767', 'MED-3768']","['MED-3762', 'MED-3696', 'MED-3767', 'MED-3766', 'MED-3700']",0.31530948274877846,sucesso_do_reranker
+NF-Corpus,PLAIN-175,Diet and Cellulite,0.10810810810810811,37,3,2,"['MED-3818', 'MED-3816', 'MED-3822']","['MED-3822', 'MED-3818']",-0.1876199755925062,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-186,Best Treatment for Constipation,0.041666666666666664,24,1,1,['MED-3904'],['MED-3904'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-196,Should We Avoid Titanium Dioxide?,0.10144927536231885,69,6,4,"['MED-3969', 'MED-3964', 'MED-3960', 'MED-3963', 'MED-3970', 'MED-5326']","['MED-3969', 'MED-3970', 'MED-3960', 'MED-3964']",-0.1804808646300713,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-207,Avoiding Cooked Meat Carcinogens,0.2909090909090909,55,3,5,"['MED-5197', 'MED-4057', 'MED-4053']","['MED-4972', 'MED-5197', 'MED-5326', 'MED-4057', 'MED-4060']",0.31799360392283404,sucesso_do_reranker
+NF-Corpus,PLAIN-217,Plant-Based Diets for Psoriasis,0.05555555555555555,36,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+NF-Corpus,PLAIN-227,Increasing Muscle Strength with Fenugreek,0.025,40,1,0,['MED-4150'],[],-0.09478836436955078,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-238,How Chemically Contaminated Are We?,0.037037037037037035,54,0,1,[],['MED-4739'],0.08514311764162098,sucesso_do_reranker
+NF-Corpus,PLAIN-248,Treating an Enlarged Prostate With Diet,0.16129032258064516,31,2,1,"['MED-4233', 'MED-5337']",['MED-4234'],0.040614661212262815,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-259,Optimal Phytosterol Dose and Source,0.21428571428571427,14,2,1,"['MED-4296', 'MED-4295']",['MED-4295'],-0.13886244387355454,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-270,Is Caffeinated Tea Really Dehydrating?,0.25,52,1,4,['MED-4331'],"['MED-5046', 'MED-4331', 'MED-4439', 'MED-4332']",0.15557809912265216,sucesso_do_reranker
+NF-Corpus,PLAIN-280,Mercury Testing Recommended Before Pregnancy,0.4,20,3,3,"['MED-4376', 'MED-5097', 'MED-4739']","['MED-4376', 'MED-5097', 'MED-4739']",0.03385090760382975,sucesso_do_reranker
+NF-Corpus,PLAIN-291,Stool Size and Breast Cancer Risk,0.3076923076923077,13,2,2,"['MED-4639', 'MED-4517']","['MED-4639', 'MED-4517']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-307,Vitamin D: Shedding some light on the new recommendations,1.0,3,2,1,"['MED-714', 'MED-919']",['MED-716'],0.02515585957395855,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-320,Breast Cancer and Diet,0.16666666666666666,42,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+NF-Corpus,PLAIN-332,Can antioxidant-rich spices counteract the effects of a high-fat meal?,0.5,2,1,1,['MED-760'],['MED-760'],-0.22629438553091674,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-344,Dioxins Stored in Our Own Fat May Increase Diabetes Risk,0.11475409836065574,61,2,1,"['MED-5324', 'MED-2388']",['MED-2388'],0.051188492093692334,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-358,Didn't another study show carnitine was good for the heart?,0.0,3,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-371,Any update on the scary in vitro avocado data?,0.5,2,1,1,['MED-4618'],['MED-4618'],0.03699955295572502,sucesso_do_reranker
+NF-Corpus,PLAIN-383,What do you think of Dr. Jenkins' take on paleolithic diets?,0.2,5,1,1,['MED-4299'],['MED-4299'],0.23216707290635236,sucesso_do_reranker
+NF-Corpus,PLAIN-395,What about pepper plus turmeric in V8 juice?,0.0,3,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-407,Is annatto food coloring safe?,0.6666666666666666,3,1,1,['MED-906'],['MED-906'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-418,Fresh fruit versus frozen--which is better?,0.6666666666666666,3,2,2,"['MED-917', 'MED-3714']","['MED-3714', 'MED-917']",-0.06892684969401042,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-430,Are krill oil supplements better than fish oil capsules?,0.625,8,3,2,"['MED-928', 'MED-927', 'MED-4936']","['MED-928', 'MED-927']",-0.26968613600874725,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-441,Is apple cider vinegar good for you?,1.0,5,5,3,"['MED-942', 'MED-941', 'MED-4701', 'MED-4702', 'MED-4703']","['MED-941', 'MED-942', 'MED-4702']",-0.24676477474869862,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-457,How can you believe in any scientific study?,0.0,5,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-468,Is vitamin D3 (cholecalciferol) preferable to D2 (ergocalciferol)?,0.6,10,2,2,"['MED-961', 'MED-962']","['MED-961', 'MED-962']",0.014901583367428806,sucesso_do_reranker
+NF-Corpus,PLAIN-478,accidents,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-488,adenovirus 36,0.7333333333333333,15,9,9,"['MED-1808', 'MED-1799', 'MED-1798', 'MED-1804', 'MED-1810', 'MED-4769', 'MED-1800', 'MED-1796', 'MED-1806']","['MED-1800', 'MED-1798', 'MED-1808', 'MED-1804', 'MED-1796', 'MED-1799', 'MED-1810', 'MED-1806', 'MED-1803']",-0.007109698644970908,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-499,African-American,0.14705882352941177,34,3,1,"['MED-2900', 'MED-4095', 'MED-2213']",['MED-2900'],-0.4053793051217231,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-510,airport scanners,0.0,6,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-520,Alli,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-531,alternative medicine,0.06818181818181818,308,4,4,"['MED-4374', 'MED-4531', 'MED-4371', 'MED-2298']","['MED-2831', 'MED-4371', 'MED-4193', 'MED-4374']",0.03791242483354473,sucesso_do_reranker
+NF-Corpus,PLAIN-541,American Dental Association,0.5,6,3,2,"['MED-3621', 'MED-3618', 'MED-3619']","['MED-3619', 'MED-3621']",-0.11799504447532705,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-551,amnesia,0.0,2,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-561,aneurysm,0.08,25,2,2,"['MED-3180', 'MED-4555']","['MED-3180', 'MED-4555']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-571,anisakis,0.2857142857142857,7,2,2,"['MED-4742', 'MED-2338']","['MED-4742', 'MED-2338']",-0.031101485426915598,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-583,antinutrients,0.0,44,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-593,apnea,0.3333333333333333,3,1,1,['MED-4402'],['MED-4402'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-603,Arkansas,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-613,ascorbic acid,0.2,10,1,1,['MED-1198'],['MED-1198'],0.15647097809912847,sucesso_do_reranker
+NF-Corpus,PLAIN-623,Atkins diet,0.07317073170731707,41,2,2,"['MED-4880', 'MED-4515']","['MED-4880', 'MED-4515']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-634,avocados,0.047619047619047616,21,1,1,['MED-4619'],['MED-4619'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-645,bagels,0.0,29,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-660,beans,0.09473684210526316,475,10,10,"['MED-3584', 'MED-3138', 'MED-1880', 'MED-2140', 'MED-3136', 'MED-2141', 'MED-4991', 'MED-2147', 'MED-2144', 'MED-5079']","['MED-4991', 'MED-3138', 'MED-2144', 'MED-1880', 'MED-3136', 'MED-2147', 'MED-2140', 'MED-3132', 'MED-2150', 'MED-5079']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-671,benzene,1.0,1,1,1,['MED-4857'],['MED-4857'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-681,betel nuts,1.0,1,1,1,['MED-5017'],['MED-5017'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-691,bioavailability,0.047619047619047616,21,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+NF-Corpus,PLAIN-701,black raspberries,0.5,8,2,4,"['MED-3720', 'MED-3721']","['MED-3720', 'MED-3721', 'MED-3719', 'MED-3716']",0.23938361568734456,sucesso_do_reranker
+NF-Corpus,PLAIN-711,blood clots,0.05263157894736842,57,1,1,['MED-2077'],['MED-2077'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-721,BMAA,0.72,25,10,10,"['MED-4876', 'MED-1282', 'MED-1267', 'MED-1287', 'MED-1289', 'MED-1284', 'MED-1278', 'MED-1274', 'MED-1265', 'MED-1290']","['MED-1267', 'MED-1289', 'MED-1287', 'MED-1274', 'MED-1268', 'MED-1266', 'MED-4876', 'MED-1284', 'MED-1278', 'MED-1265']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-731,bone fractures,0.4444444444444444,54,7,8,"['MED-1341', 'MED-4722', 'MED-1339', 'MED-3229', 'MED-1337', 'MED-1340', 'MED-2989']","['MED-2987', 'MED-3229', 'MED-1337', 'MED-5145', 'MED-1339', 'MED-1341', 'MED-1340', 'MED-4722']",0.0670303103128993,sucesso_do_reranker
+NF-Corpus,PLAIN-741,BPH,0.42105263157894735,19,8,7,"['MED-4237', 'MED-4236', 'MED-4232', 'MED-4231', 'MED-4234', 'MED-4235', 'MED-5176', 'MED-4230']","['MED-4236', 'MED-4232', 'MED-4234', 'MED-4237', 'MED-4235', 'MED-4230', 'MED-4231']",-0.11734011443088532,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-751,BRCA genes,0.0,7,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-761,breast pain,0.16666666666666666,6,1,1,['MED-666'],['MED-666'],0.15130120674940672,sucesso_do_reranker
+NF-Corpus,PLAIN-771,bronchiolitis obliterans,1.0,3,3,3,"['MED-3386', 'MED-3387', 'MED-3385']","['MED-3387', 'MED-3386', 'MED-3385']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-782,Bush administration,0.0,2,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-792,cadaverine,0.5,6,3,3,"['MED-4546', 'MED-4958', 'MED-4547']","['MED-4958', 'MED-4546', 'MED-4547']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-806,caloric restriction,0.25,96,8,8,"['MED-4996', 'MED-2138', 'MED-2519', 'MED-3273', 'MED-2506', 'MED-2502', 'MED-2510', 'MED-2513']","['MED-4996', 'MED-2506', 'MED-2138', 'MED-2513', 'MED-2519', 'MED-2502', 'MED-1715', 'MED-2509']",-0.019023530646312792,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-817,canker sores,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-827,carcinogens,0.0860655737704918,244,5,9,"['MED-2106', 'MED-1605', 'MED-1602', 'MED-4492', 'MED-4194']","['MED-2106', 'MED-1605', 'MED-4049', 'MED-4451', 'MED-1603', 'MED-4482', 'MED-5197', 'MED-5122', 'MED-4472']",0.4230482802414282,sucesso_do_reranker
+NF-Corpus,PLAIN-838,carrageenan,0.7777777777777778,9,7,7,"['MED-3502', 'MED-3495', 'MED-3501', 'MED-3496', 'MED-3500', 'MED-3499', 'MED-3494']","['MED-3499', 'MED-3501', 'MED-3502', 'MED-3495', 'MED-3500', 'MED-3496', 'MED-3494']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-850,cauliflower,0.08771929824561403,57,5,5,"['MED-4455', 'MED-2064', 'MED-2070', 'MED-2066', 'MED-2075']","['MED-2070', 'MED-2064', 'MED-2066', 'MED-2075', 'MED-4455']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-872,chanterelle mushrooms,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-882,Chernobyl,0.13333333333333333,15,2,2,"['MED-3622', 'MED-3632']","['MED-3632', 'MED-3622']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-892,chickpeas,0.11956521739130435,92,6,7,"['MED-3132', 'MED-2010', 'MED-2148', 'MED-2008', 'MED-4347', 'MED-2145']","['MED-2010', 'MED-3132', 'MED-2148', 'MED-2008', 'MED-4347', 'MED-2145', 'MED-2146']",0.06625422345438903,sucesso_do_reranker
+NF-Corpus,PLAIN-902,chlorophyll,0.5,4,2,2,"['MED-4195', 'MED-4197']","['MED-4195', 'MED-4197']",-0.0511123637446792,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-913,cinnamon,0.2647058823529412,34,9,9,"['MED-3811', 'MED-4416', 'MED-4415', 'MED-3813', 'MED-5000', 'MED-3812', 'MED-4417', 'MED-4418', 'MED-5084']","['MED-4415', 'MED-3811', 'MED-4416', 'MED-4417', 'MED-3812', 'MED-4418', 'MED-3813', 'MED-5000', 'MED-5084']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-924,cocaine,0.03125,32,1,1,['MED-3044'],['MED-3044'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-934,coffee,0.3564356435643564,101,8,6,"['MED-1648', 'MED-1621', 'MED-1649', 'MED-1640', 'MED-2161', 'MED-1636', 'MED-2159', 'MED-2155']","['MED-2155', 'MED-5258', 'MED-5123', 'MED-1640', 'MED-1648', 'MED-1649']",-0.20483424751859092,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-946,coma,0.06451612903225806,31,2,2,"['MED-4381', 'MED-4380']","['MED-4380', 'MED-4381']",-0.11969112987696987,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-956,cooking methods,0.16019417475728157,206,5,5,"['MED-5074', 'MED-2182', 'MED-5076', 'MED-2179', 'MED-2183']","['MED-5076', 'MED-2209', 'MED-4053', 'MED-2064', 'MED-2183']",0.17883819552358876,sucesso_do_reranker
+NF-Corpus,PLAIN-966,cortisol,0.3333333333333333,3,1,1,['MED-4103'],['MED-4103'],0.15481493810603625,sucesso_do_reranker
+NF-Corpus,PLAIN-977,crib death,0.3333333333333333,3,1,1,['MED-4402'],['MED-4402'],0.15481493810603625,sucesso_do_reranker
+NF-Corpus,PLAIN-987,cumin,0.3333333333333333,3,1,1,['MED-2830'],['MED-2830'],0.23463936301137822,sucesso_do_reranker
+NF-Corpus,PLAIN-997,Czechoslovakia,0.0,2,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1008,deafness,0.0,5,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1018,DHA,0.13333333333333333,60,6,6,"['MED-4936', 'MED-5091', 'MED-1832', 'MED-5092', 'MED-3012', 'MED-5093']","['MED-4936', 'MED-5091', 'MED-5092', 'MED-3012', 'MED-5093', 'MED-4633']",0.013078460449406415,sucesso_do_reranker
+NF-Corpus,PLAIN-1028,dietary scoring,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1039,domoic acid,1.0,2,2,2,"['MED-4380', 'MED-4381']","['MED-4380', 'MED-4381']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1050,Dr. Dean Ornish,0.010638297872340425,94,1,0,['MED-2763'],[],-0.06362078819895171,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1066,Dr. Walter Willett,0.0,9,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1088,ECMO,0.4,5,2,2,"['MED-2109', 'MED-2110']","['MED-2110', 'MED-2109']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1098,eggnog,0.0,5,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1109,endocrine disruptors,0.12244897959183673,98,5,5,"['MED-2643', 'MED-2650', 'MED-1763', 'MED-1100', 'MED-1099']","['MED-2650', 'MED-2643', 'MED-2627', 'MED-2658', 'MED-1100']",-0.012758719983132827,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1119,energy drinks,0.0,11,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1130,ergothioneine,1.0,1,1,1,['MED-4165'],['MED-4165'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1141,Evidence-based medicine,0.1875,16,1,1,['MED-2112'],['MED-2112'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1151,factory farming practices,0.06535947712418301,153,3,4,"['MED-1759', 'MED-2742', 'MED-2738']","['MED-4139', 'MED-1759', 'MED-2742', 'MED-2775']",0.06362078819895173,sucesso_do_reranker
+NF-Corpus,PLAIN-1161,fava beans,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1172,fenugreek,0.05263157894736842,19,1,1,['MED-4150'],['MED-4150'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1183,Finland,0.08,25,2,2,"['MED-1276', 'MED-4070']","['MED-1276', 'MED-4070']",-0.1525382779365457,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1193,flax oil,0.4444444444444444,18,1,1,['MED-4004'],['MED-5179'],0.07524165567460282,sucesso_do_reranker
+NF-Corpus,PLAIN-1203,folic acid,0.16666666666666666,12,2,2,"['MED-4771', 'MED-1203']","['MED-4771', 'MED-1203']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1214,Fosamax,0.0,17,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1225,fructose,0.37037037037037035,27,6,6,"['MED-1669', 'MED-1674', 'MED-1710', 'MED-1675', 'MED-1672', 'MED-1261']","['MED-1674', 'MED-1672', 'MED-1669', 'MED-1710', 'MED-1675', 'MED-1261']",0.1445487858686373,sucesso_do_reranker
+NF-Corpus,PLAIN-1236,galactosemia,0.2,5,1,1,['MED-1341'],['MED-1341'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1249,genetic manipulation,0.0,4,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1262,Global Burden of Disease Study,0.3,10,2,3,"['MED-5293', 'MED-5303']","['MED-5293', 'MED-5303', 'MED-2082']",0.260706427510343,sucesso_do_reranker
+NF-Corpus,PLAIN-1275,goji berries,0.10909090909090909,55,3,2,"['MED-4712', 'MED-2886', 'MED-2924']","['MED-4712', 'MED-2886']",-0.09478836436955079,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1288,grapes,0.05102040816326531,196,7,6,"['MED-1538', 'MED-1533', 'MED-2663', 'MED-1795', 'MED-4029', 'MED-5065', 'MED-4585']","['MED-2663', 'MED-1538', 'MED-5065', 'MED-1533', 'MED-1795', 'MED-4585']",-0.03939622237756424,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1299,growth promoters,0.04918032786885246,61,2,1,"['MED-4747', 'MED-2774']",['MED-4747'],-0.085143117641621,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1309,halibut,0.0,4,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1320,Harvard Physicians’ Study II,0.5,6,3,2,"['MED-2760', 'MED-2758', 'MED-2761']","['MED-2760', 'MED-2758']",-0.23443291840383038,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1331,hearing,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1342,heme iron,0.3125,16,4,3,"['MED-4317', 'MED-1403', 'MED-1401', 'MED-4318']","['MED-1403', 'MED-1401', 'MED-4317']",-0.09355790058568608,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1353,hernia,0.0,4,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1363,Hiroshima,0.09090909090909091,11,1,1,['MED-3620'],['MED-3620'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1374,hormonal dysfunction,0.11538461538461539,26,1,0,['MED-4747'],[],-0.08514311764162098,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1387,hyperactivity,0.6666666666666666,12,6,5,"['MED-3380', 'MED-5063', 'MED-3383', 'MED-3384', 'MED-5062', 'MED-3381']","['MED-3380', 'MED-5062', 'MED-3381', 'MED-5063', 'MED-3384']",-0.22392657928818444,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1398,IGF-1,0.27184466019417475,103,10,10,"['MED-1715', 'MED-4212', 'MED-4228', 'MED-4897', 'MED-4216', 'MED-1712', 'MED-1719', 'MED-1724', 'MED-4220', 'MED-1722']","['MED-4897', 'MED-1722', 'MED-4216', 'MED-4212', 'MED-1715', 'MED-4228', 'MED-4223', 'MED-4225', 'MED-4211', 'MED-1716']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1409,industrial toxins,0.023715415019762844,253,1,4,['MED-5101'],"['MED-1958', 'MED-3590', 'MED-2650', 'MED-4176']",0.3335714066644499,sucesso_do_reranker
+NF-Corpus,PLAIN-1419,insects,0.03076923076923077,65,2,2,"['MED-4198', 'MED-2344']","['MED-4198', 'MED-2344']",0.04407407950400377,sucesso_do_reranker
+NF-Corpus,PLAIN-1429,Iowa Women’s Health Study,0.0,6,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1441,Japan,0.12903225806451613,186,4,8,"['MED-2773', 'MED-2770', 'MED-3629', 'MED-1332']","['MED-3973', 'MED-2773', 'MED-3975', 'MED-3972', 'MED-2770', 'MED-3000', 'MED-2660', 'MED-2511']",0.42239628512566096,sucesso_do_reranker
+NF-Corpus,PLAIN-1453,junk food,0.10612244897959183,245,2,3,"['MED-2221', 'MED-1761']","['MED-2221', 'MED-3091', 'MED-2264']",0.07589947018231885,sucesso_do_reranker
+NF-Corpus,PLAIN-1463,kidney beans,0.375,24,3,2,"['MED-2140', 'MED-3136', 'MED-3138']","['MED-3136', 'MED-2140']",-0.15459324452388565,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1473,kohlrabi,1.0,1,1,1,['MED-4455'],['MED-4455'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1485,lard,0.0,54,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1496,leeks,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1506,leucine,0.13333333333333333,15,2,2,"['MED-5239', 'MED-2509']","['MED-5239', 'MED-2509']",-0.06483922703365017,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1516,Lindane,0.0,2,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1527,liver disease,0.15841584158415842,202,8,7,"['MED-2160', 'MED-1307', 'MED-1304', 'MED-1302', 'MED-4817', 'MED-2158', 'MED-4101', 'MED-2154']","['MED-1304', 'MED-1307', 'MED-4101', 'MED-2154', 'MED-4814', 'MED-2160', 'MED-4873']",-0.06362078819895167,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1537,low-carb diets,0.2,45,0,6,[],"['MED-4515', 'MED-4514', 'MED-2588', 'MED-2591', 'MED-1616', 'MED-2586']",0.5481351590340573,sucesso_do_reranker
+NF-Corpus,PLAIN-1547,lyme disease,0.0,6,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1557,magnesium,0.15384615384615385,26,3,2,"['MED-3918', 'MED-4315', 'MED-4313']","['MED-3918', 'MED-4315']",-0.08300916882728984,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1568,maple syrup,1.0,2,2,2,"['MED-4150', 'MED-5056']","['MED-4150', 'MED-5056']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1579,mastitis,0.2,5,1,1,['MED-4667'],['MED-4667'],-0.12517394053908856,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1590,medical ethics,0.2222222222222222,18,1,1,['MED-3604'],['MED-3604'],-0.08122932242452563,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1601,memory,0.22972972972972974,74,6,6,"['MED-4996', 'MED-3537', 'MED-4860', 'MED-2669', 'MED-5002', 'MED-2668']","['MED-4996', 'MED-2669', 'MED-4404', 'MED-3537', 'MED-5002', 'MED-4438']",0.034349850549082794,sucesso_do_reranker
+NF-Corpus,PLAIN-1611,mesquite,0.0,6,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1621,Mevacor,0.0,4,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1635,milk,0.14617169373549885,431,6,9,"['MED-4899', 'MED-2774', 'MED-4753', 'MED-1229', 'MED-2123', 'MED-4902']","['MED-1229', 'MED-2123', 'MED-4897', 'MED-1223', 'MED-2058', 'MED-2774', 'MED-1768', 'MED-2771', 'MED-2055']",0.4249260138166713,sucesso_do_reranker
+NF-Corpus,PLAIN-1645,molasses,0.16666666666666666,6,1,1,['MED-5056'],['MED-5056'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1656,mouth cancer,0.03571428571428571,28,1,1,['MED-4819'],['MED-4819'],0.015257518779489304,sucesso_do_reranker
+NF-Corpus,PLAIN-1667,muscle health,0.22641509433962265,159,7,6,"['MED-1474', 'MED-4828', 'MED-3460', 'MED-3462', 'MED-4830', 'MED-1460', 'MED-4829']","['MED-3453', 'MED-3460', 'MED-3220', 'MED-3163', 'MED-3466', 'MED-1472']",-0.10416664828793365,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1679,myelopathy,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1690,National Academy of Sciences,0.25,4,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+NF-Corpus,PLAIN-1700,Native Americans,0.0,5,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1710,neurocysticercosis,0.8125,16,10,10,"['MED-3169', 'MED-3180', 'MED-3181', 'MED-3175', 'MED-3178', 'MED-3174', 'MED-3179', 'MED-3172', 'MED-3170', 'MED-3177']","['MED-3178', 'MED-3177', 'MED-3170', 'MED-3179', 'MED-3175', 'MED-3169', 'MED-3181', 'MED-3180', 'MED-3174', 'MED-3172']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1721,NIH-AARP study,0.1935483870967742,31,6,6,"['MED-4821', 'MED-1602', 'MED-4823', 'MED-1627', 'MED-1606', 'MED-4983']","['MED-1602', 'MED-4983', 'MED-4821', 'MED-4823', 'MED-1606', 'MED-1627']",0.0031769984823882824,sucesso_do_reranker
+NF-Corpus,PLAIN-1731,norovirus,0.6666666666666666,3,2,2,"['MED-2749', 'MED-2748']","['MED-2749', 'MED-2748']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1741,nuts,0.15714285714285714,420,10,10,"['MED-2383', 'MED-4286', 'MED-4300', 'MED-2595', 'MED-4292', 'MED-2597', 'MED-4314', 'MED-4707', 'MED-4295', 'MED-2381']","['MED-2595', 'MED-4286', 'MED-4314', 'MED-4292', 'MED-4300', 'MED-1381', 'MED-2383', 'MED-2597', 'MED-4249', 'MED-2596']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1752,okra,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1762,oral intraepithelial neoplasia,0.625,8,2,2,"['MED-3721', 'MED-3716']","['MED-3716', 'MED-3721']",0.14400621014990123,sucesso_do_reranker
+NF-Corpus,PLAIN-1772,organotins,1.0,2,2,2,"['MED-4728', 'MED-4727']","['MED-4728', 'MED-4727']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1784,oxen meat,0.0,2,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1794,Panama,1.0,2,2,2,"['MED-5041', 'MED-5042']","['MED-5041', 'MED-5042']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1805,Parkinson's disease,0.22413793103448276,116,9,9,"['MED-3938', 'MED-5196', 'MED-3931', 'MED-4939', 'MED-3935', 'MED-3933', 'MED-2173', 'MED-3925', 'MED-3930']","['MED-3935', 'MED-4939', 'MED-3925', 'MED-3929', 'MED-3930', 'MED-3927', 'MED-3936', 'MED-5196', 'MED-1282']",-0.025357142432773427,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1817,peanut butter,0.2222222222222222,27,4,4,"['MED-4284', 'MED-4706', 'MED-2150', 'MED-4709']","['MED-4284', 'MED-4706', 'MED-2150', 'MED-4709']",0.008967047041898102,sucesso_do_reranker
+NF-Corpus,PLAIN-1827,Peoria,0.0,3,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1837,pesticides,0.23979591836734693,196,10,10,"['MED-2748', 'MED-1725', 'MED-3936', 'MED-1158', 'MED-1726', 'MED-4535', 'MED-4178', 'MED-1167', 'MED-1170', 'MED-1176']","['MED-1161', 'MED-1726', 'MED-4179', 'MED-4177', 'MED-1157', 'MED-1725', 'MED-1166', 'MED-1167', 'MED-3279', 'MED-1749']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1847,philippines,0.18181818181818182,11,2,2,"['MED-4000', 'MED-3983']","['MED-4000', 'MED-3983']",-0.08122932242452566,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1857,phytic acid,0.18181818181818182,33,5,5,"['MED-4319', 'MED-2544', 'MED-2988', 'MED-2578', 'MED-2575']","['MED-2578', 'MED-2988', 'MED-4319', 'MED-2544', 'MED-2575']",0.009743133900408374,sucesso_do_reranker
+NF-Corpus,PLAIN-1867,pineapples,0.0,7,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1877,plant-based diet,0.027777777777777776,36,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+NF-Corpus,PLAIN-1887,poisonous plants,0.0,4,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1897,polypropylene plastic,0.0,2,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1909,pork,0.09719222462203024,463,10,8,"['MED-2341', 'MED-4818', 'MED-1979', 'MED-2352', 'MED-1983', 'MED-3171', 'MED-1610', 'MED-4593', 'MED-3891', 'MED-2340']","['MED-1979', 'MED-1983', 'MED-1610', 'MED-4593', 'MED-4818', 'MED-2341', 'MED-3891', 'MED-2352']",-0.14279514403613724,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1919,poultry workers,0.6296296296296297,27,7,7,"['MED-3321', 'MED-4431', 'MED-4819', 'MED-3320', 'MED-3315', 'MED-4433', 'MED-3311']","['MED-4431', 'MED-3315', 'MED-3321', 'MED-4433', 'MED-3320', 'MED-4819', 'MED-3307']",0.0031769984823882824,sucesso_do_reranker
+NF-Corpus,PLAIN-1929,prenatal vitamins,0.0,10,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1940,prolactin,0.16666666666666666,12,2,2,"['MED-3792', 'MED-3797']","['MED-3792', 'MED-3797']",-0.02881656072451444,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-1950,prunes,0.15384615384615385,13,2,2,"['MED-4250', 'MED-3904']","['MED-3904', 'MED-4250']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1962,pumpkin,0.0,13,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1972,quinine,0.0,11,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-1983,rapamycin,0.5,32,10,10,"['MED-2137', 'MED-2521', 'MED-2134', 'MED-2520', 'MED-2514', 'MED-2132', 'MED-2507', 'MED-5237', 'MED-2517', 'MED-2127']","['MED-2521', 'MED-2132', 'MED-2128', 'MED-2134', 'MED-2137', 'MED-2127', 'MED-2517', 'MED-5239', 'MED-2139', 'MED-2509']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-1995,red tea,0.09090909090909091,11,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+NF-Corpus,PLAIN-2009,rhabdomyolysis,0.125,8,1,1,['MED-4961'],['MED-4961'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-2019,rickets,0.3333333333333333,3,1,1,['MED-4573'],['MED-4573'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-2030,Rutin,0.16666666666666666,6,1,1,['MED-4051'],['MED-4051'],-0.11168154731987878,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2040,salmon,0.12121212121212122,132,7,8,"['MED-4933', 'MED-3024', 'MED-4936', 'MED-4961', 'MED-2678', 'MED-2396', 'MED-4934']","['MED-3024', 'MED-2396', 'MED-4933', 'MED-2678', 'MED-4961', 'MED-2391', 'MED-4934', 'MED-4936']",0.10563314498669163,sucesso_do_reranker
+NF-Corpus,PLAIN-2051,saturated fat,0.1267605633802817,355,7,4,"['MED-1556', 'MED-1781', 'MED-1454', 'MED-4556', 'MED-4005', 'MED-3586', 'MED-5014']","['MED-1781', 'MED-1556', 'MED-5014', 'MED-2180']",-0.17442237302818642,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2061,seafood,0.0951219512195122,410,9,10,"['MED-3031', 'MED-4736', 'MED-2344', 'MED-5101', 'MED-2262', 'MED-4742', 'MED-2411', 'MED-4968', 'MED-2406']","['MED-4736', 'MED-5101', 'MED-3031', 'MED-4742', 'MED-2344', 'MED-2411', 'MED-2339', 'MED-4960', 'MED-4968', 'MED-3030']",0.06625422345438903,sucesso_do_reranker
+NF-Corpus,PLAIN-2071,serotonin,0.2,45,5,4,"['MED-3532', 'MED-4306', 'MED-3530', 'MED-3526', 'MED-3540']","['MED-3532', 'MED-4306', 'MED-3526', 'MED-3530']",-0.1427951440361374,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2081,shelf life,1.0,1,1,1,['MED-4303'],['MED-4303'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-2092,sirtuins,0.5,10,5,5,"['MED-1434', 'MED-1437', 'MED-1436', 'MED-1432', 'MED-1440']","['MED-1434', 'MED-1436', 'MED-1432', 'MED-1437', 'MED-1440']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-2102,smoking,0.09501187648456057,421,4,7,"['MED-1545', 'MED-3318', 'MED-2237', 'MED-3544']","['MED-3318', 'MED-2237', 'MED-1598', 'MED-3046', 'MED-1545', 'MED-1603', 'MED-2252']",0.17130889977298325,sucesso_do_reranker
+NF-Corpus,PLAIN-2113,soil health,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2124,spearmint,0.11764705882352941,17,2,2,"['MED-1525', 'MED-1522']","['MED-1525', 'MED-1522']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-2134,Splenda,0.0,12,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2145,St. John's wort,0.1111111111111111,9,1,1,['MED-3918'],['MED-3918'],-0.03077445586290642,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2156,stevia,0.5,6,3,3,"['MED-4868', 'MED-5055', 'MED-4867']","['MED-4868', 'MED-5055', 'MED-4867']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-2167,subsidies,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2177,sulfur,0.125,24,3,3,"['MED-1185', 'MED-1421', 'MED-1420']","['MED-1421', 'MED-1185', 'MED-1420']",9.788717247855017e-05,sucesso_do_reranker
+NF-Corpus,PLAIN-2187,suppositories,0.2222222222222222,9,2,2,"['MED-1248', 'MED-1244']","['MED-1244', 'MED-1248']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-2197,sweeteners,0.13793103448275862,58,8,8,"['MED-5054', 'MED-5056', 'MED-4120', 'MED-5057', 'MED-1625', 'MED-5053', 'MED-4868', 'MED-1627']","['MED-5054', 'MED-1625', 'MED-4868', 'MED-4120', 'MED-5056', 'MED-1627', 'MED-5053', 'MED-5057']",-0.016390095390875437,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2209,taro,0.0,2,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2220,tempeh,0.1111111111111111,9,1,1,['MED-4976'],['MED-4976'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-2230,thiamine,0.0,7,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2240,titanium dioxide,0.45454545454545453,11,5,5,"['MED-3969', 'MED-3960', 'MED-3964', 'MED-3963', 'MED-3970']","['MED-3969', 'MED-3970', 'MED-3964', 'MED-3960', 'MED-3963']",0.06549852177419457,sucesso_do_reranker
+NF-Corpus,PLAIN-2250,tongue worm,0.0,2,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2261,trans fats,0.15,60,5,6,"['MED-3597', 'MED-1558', 'MED-3599', 'MED-4556', 'MED-4450']","['MED-3599', 'MED-3597', 'MED-3598', 'MED-4450', 'MED-4559', 'MED-4556']",0.2665168612481686,sucesso_do_reranker
+NF-Corpus,PLAIN-2271,Tufts,0.1,10,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+NF-Corpus,PLAIN-2281,turnips,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2291,ultra-processed foods,0.4,5,2,1,"['MED-2726', 'MED-1650']",['MED-2726'],-0.11305340175787204,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2301,uterine health,0.0,13,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2311,veal,0.0,2,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2321,veggie chicken,0.0,5,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2332,viral infections,0.13402061855670103,97,4,2,"['MED-4766', 'MED-3292', 'MED-3309', 'MED-3312']","['MED-4766', 'MED-1798']",-0.21661344306085173,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2343,vitamin K,0.0,2,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2354,walnut oil,0.4,5,2,2,"['MED-4303', 'MED-2152']","['MED-2152', 'MED-4303']",0.044406162097719526,sucesso_do_reranker
+NF-Corpus,PLAIN-2364,weight gain,0.0,15,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2375,whiting,0.0,2,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2386,worms,0.0,19,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2396,Yale,0.0,18,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2408,Zoloft,0.0,5,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2430,Preventing Brain Loss with B Vitamins?,0.17391304347826086,46,3,3,"['MED-994', 'MED-980', 'MED-986']","['MED-980', 'MED-2664', 'MED-986']",-0.11106836583246765,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2440,More Than an Apple a Day: Combating Common Diseases,0.0,21,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2450,Are Organic Foods Safer?,0.18421052631578946,38,2,2,"['MED-1178', 'MED-1173']","['MED-1178', 'MED-1169']",-0.10265376469471635,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2460,Diabetes as a Disease of Fat Toxicity,0.16129032258064516,31,1,0,['MED-1236'],[],-0.11496943328345773,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2470,Is Milk Good for Our Bones?,0.1506849315068493,73,2,1,"['MED-1337', 'MED-2771']",['MED-1340'],-0.09375358373665316,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2480,Preventing Ulcerative Colitis with Diet,0.3333333333333333,18,3,2,"['MED-3964', 'MED-1582', 'MED-1421']","['MED-3964', 'MED-1576']",0.03128220470182619,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2490,The Actual Benefit of Diet vs. Drugs,0.2608695652173913,23,3,1,"['MED-1490', 'MED-1488', 'MED-1486']",['MED-1490'],-0.4544349947341837,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2500,The Saturated Fat Studies: Buttering Up the Public,0.42857142857142855,7,1,0,['MED-4556'],[],-0.059872671137193724,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2510,Coffee and Artery Function,0.5217391304347826,46,8,7,"['MED-1648', 'MED-1640', 'MED-1642', 'MED-1639', 'MED-1649', 'MED-1645', 'MED-1638', 'MED-1643']","['MED-1648', 'MED-1640', 'MED-1639', 'MED-1642', 'MED-1649', 'MED-1641', 'MED-2155']",-0.13688927926756744,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2520,Caloric Restriction vs. Plant-Based Diets,0.136986301369863,73,3,1,"['MED-2138', 'MED-2519', 'MED-2506']",['MED-2507'],-0.08799939092429448,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2530,Infectobesity: Adenovirus 36 and Childhood Obesity,0.3055555555555556,72,10,10,"['MED-1804', 'MED-1808', 'MED-1798', 'MED-1803', 'MED-1799', 'MED-4768', 'MED-1800', 'MED-1796', 'MED-4766', 'MED-4769']","['MED-1804', 'MED-1798', 'MED-1808', 'MED-1800', 'MED-1796', 'MED-4766', 'MED-1806', 'MED-1799', 'MED-1803', 'MED-1810']",0.033127111727194514,sucesso_do_reranker
+NF-Corpus,PLAIN-2540,Does Cholesterol Size Matter?,0.42857142857142855,21,2,3,"['MED-1886', 'MED-3198']","['MED-1886', 'MED-1882', 'MED-1887']",-0.00639160402075073,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2550,Barriers to Heart Disease Prevention,0.24,25,3,1,"['MED-2527', 'MED-4598', 'MED-2525']",['MED-2529'],-0.11918532507629645,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2560,Childhood Constipation and Cow’s Milk,0.7142857142857143,21,7,9,"['MED-2057', 'MED-2055', 'MED-2053', 'MED-2060', 'MED-2061', 'MED-2059', 'MED-2062']","['MED-2053', 'MED-2058', 'MED-2060', 'MED-2057', 'MED-2055', 'MED-2059', 'MED-2061', 'MED-2063', 'MED-2056']",0.15457433957839828,sucesso_do_reranker
+NF-Corpus,PLAIN-2570,Diabetics Should Take Their Pulses,0.1,40,1,1,['MED-2145'],['MED-2145'],-0.03200606484240487,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2580,Academy of Nutrition and Dietetics Conflicts of Interest,0.13043478260869565,23,2,2,"['MED-2220', 'MED-2725']","['MED-2220', 'MED-2725']",-0.010386329346650791,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2590,Do Vegetarians Get Enough Protein?,0.07936507936507936,63,1,2,['MED-4600'],"['MED-4313', 'MED-4600']",0.07292655201988812,sucesso_do_reranker
+NF-Corpus,PLAIN-2600,Eggs and Arterial Function,0.3,10,2,2,"['MED-2371', 'MED-4324']","['MED-2372', 'MED-2371']",0.26139068822021266,sucesso_do_reranker
+NF-Corpus,PLAIN-2610,Treating Asthma With Plants vs. Supplements?,0.09836065573770492,61,2,2,"['MED-2452', 'MED-2655']","['MED-2452', 'MED-2458']",0.015711895704843715,sucesso_do_reranker
+NF-Corpus,PLAIN-2620,Phytates for the Treatment of Cancer,0.10909090909090909,55,2,1,"['MED-2988', 'MED-2983']",['MED-2988'],-0.16787496074933989,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2630,Alkylphenol Endocrine Disruptors and Allergies,0.2708333333333333,48,3,3,"['MED-2643', 'MED-2650', 'MED-2644']","['MED-2658', 'MED-2650', 'MED-2643']",0.0249027655074191,sucesso_do_reranker
+NF-Corpus,PLAIN-2640,Chicken Salmonella Thanks to Meat Industry Lawsuit,0.5416666666666666,48,8,7,"['MED-2745', 'MED-2743', 'MED-3882', 'MED-4429', 'MED-3892', 'MED-3880', 'MED-2741', 'MED-4354']","['MED-3880', 'MED-2745', 'MED-2741', 'MED-4429', 'MED-3892', 'MED-2742', 'MED-4354']",-0.03594933206145212,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2650,Turmeric Curcumin and Osteoarthritis,0.3793103448275862,29,4,3,"['MED-2800', 'MED-2819', 'MED-2801', 'MED-2807']","['MED-2800', 'MED-2797', 'MED-2819']",-0.1321175952106089,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2660,How Long to Detox From Fish Before Pregnancy?,0.25925925925925924,27,2,1,"['MED-3012', 'MED-2907']",['MED-3021'],0.059049178474140374,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2670,Is Caramel Color Carcinogenic?,0.11428571428571428,35,1,2,['MED-2994'],"['MED-2994', 'MED-2992']",0.14982420171299154,sucesso_do_reranker
+NF-Corpus,PLAIN-2680,Counteracting the Effects of Dioxins Through Diet,0.2857142857142857,14,2,4,"['MED-3100', 'MED-3102']","['MED-3100', 'MED-3109', 'MED-3102', 'MED-3112']",0.18210369776815222,sucesso_do_reranker
+NF-Corpus,PLAIN-2690,Chronic Headaches and Pork Tapeworms,0.11627906976744186,43,1,2,['MED-3288'],"['MED-3175', 'MED-3288']",0.2200917662980802,sucesso_do_reranker
+NF-Corpus,PLAIN-2700,Heart Disease Starts in Childhood,0.3,10,1,2,['MED-3253'],"['MED-3253', 'MED-4613']",0.1605327106653441,sucesso_do_reranker
+NF-Corpus,PLAIN-2710,Artificial Food Colors and ADHD,0.2857142857142857,21,3,4,"['MED-3382', 'MED-3380', 'MED-3381']","['MED-3382', 'MED-3380', 'MED-5062', 'MED-3381']",0.08661734426551171,sucesso_do_reranker
+NF-Corpus,PLAIN-2720,Keeping Your Hands Warm With Citrus,0.19444444444444445,36,2,3,"['MED-3483', 'MED-4392']","['MED-3483', 'MED-3474', 'MED-4392']",0.13211759521060887,sucesso_do_reranker
+NF-Corpus,PLAIN-2730,Anti-Angiogenesis: Cutting Off Tumor Supply Lines,0.3448275862068966,29,4,6,"['MED-3554', 'MED-3553', 'MED-3548', 'MED-4089']","['MED-3550', 'MED-3553', 'MED-3554', 'MED-3548', 'MED-3549', 'MED-3551']",0.4087982744859299,sucesso_do_reranker
+NF-Corpus,PLAIN-2740,Cancer Risk From CT Scan Radiation,0.28,50,4,5,"['MED-3627', 'MED-3624', 'MED-3623', 'MED-3620']","['MED-3627', 'MED-3624', 'MED-3620', 'MED-3625', 'MED-3623']",0.20090200410073256,sucesso_do_reranker
+NF-Corpus,PLAIN-2750,Preventing the Common Cold with Probiotics?,0.2033898305084746,59,5,7,"['MED-3683', 'MED-3680', 'MED-5031', 'MED-3692', 'MED-3695']","['MED-3676', 'MED-3691', 'MED-3683', 'MED-3680', 'MED-3690', 'MED-3692', 'MED-4564']",-0.08698451916692779,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2760,Eating Healthy on a Budget,0.0,8,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2770,Flaxseeds & Breast Cancer Survival: Clinical Evidence,0.2926829268292683,41,3,0,"['MED-3832', 'MED-3834', 'MED-3830']",[],-0.3820564381065627,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2780,Do Fruit & Nut Bars Cause Weight Gain?,0.4090909090909091,22,4,4,"['MED-3896', 'MED-4292', 'MED-4291', 'MED-4286']","['MED-3896', 'MED-4286', 'MED-4292', 'MED-4289']",0.02666352696971208,sucesso_do_reranker
+NF-Corpus,PLAIN-2790,Titanium Dioxide & Inflammatory Bowel Disease,0.13559322033898305,59,5,5,"['MED-3964', 'MED-3970', 'MED-3969', 'MED-3960', 'MED-3963']","['MED-3970', 'MED-3964', 'MED-3960', 'MED-3969', 'MED-3963']",0.006744848662945557,sucesso_do_reranker
+NF-Corpus,PLAIN-2800,Prolonged Liver Function Enhancement From Broccoli,0.16666666666666666,24,2,1,"['MED-4454', 'MED-4040']",['MED-4040'],-0.049783113561611234,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2810,Apple Juice May Be Worse Than Sugar Water,0.5,8,1,0,['MED-4090'],[],-0.05854439592831931,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2820,Preventing Strokes with Diet,0.125,8,0,1,[],['MED-4106'],0.11671218210122507,sucesso_do_reranker
+NF-Corpus,PLAIN-2830,Neurobiology of Artificial Sweeteners,0.3333333333333333,3,1,1,['MED-4120'],['MED-4120'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-2840,Benefits of Fenugreek Seeds,0.0,17,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2850,More Antibiotics In White Meat or Dark Meat?,0.0,9,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2860,BPA Plastic and Male Sexual Dysfunction,1.0,2,2,2,"['MED-4186', 'MED-4185']","['MED-4186', 'MED-4185']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-2870,Filled Full of Lead,0.2,5,1,0,['MED-4531'],[],-0.07623986638854101,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2880,The Answer to the Pritikin Puzzle,0.0,17,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2890,To Snack or Not to Snack?,0.06896551724137931,29,1,1,['MED-4250'],['MED-4250'],-0.04156595943551104,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2900,Boosting Good Bacteria in the Colon Without Probiotics,0.16666666666666666,12,1,1,['MED-4271'],['MED-4271'],0.1926866049182051,sucesso_do_reranker
+NF-Corpus,PLAIN-2910,Optimal Phytosterol Dose,0.06666666666666667,15,1,1,['MED-4295'],['MED-4295'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-2920,Human Neurotransmitters in Plants,0.14285714285714285,7,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+NF-Corpus,PLAIN-2930,Kiwifruit for Irritable Bowel Syndrome,0.2857142857142857,14,1,1,['MED-4325'],['MED-4325'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-2940,Dietary Treatment of Crohn's Disease,0.045454545454545456,22,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+NF-Corpus,PLAIN-2950,Unsafe at Any Feed,0.0,2,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2960,Pharmacists Versus Health Food Store Employees: Who Gives Better Advice?,0.5,2,1,1,['MED-4370'],['MED-4370'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-2970,Preventing Cataracts with Diet,0.0,9,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-2981,Cheese Mites and Maggots,0.2857142857142857,7,2,1,"['MED-4403', 'MED-4909']",['MED-4403'],-0.07187006452250416,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-2991,Cholesterol and Lower Back Pain,0.5,2,1,1,['MED-4424'],['MED-4424'],0.08027921085181244,sucesso_do_reranker
+NF-Corpus,PLAIN-3001,EPIC Findings on Lymphoma,0.5,2,1,0,['MED-4436'],[],-0.20438239758848611,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-3014,Sometimes the Enzyme Myth Is True,0.0,1,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-3026,Vitamin C-Enriched Bacon,1.0,1,1,0,['MED-4470'],[],-0.3010299956639812,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-3037,Out of the Lab Onto the Track,0.0,4,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-3053,Dragon's Blood,0.6666666666666666,3,2,2,"['MED-4525', 'MED-4526']","['MED-4525', 'MED-4526']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-3063,Better Than Goji Berries,0.0,4,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-3074,How to Help Prevent Abdominal Aortic Aneurysms,1.0,1,1,1,['MED-4555'],['MED-4555'],-0.6989700043360187,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-3085,The Difficulty of Arriving at a Vitamin D Recommendation,1.0,2,1,1,['MED-4570'],['MED-4573'],-0.12278468466195075,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-3097,Amyloid and Apple Juice,0.5,4,1,1,['MED-4590'],['MED-4590'],0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-3116,Dietary Guidelines: From Dairies to Berries,1.0,1,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+NF-Corpus,PLAIN-3131,Are Avocados Good for You?,0.16666666666666666,6,1,1,['MED-4619'],['MED-4619'],0.016124726840871212,sucesso_do_reranker
+NF-Corpus,PLAIN-3141,Relieving Yourself of Excess Estrogen,0.14705882352941177,34,1,2,['MED-4644'],"['MED-3849', 'MED-4644']",0.1333769321014654,sucesso_do_reranker
+NF-Corpus,PLAIN-3151,Too Much Iodine Can Be as Bad as Too Little,0.4444444444444444,18,1,6,['MED-4660'],"['MED-4660', 'MED-4664', 'MED-4666', 'MED-4662', 'MED-3971', 'MED-3444']",0.6140091041223233,sucesso_do_reranker
+NF-Corpus,PLAIN-3161,Is Milk and Mucus a Myth?,0.3488372093023256,43,3,5,"['MED-4677', 'MED-1223', 'MED-1229']","['MED-1229', 'MED-4677', 'MED-1768', 'MED-1223', 'MED-1774']",-0.04757463375562648,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-3171,Convergence of Evidence,0.20588235294117646,34,3,3,"['MED-1504', 'MED-1501', 'MED-1502']","['MED-1501', 'MED-1498', 'MED-1502']",0.09125965040647843,sucesso_do_reranker
+NF-Corpus,PLAIN-3181,Is Dragon Fruit Good For You?,0.1111111111111111,27,0,2,[],"['MED-1795', 'MED-1792']",0.22400556151517553,sucesso_do_reranker
+NF-Corpus,PLAIN-3191,Is Distilled Fish Oil Toxin-Free?,0.4375,16,2,1,"['MED-2751', 'MED-1831']",['MED-1831'],-0.042367766003497065,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-3201,Acne & Cancer Connection,0.125,32,3,1,"['MED-4752', 'MED-4398', 'MED-5106']",['MED-4752'],0.10417425704168615,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-3211,Overdosing on Greens,0.0,18,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-3221,Dietary Theory of Alzheimer's,0.125,24,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+NF-Corpus,PLAIN-3231,Meat & Multiple Myeloma,0.25,8,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+NF-Corpus,PLAIN-3241,Apthous Ulcer Mystery Solved,0.0,29,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-3251,EPIC Study,0.09523809523809523,21,1,1,['MED-3699'],['MED-3699'],0.01755969744406629,sucesso_do_reranker
+NF-Corpus,PLAIN-3261,Update on Herbalife®,0.15384615384615385,13,1,1,['MED-4873'],['MED-4873'],0.006854113763784919,sucesso_do_reranker
+NF-Corpus,PLAIN-3271,Saturated Fat & Cancer Progression,0.061224489795918366,49,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+NF-Corpus,PLAIN-3281,Aluminum in Vaccines vs. Food,0.11538461538461539,26,1,2,['MED-4909'],"['MED-2264', 'MED-4909']",-0.12755478454853666,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-3292,Are Multivitamins Good For You?,0.7142857142857143,7,4,4,"['MED-2761', 'MED-4645', 'MED-2759', 'MED-4925']","['MED-4925', 'MED-4645', 'MED-2760', 'MED-2761']",-0.11889931614133659,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-3302,Fish Fog,0.3783783783783784,37,2,0,"['MED-3029', 'MED-2907']",[],-0.29420263302058774,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-3312,Sexually Transmitted Fish Toxin,0.6153846153846154,13,2,4,"['MED-1569', 'MED-4966']","['MED-4966', 'MED-1570', 'MED-1569', 'MED-4968']",0.16166836532571668,sucesso_do_reranker
+NF-Corpus,PLAIN-3322,Veggies vs. Cancer,0.0759493670886076,79,1,2,['MED-2584'],"['MED-2577', 'MED-2584']",0.07589947018231881,sucesso_do_reranker
+NF-Corpus,PLAIN-3332,Alcohol Risks vs. Benefits,0.6428571428571429,14,3,3,"['MED-3696', 'MED-4994', 'MED-3762']","['MED-3768', 'MED-3696', 'MED-3762']",0.012295225617264038,sucesso_do_reranker
+NF-Corpus,PLAIN-3342,Is Coconut Milk Good For You?,1.0,3,2,1,"['MED-5012', 'MED-5014']",['MED-5014'],-0.4800129389813732,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-3352,Boosting Heart Nerve Control,0.1794871794871795,39,0,1,[],['MED-3424'],0.16195671984435944,sucesso_do_reranker
+NF-Corpus,PLAIN-3362,Kuna Indian Secret,0.8181818181818182,11,3,3,"['MED-5042', 'MED-2227', 'MED-5041']","['MED-5042', 'MED-2227', 'MED-5041']",0.0,sem_mudanca_relevante
+NF-Corpus,PLAIN-3372,The Healthiest Sweetener,0.0,14,0,0,[],[],0.0,falha_bm25_sem_relevantes_no_top100
+NF-Corpus,PLAIN-3382,Are Artificial Colors Bad for You?,0.2857142857142857,14,3,4,"['MED-3382', 'MED-3380', 'MED-3381']","['MED-5062', 'MED-3382', 'MED-3381', 'MED-3380']",0.3084253774851065,sucesso_do_reranker
+NF-Corpus,PLAIN-3392,Healthiest Airplane Beverage,0.08695652173913043,23,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10
+NF-Corpus,PLAIN-3402,Antioxidant Content of 300 Foods,0.07142857142857142,14,0,1,[],['MED-3744'],0.08514311764162098,sucesso_do_reranker
+NF-Corpus,PLAIN-3412,Plant vs. Cow Calcium,0.14285714285714285,49,3,1,"['MED-4682', 'MED-3227', 'MED-3233']",['MED-4682'],-0.10644397828150137,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-3422,Vitamin Supplements Worth Taking,0.5806451612903226,31,1,3,['MED-4566'],"['MED-5131', 'MED-3990', 'MED-4566']",0.27250304536248027,sucesso_do_reranker
+NF-Corpus,PLAIN-3432,Healthy Chocolate Milkshakes,0.21428571428571427,42,3,1,"['MED-2227', 'MED-2225', 'MED-2224']",['MED-2227'],-0.18844415212771537,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-3442,The Healthiest Vegetables,0.06896551724137931,29,0,1,[],['MED-2098'],0.08879873949105598,sucesso_do_reranker
+NF-Corpus,PLAIN-3452,Bowel Movement Frequency,0.4117647058823529,17,4,4,"['MED-5175', 'MED-2100', 'MED-4641', 'MED-4638']","['MED-5175', 'MED-4638', 'MED-2100', 'MED-4641']",-0.026992786640726574,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-3462,Olive Oil and Artery Function,0.4375,64,7,6,"['MED-5271', 'MED-5274', 'MED-5260', 'MED-5268', 'MED-5269', 'MED-5263', 'MED-5273']","['MED-5274', 'MED-5262', 'MED-5271', 'MED-1410', 'MED-5269', 'MED-5273']",-0.13298229857516786,falha_ou_piora_do_reranker
+NF-Corpus,PLAIN-3472,How Doctors Responded to Being Named a Leading Killer,0.058823529411764705,17,0,0,[],[],0.0,relevantes_existiam_nos_candidatos_mas_ficaram_fora_top10

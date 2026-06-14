@@ -1,0 +1,1218 @@
+feature,coefficient
+query_tfidf__carcinogens,1.0026411637346166
+numeric__lexical_coverage_top3_mean,0.9943008642286429
+query_tfidf__based,-0.9367473411297246
+query_tfidf__practices,0.9345733947878127
+query_tfidf__what,0.9258501749564628
+query_tfidf__boosting,0.8794650807853204
+numeric__bm25_top1_mean_ratio,-0.8778500247325791
+query_tfidf__are,0.8672215316261018
+numeric__bm25_score_range,-0.8363837811766088
+query_tfidf__supply,0.8294140288301954
+numeric__bm25_top1_top2_margin,-0.8160338513661722
+query_tfidf__childhood,0.7975475370722643
+query_tfidf__beans,-0.7961800757503003
+query_tfidf__diets,0.789524983998492
+query_tfidf__do,0.743544657549015
+query_tfidf__dental,0.7408965180100393
+query_tfidf__update on,0.7405580077983904
+query_tfidf__update,0.7405580077983904
+query_tfidf__with diet,0.7388347983013099
+query_tfidf__pain,0.717800071873432
+query_tfidf__safe,0.7098674723359443
+query_tfidf__dioxide,0.7068359877640271
+query_tfidf__titanium,0.7068359877640271
+query_tfidf__titanium dioxide,0.7068359877640271
+query_tfidf__taking,0.7009812524651127
+query_tfidf__activate,0.6996063733017693
+query_tfidf__low,0.6988222144962136
+query_tfidf__health,-0.687000364410858
+query_tfidf__cognitive,0.6696442272402576
+query_tfidf__bone,0.6693934902480575
+query_tfidf__and adhd,0.6608842807464494
+query_tfidf__specific,-0.6603116563502256
+query_tfidf__in,-0.6450372877048007
+query_tfidf__cancer,0.6380612332112038
+query_tfidf__adhd,0.6307811655801274
+query_tfidf__to,-0.6292770467814495
+query_tfidf__obesity,0.6276390510597143
+query_tfidf__toxin,0.6268122001522487
+query_tfidf__headaches,0.6155567769852093
+query_tfidf__with,0.6121273526518547
+query_tfidf__or,-0.6043676911582221
+query_tfidf__increases,0.6027292503537314
+query_tfidf__vitamin,0.5967931960013407
+query_tfidf__covid 19,0.5939310568868948
+query_tfidf__covid,0.5939310568868948
+query_tfidf__19,0.5939310568868948
+query_tfidf__prostate,0.5827621777246631
+query_tfidf__drugs,-0.5820195439359134
+query_tfidf__plant,-0.5691750705235957
+query_tfidf__breast cancer,-0.5657433760029367
+query_tfidf__before pregnancy,0.564710626255324
+query_tfidf__pregnancy,0.564710626255324
+query_tfidf__viral,-0.5603140638764427
+query_tfidf__deficiency,0.5596783773559344
+query_tfidf__prr mda5,0.5591501260664571
+query_tfidf__rna,0.5591501260664571
+query_tfidf__the prr,0.5591501260664571
+query_tfidf__prr,0.5591501260664571
+query_tfidf__death,0.5554723199016267
+query_tfidf__nuts,-0.5546214590290948
+query_tfidf__better,-0.5544721322183385
+query_tfidf__proteins,0.5541175722243971
+query_tfidf__in childhood,0.5520282693553352
+query_tfidf__risk,0.5505916632240665
+query_tfidf__dietary,-0.5495697842921703
+query_tfidf__development,-0.5420076604817646
+query_tfidf__how,0.5398384916580747
+query_tfidf__levels of,0.5374235293912316
+query_tfidf__heart,0.5333851084479413
+query_tfidf__into,0.5307857381622614
+query_tfidf__treating,0.5296348256645104
+query_tfidf__coffee,-0.529435181526087
+query_tfidf__supplements,0.5280266964302812
+query_tfidf__rates,-0.5214567259096274
+query_tfidf__mortality,-0.51888745861393
+query_tfidf__testing,0.517771196740882
+numeric__bm25_score_slope,-0.5171727181503254
+query_tfidf__fat,-0.5146644215181376
+query_tfidf__genetic,-0.5112882018567365
+query_tfidf__dioxins,0.5088503426013632
+query_tfidf__dna,-0.5086969575965756
+query_tfidf__mouse,0.5079969330589429
+query_tfidf__disease,-0.5011236310585612
+query_tfidf__physical,0.49799996225705184
+query_tfidf__immune,-0.49341624926379074
+query_tfidf__energy,-0.48921489560912923
+query_tfidf__phosphatidylinositol,0.48636490793646975
+query_tfidf__bad,0.48585601221377345
+query_tfidf__colors,0.4835883475337309
+query_tfidf__much,0.4834134815186832
+query_tfidf__what are,0.48188994821007936
+query_tfidf__in the,0.4818443827623971
+query_tfidf__evidence,0.4817056988611143
+query_tfidf__is associated,-0.4791754306658164
+query_tfidf__vegetarians,0.47723095894851936
+query_tfidf__treatment,-0.47476004672195654
+query_tfidf__show,-0.4692463041368357
+query_tfidf__and pork,0.4690955151083647
+query_tfidf__chronic headaches,0.4690955151083647
+query_tfidf__headaches and,0.4690955151083647
+query_tfidf__across,0.46891228164058235
+query_tfidf__healthy,-0.4604484203083784
+query_tfidf__apoptosis,-0.4589679860353909
+query_tfidf__with cognitive,0.45799502135289927
+query_tfidf__warm,0.4575080117872521
+query_tfidf__hands,0.4575080117872521
+query_tfidf__your hands,0.4575080117872521
+query_tfidf__hands warm,0.4575080117872521
+query_tfidf__citrus,0.4575080117872521
+query_tfidf__saturated fat,-0.4571154484421719
+query_tfidf__saturated,-0.4571154484421719
+query_tfidf__food,0.4560241878181353
+query_tfidf__rapamycin,-0.4529900933907586
+query_tfidf__burden,0.4504767720020584
+query_tfidf__diet,-0.4469225482650347
+query_tfidf__does,0.4463877667525447
+query_tfidf__before,0.4458321936185616
+query_tfidf__tea,0.44514206991805644
+query_tfidf__at,-0.44220410765046714
+query_tfidf__decreases,-0.44210637623636284
+query_tfidf__artery,-0.43973174586222513
+query_tfidf__what do,0.43961108326131837
+query_tfidf__coronavirus,0.4392734763362664
+query_tfidf__alternative,0.4377112224015572
+query_tfidf__cell,-0.4312605837390852
+query_tfidf__muscle,-0.4305558221744535
+query_tfidf__sweeteners,-0.4291040403717272
+query_tfidf__chicken,-0.4188774016346366
+query_tfidf__interaction with,0.4184187827701321
+query_tfidf__plant based,-0.4161918679056822
+query_tfidf__treatment of,-0.41511950342258885
+query_tfidf__type,-0.413748397869898
+query_tfidf__mutations,-0.41106342922517247
+query_tfidf__cells can,0.4091792533752958
+query_tfidf__alcohol,0.40831750528186894
+query_tfidf__bat,0.4072212491254113
+query_tfidf__bat recruitment,0.4072212491254113
+query_tfidf__levels,0.40597355869236224
+query_tfidf__and lower,0.40408128562088885
+numeric__lexical_coverage_top1,-0.4029393953423388
+query_tfidf__after,-0.40282277177157905
+query_tfidf__urease,0.40277099504934366
+query_tfidf__may,0.4019340317553602
+query_tfidf__interaction,0.399039122834546
+query_tfidf__mda5,0.3989267038135624
+query_tfidf__the primary,-0.39745374207979123
+query_tfidf__as,0.3969796007031256
+query_tfidf__life,-0.3963720748431812
+query_tfidf__domain,0.3958997008135351
+query_tfidf__observed in,0.3957040622196439
+query_tfidf__turmeric,-0.3950069828152779
+query_tfidf__severe,0.3910747199166246
+query_tfidf__into the,0.3880591365374283
+query_tfidf__weight,0.3879942987748491
+query_tfidf__new,0.38791714237368397
+query_tfidf__vitamin deficiency,0.3867205764545634
+query_tfidf__apple,-0.3848316426319734
+query_tfidf__antioxidant,0.38367903376505186
+query_tfidf__mediated,-0.3805212159019801
+query_tfidf__complications,0.3778592647095123
+query_tfidf__brain,-0.3776208851955833
+query_tfidf__how does,0.37566235897775035
+query_tfidf__does the,0.37566235897775035
+query_tfidf__dr,-0.3746284455107012
+query_tfidf__juice,-0.37246201441691335
+query_tfidf__primary,-0.37095796558897703
+query_tfidf__academy of,-0.37042337865119035
+query_tfidf__academy,-0.37042337865119035
+query_tfidf__binding,-0.36978428048169826
+query_tfidf__lacking,0.3672485043047954
+query_tfidf__and artery,-0.3661972850523575
+query_tfidf__artery function,-0.3661972850523575
+query_tfidf__of covid,0.36615412283174126
+query_tfidf__control,0.3659341172162635
+query_tfidf__aging,-0.36351506082176804
+query_tfidf__liver,-0.3623452346760504
+query_tfidf__vs,0.3616934987316792
+query_tfidf__cold exposure,0.36158940696545355
+query_tfidf__neoplasia,0.36133672192320254
+query_tfidf__intraepithelial neoplasia,0.36133672192320254
+query_tfidf__intraepithelial,0.36133672192320254
+query_tfidf__differentiate,0.3585216321620113
+query_tfidf__pathway,0.35775633913031046
+query_tfidf__associated,-0.357307031214947
+query_tfidf__high,-0.355254771290635
+query_tfidf__whole,0.35523206288897446
+query_tfidf__elements,0.35420926573404005
+query_tfidf__your,0.3539157483886472
+query_tfidf__size,-0.3538994718678023
+query_tfidf__no,-0.35388630425234935
+query_tfidf__recruitment,0.35300686733211345
+query_tfidf__lower,0.35270972398173606
+query_tfidf__fenugreek,-0.3521196566905238
+query_tfidf__myth,-0.35005665596497315
+query_tfidf__is milk,-0.34490446499328625
+query_tfidf__peroxynitrite,0.34479179114127867
+query_tfidf__oil,0.34346079509589805
+query_tfidf__pairs,0.34333489178987003
+query_tfidf__released,-0.34189261005544136
+query_tfidf__vitamins,-0.3410779769681297
+query_tfidf__progression,-0.339757793857516
+query_tfidf__mda5 has,0.3376376606293468
+query_tfidf__most,-0.33521546796473145
+query_tfidf__population,0.3347358550255981
+query_tfidf__american,-0.33184782570913474
+query_tfidf__factor,-0.3309187943892415
+query_tfidf__how has,0.33075409788827986
+query_tfidf__with low,0.3302198217188918
+query_tfidf__cellular,-0.3301790509843945
+query_tfidf__versus,-0.32999437635133694
+query_tfidf__pten,0.32831248680137365
+query_tfidf__results,-0.3237910584001283
+query_tfidf__the coronavirus,0.3217681285743126
+query_tfidf__absent,-0.3214548238650881
+query_tfidf__fish oil,-0.3202860705286002
+query_tfidf__larger lumen,0.32013435365869514
+query_tfidf__diameter,0.32013435365869514
+query_tfidf__diameter than,0.32013435365869514
+query_tfidf__lumen diameter,0.32013435365869514
+query_tfidf__lumen,0.32013435365869514
+query_tfidf__have larger,0.32013435365869514
+query_tfidf__lead,-0.3195396786084352
+query_tfidf__against,-0.3192965656849751
+query_tfidf__preventing,0.3180153493704056
+query_tfidf__milk good,-0.3172488257512314
+query_tfidf__events,-0.31557423323948464
+query_tfidf__mice,-0.3138095406934927
+query_tfidf__the healthiest,0.3129559531118705
+query_tfidf__ppar,-0.3123394166920965
+query_tfidf__an,-0.3106514347571381
+query_tfidf__live,-0.31001935138972014
+query_tfidf__foods,-0.30877369800876375
+query_tfidf__myocardial,-0.3085730898253627
+query_tfidf__structural,0.3079328395081466
+numeric__lexical_coverage_mean,-0.3063364559054103
+query_tfidf__without,0.30617662353593716
+query_tfidf__heart disease,0.30583816656328583
+query_tfidf__diseases,-0.30583519454198715
+query_tfidf__associated with,-0.3057384811633803
+query_tfidf__decreases the,-0.30561427281180276
+query_tfidf__differentiation,0.30360588676928524
+query_tfidf__pro,-0.3034149330230779
+query_tfidf__tissue,-0.30313274916899946
+query_tfidf__of,0.30026546459164694
+query_tfidf__ir,-0.2988861828563281
+query_tfidf__mental health,-0.29808564156992884
+query_tfidf__density,0.2977162292756503
+query_tfidf__anti,0.295430227756107
+query_tfidf__children,0.29505297993389984
+query_tfidf__ucb cells,-0.2948806156316798
+query_tfidf__ucb,-0.2948806156316798
+query_tfidf__statins,-0.29485888515196124
+query_tfidf__breast,-0.29469049528173996
+query_tfidf__artificial,0.29385876684933937
+query_tfidf__between,-0.29345901127429685
+query_tfidf__good for,-0.2929498171466633
+query_tfidf__response,-0.29103961207115553
+query_tfidf__mediated by,-0.289418938821564
+query_tfidf__free,-0.28920815255089305
+query_tfidf__rates of,-0.28876601599681545
+numeric__bm25_top1_top5_margin,-0.2884123715073994
+query_tfidf__biological,-0.28786144036815003
+query_tfidf__cells are,-0.2877536267308734
+query_tfidf__fruit,0.2866824779112042
+query_tfidf__transcription,-0.2865410551739771
+query_tfidf__inhibitor,0.2850086867055515
+query_tfidf__stress,-0.28486636754594324
+query_tfidf__of the,-0.2831080452013522
+query_tfidf__activation in,-0.2830386886309169
+numeric__bm25_score_max,-0.2819470309708773
+query_tfidf__the treatment,-0.2805394752868827
+query_tfidf__of cancer,-0.2805394752868827
+query_tfidf__observed,0.27870667433242907
+query_tfidf__national,-0.27796479668511553
+query_tfidf__risk of,0.27756662163020523
+query_tfidf__il,-0.27727477884885054
+query_tfidf__treated with,0.2764187024469672
+query_tfidf__treated,0.2764187024469672
+query_tfidf__berries,-0.2762134486394589
+query_tfidf__birth,0.2761724703051862
+query_tfidf__birth weight,0.2761724703051862
+query_tfidf__we,0.2736577151737799
+query_tfidf__impact on,-0.272961531668418
+query_tfidf__found,-0.2713220138648673
+query_tfidf__loss,-0.2713063395504118
+query_tfidf__blood cholesterol,-0.2705065122721623
+query_tfidf__autophagy,-0.27033410421006254
+query_tfidf__caloric restriction,-0.26885036543013024
+query_tfidf__caloric,-0.26885036543013024
+numeric__bm25_score_std,0.26840283650796537
+query_tfidf__activation,-0.26835809258642135
+query_tfidf__proliferation,0.26818136919218855
+query_tfidf__extracellular,-0.2681080733106641
+query_tfidf__production of,-0.2674886474971608
+query_tfidf__immunity,-0.2672479430860815
+query_tfidf__syndrome,-0.2651646316566717
+query_tfidf__treatment for,-0.2639504917458965
+query_tfidf__re,-0.2621938739124831
+query_tfidf__development of,-0.26200108040045966
+query_tfidf__human,-0.2613772273625471
+query_tfidf__resistance,-0.26131233911186563
+query_tfidf__causes,0.2607873478616793
+query_tfidf__to an,-0.26045228869288645
+query_tfidf__neutrophil,-0.260383410051991
+query_tfidf__epic,0.25942580145605065
+query_tfidf__mechanism,0.25927763499783524
+query_tfidf__terminal,-0.25859301588415406
+query_tfidf__counteract,-0.25760779001014605
+query_tfidf__ascorbic acid,0.2570293493984538
+query_tfidf__ascorbic,0.2570293493984538
+query_tfidf__promoters,-0.2568294663202764
+query_tfidf__is not,-0.2552620146214569
+query_tfidf__normal,-0.25484472213688064
+query_tfidf__involved,0.2547173551415448
+query_tfidf__involved in,0.2547173551415448
+query_tfidf__region,0.25455979874103923
+query_tfidf__how much,0.25432872507524906
+query_tfidf__americans,-0.25393406646529665
+query_tfidf__affecting,0.2534851719499793
+query_tfidf__by affecting,0.2534851719499793
+query_tfidf__replication,-0.2527370319749762
+query_tfidf__differ from,0.2522259535142863
+query_tfidf__differ,0.2522259535142863
+query_tfidf__health care,0.25195210681927194
+query_tfidf__efficiency,-0.25127507793990994
+query_tfidf__efficiency in,-0.25127507793990994
+query_tfidf__genes,-0.25064994335406177
+query_tfidf__pathways,0.2502441991717261
+query_tfidf__production,-0.24950995321189195
+query_tfidf__pro inflammatory,-0.24865189984616937
+query_tfidf__fractures,0.24765568561430681
+query_tfidf__fish,0.2459131823285514
+query_tfidf__spores,-0.24499098258879623
+query_tfidf__increased risk,0.24454267143374442
+query_tfidf__meat,-0.24392172070377424
+query_tfidf__intracellular,-0.243578480596525
+numeric__query_avg_word_length,-0.24296921884152062
+query_tfidf__bacteria,0.24073549746959932
+query_tfidf__prolonged,-0.24069174451231704
+query_tfidf__african,-0.23954889948025715
+query_tfidf__based diets,-0.23887342425117014
+query_tfidf__dysfunction,-0.2380309008980127
+query_tfidf__care,0.23785098157584264
+query_tfidf__apple juice,-0.23757464259571634
+query_tfidf__tuberculosis,-0.23697979393194313
+query_tfidf__the risk,-0.23655584321006043
+query_tfidf__have increased,0.23652374187364142
+query_tfidf__people,-0.23641196674735104
+query_tfidf__autoimmune,-0.2354086987380377
+query_tfidf__sequence,-0.23530688270709724
+query_tfidf__is due,0.23423119120874566
+query_tfidf__infections,-0.23328957145059978
+query_tfidf__enhancement,0.2326260622199334
+numeric__query_char_count,0.23199689873865942
+query_tfidf__masks,0.23171233832903965
+query_tfidf__exposure,0.23142663659365537
+query_tfidf__receptor,-0.23133092021967772
+query_tfidf__does not,0.23125499351154916
+query_tfidf__are asymptomatic,-0.2308977321863574
+query_tfidf__rate,-0.23062014659824126
+query_tfidf__there for,0.22972123549007972
+query_tfidf__adult,0.229103657323263
+query_tfidf__vaccine,0.22903978505118577
+query_tfidf__000,-0.22882043974841232
+query_tfidf__effective,-0.22838387121960457
+query_tfidf__decreased,-0.22822582309000639
+query_tfidf__increase,0.22819466404533212
+query_tfidf__has,0.22785880141023185
+query_tfidf__sars,-0.2275164626695163
+query_tfidf__crp,-0.22751455074236618
+query_tfidf__have,0.22718154339549695
+query_tfidf__induced genes,0.22658282458663054
+query_tfidf__of granule,0.22658282458663054
+query_tfidf__granule,0.22658282458663054
+query_tfidf__granule cell,0.22658282458663054
+query_tfidf__and higher,0.22658282458663054
+query_tfidf__higher basal,0.22658282458663054
+query_tfidf__by west,0.22658282458663054
+query_tfidf__basal,0.22658282458663054
+query_tfidf__infected by,0.22658282458663054
+query_tfidf__survival of,0.22658282458663054
+query_tfidf__basal expression,0.22658282458663054
+query_tfidf__cell neurons,0.22658282458663054
+query_tfidf__regulation and,0.22658282458663054
+query_tfidf__are infected,0.22658282458663054
+query_tfidf__neurons that,0.22658282458663054
+query_tfidf__rapid up,0.22658282458663054
+query_tfidf__interferon induced,0.22658282458663054
+query_tfidf__of interferon,0.22658282458663054
+query_tfidf__promotes,-0.22626535940902875
+query_tfidf__early,-0.225408633385833
+query_tfidf__functioning,0.22531469961329464
+query_tfidf__can,0.22502839209883416
+query_tfidf__virus,0.22470089365109153
+query_tfidf__asymptomatic,-0.22301003538224057
+query_tfidf__improving,-0.2223826490220644
+query_tfidf__common,-0.22228023199530345
+query_tfidf__surgery,-0.22202369432619026
+query_tfidf__ly6c,0.22163225665647404
+query_tfidf__expression of,-0.22095165879276651
+query_tfidf__release of,-0.2186741907095948
+query_tfidf__release,-0.2186741907095948
+query_tfidf__compared to,-0.21807042441902802
+query_tfidf__how to,-0.21806106477589346
+query_tfidf__studies,-0.21798618693969546
+query_tfidf__compared,-0.2168770643366884
+query_tfidf__reduces,-0.21521784880353143
+query_tfidf__venules,0.2144633393243833
+query_tfidf__arterioles,0.2144633393243833
+query_tfidf__functional,-0.21362717881723303
+query_tfidf__activator,0.21355789904994446
+query_tfidf__protein,0.21336874282678123
+query_tfidf__dose,-0.21306199573890708
+query_tfidf__activated by,-0.2121306403345172
+query_tfidf__enzyme,-0.21118997826472158
+query_tfidf__multiple,-0.21113506457081138
+query_tfidf__very,0.21046787233159317
+numeric__lexical_coverage_std,-0.20870224328925774
+query_tfidf__incidence rates,-0.20845085682101427
+query_tfidf__cancer have,-0.20845085682101427
+query_tfidf__of cervical,-0.20845085682101427
+query_tfidf__occur,-0.20824633579242807
+query_tfidf__failure,0.20806173937751837
+query_tfidf__and,0.20705480117629987
+query_tfidf__drug,-0.20702469483966696
+query_tfidf__subunits,0.2061910736479058
+query_tfidf__zebrafish neuralation,0.20577761170371786
+query_tfidf__zebrafish,0.20577761170371786
+query_tfidf__neuralation,0.20577761170371786
+query_tfidf__during zebrafish,0.20577761170371786
+query_tfidf__dependent pk,0.20577761170371786
+query_tfidf__anterior membrane,0.20577761170371786
+query_tfidf__anterior,0.20577761170371786
+query_tfidf__localizes,0.20577761170371786
+query_tfidf__membrane of,0.20577761170371786
+query_tfidf__pk,0.20577761170371786
+query_tfidf__pk localizes,0.20577761170371786
+query_tfidf__localizes to,0.20577761170371786
+query_tfidf__pcp dependent,0.20577761170371786
+query_tfidf__fz pcp,0.20577761170371786
+query_tfidf__the anterior,0.20577761170371786
+query_tfidf__pcp,0.20577761170371786
+query_tfidf__fz,0.20577761170371786
+query_tfidf__cells during,0.20577761170371786
+query_tfidf__cardiac,-0.20551641691162942
+query_tfidf__less than,0.20421856179117373
+query_tfidf__clinical,0.20421161366193852
+query_tfidf__restriction,0.2042059043857186
+query_tfidf__affects,-0.20412622755088142
+query_tfidf__administration,-0.2034079204003085
+query_tfidf__age,-0.20333249241492035
+query_tfidf__should take,-0.20281326125316154
+query_tfidf__inhibits,-0.20267894887244303
+query_tfidf__during,0.20262803037636765
+query_tfidf__stable,-0.2011764526359795
+query_tfidf__cholesterol,-0.2005270008915151
+query_tfidf__has been,0.19953867450350155
+query_tfidf__mutations in,-0.19794464769584133
+query_tfidf__benefits of,-0.1978999148185391
+query_tfidf__acetylation,0.19754202059675155
+query_tfidf__not,-0.1970282523267311
+query_tfidf__memory,0.19677421153596306
+query_tfidf__should be,0.19663961062666718
+query_tfidf__p53,-0.19650077579710437
+query_tfidf__modulate,-0.19637072424473717
+query_tfidf__such,0.1962169566819333
+query_tfidf__such as,0.1962169566819333
+query_tfidf__membrane,0.1961055071620936
+query_tfidf__mir7a,-0.1955678772056182
+query_tfidf__of mir7a,-0.1955678772056182
+query_tfidf__exerts biological,-0.1955678772056182
+query_tfidf__low expression,-0.1955678772056182
+query_tfidf__biological function,-0.1955678772056182
+query_tfidf__exerts,-0.1955678772056182
+query_tfidf__hospitals,0.19525361495480387
+query_tfidf__likely,0.19399963904166073
+query_tfidf__frequently,-0.19382065860420702
+query_tfidf__progenitor,-0.1934411731550713
+query_tfidf__progenitor cells,-0.1934411731550713
+query_tfidf__predict,0.1934078455897741
+query_tfidf__among,0.19332588260419506
+query_tfidf__you,0.19324597137321606
+query_tfidf__disruptors,0.19291819312635222
+query_tfidf__endocrine,0.19291819312635222
+query_tfidf__endocrine disruptors,0.19291819312635222
+query_tfidf__patients with,-0.1927606789152226
+query_tfidf__nutrition,-0.1927150739445255
+query_tfidf__sites,-0.19238501163594718
+query_tfidf__regulation,0.1919737245041328
+query_tfidf__important for,0.19193445603390286
+query_tfidf__plastic,-0.1914218285361468
+numeric__bm25_top10_std,0.19078032082477042
+query_tfidf__years,-0.19050966417058524
+query_tfidf__higher,0.19021662463973774
+query_tfidf__aldh1,-0.19020075496579988
+query_tfidf__aldh1 expression,-0.19020075496579988
+query_tfidf__expression is,-0.19020075496579988
+query_tfidf__better than,-0.1901906759376163
+query_tfidf__by the,-0.1898956388828526
+query_tfidf__resistant,-0.18963316890225276
+query_tfidf__sensitivity,-0.1885851389343868
+query_tfidf__nile,0.1883218062707861
+query_tfidf__nile virus,0.1883218062707861
+query_tfidf__west nile,0.1883218062707861
+query_tfidf__west,0.1883218062707861
+query_tfidf__leads to,-0.18824383685216214
+query_tfidf__leads,-0.18824383685216214
+query_tfidf__based on,-0.18818220999836585
+query_tfidf__combination,-0.18815655568890707
+query_tfidf__result of,0.1878545608911094
+query_tfidf__function in,-0.1877756939946351
+query_tfidf__the benefits,-0.1877249415476363
+query_tfidf__histone,-0.1875947154152094
+query_tfidf__stem,-0.1873985987314003
+numeric__lexical_coverage_max,0.1873882816774938
+query_tfidf__bowel,-0.18719597194674767
+query_tfidf__mutant,-0.1863099158455869
+query_tfidf__target,-0.18563445374304996
+query_tfidf__hematopoietic stem,-0.18522902119877951
+query_tfidf__phytosterol dose,-0.18486895933211556
+query_tfidf__phytosterol,-0.18486895933211556
+query_tfidf__optimal,-0.18486895933211556
+query_tfidf__optimal phytosterol,-0.18486895933211556
+query_tfidf__ppar ligands,-0.18447269102075456
+query_tfidf__ppar rxrs,-0.18447269102075456
+query_tfidf__rxrs,-0.18447269102075456
+query_tfidf__ligands,-0.18447269102075456
+query_tfidf__by ppar,-0.18447269102075456
+query_tfidf__found in,-0.1844681567966627
+query_tfidf__has no,-0.1842668397221998
+query_tfidf__lipid,0.1842310980900128
+query_tfidf__cells and,-0.18374990354191714
+query_tfidf__model,-0.18331759872602135
+query_tfidf__mutations occur,-0.1832354283835646
+query_tfidf__statin,-0.18294288834069064
+query_tfidf__within,0.1822129473676408
+query_tfidf__alpha,-0.18193506884356425
+query_tfidf__drugs have,-0.18170362450857194
+query_tfidf__can be,0.18150273462435038
+query_tfidf__migrate,0.1809321225439283
+query_tfidf__uptake,0.1802570611322731
+query_tfidf__allele,0.17985214771718314
+query_tfidf__tumor,-0.17960457383420755
+query_tfidf__represses,-0.17951562540174873
+query_tfidf__complex,-0.17838118961595997
+query_tfidf__consequences,-0.17807229488699816
+query_tfidf__for you,0.17700087346635823
+query_tfidf__the development,-0.17679158320845012
+query_tfidf__cold,0.1757901768869368
+query_tfidf__term,0.17554027102934058
+query_tfidf__is,0.17551169211658418
+query_tfidf__kinase,0.17536780748644004
+query_tfidf__medicine,0.17510859925459044
+query_tfidf__apoe4,0.17488726680623223
+query_tfidf__induce,-0.17477863932490983
+query_tfidf__use,-0.17389027708690627
+query_tfidf__ii,-0.1737634763920764
+query_tfidf__in bacillus,-0.17333193214304435
+query_tfidf__clpc,-0.17333193214304435
+query_tfidf__bacillus subtilis,-0.17333193214304435
+query_tfidf__bacillus,-0.17333193214304435
+query_tfidf__subtilis,-0.17333193214304435
+query_tfidf__sporulation efficiency,-0.17333193214304435
+query_tfidf__sporulation,-0.17333193214304435
+query_tfidf__impairment,0.1727804658437967
+query_tfidf__oral,0.1720719753018385
+query_tfidf__poorly,-0.17203682111078422
+query_tfidf__on,-0.17180777452161117
+query_tfidf__inhibitors,-0.1712320351422399
+query_tfidf__th2,-0.1712059794757151
+query_tfidf__cx3cr1,-0.1712059794757151
+query_tfidf__th2 cells,-0.1712059794757151
+query_tfidf__the th2,-0.1712059794757151
+query_tfidf__cx3cr1 on,-0.1712059794757151
+query_tfidf__cerevisiae,0.17095051983159204
+query_tfidf__saccharomyces cerevisiae,0.17095051983159204
+query_tfidf__saccharomyces,0.17095051983159204
+query_tfidf__or its,-0.1707973195184508
+query_tfidf__its,-0.1707973195184508
+query_tfidf__its receptor,-0.1707973195184508
+query_tfidf__immune response,-0.1702615745719058
+query_tfidf__results in,-0.17006176422373295
+query_tfidf__ivermectin is,0.16926242581807135
+query_tfidf__ivermectin,0.16926242581807135
+query_tfidf__who,0.16850368896220136
+query_tfidf__there,0.16820027679975103
+query_tfidf__what kinds,0.1680946692469486
+query_tfidf__complications related,0.1680946692469486
+query_tfidf__kinds of,0.1680946692469486
+query_tfidf__of complications,0.1680946692469486
+query_tfidf__kinds,0.1680946692469486
+query_tfidf__19 are,0.1680946692469486
+query_tfidf__antibody,-0.16745319200218858
+query_tfidf__degree,-0.1674095777394781
+query_tfidf__degree of,-0.1674095777394781
+query_tfidf__prevents,-0.1667363923999767
+query_tfidf__filariasis,-0.16667720932476057
+query_tfidf__lymphatic,-0.16667720932476057
+query_tfidf__treat lymphatic,-0.16667720932476057
+query_tfidf__lymphatic filariasis,-0.16667720932476057
+query_tfidf__experience,-0.16587952661979533
+query_tfidf__larger,0.16532318370354113
+query_tfidf__anti inflammatory,-0.16527587223993517
+query_tfidf__and anti,-0.16527587223993517
+query_tfidf__replacement,-0.16518267961915467
+query_tfidf__is induced,-0.16475036430676424
+query_tfidf__transplantation,-0.16446492889635625
+query_tfidf__their,0.16432067615897633
+query_tfidf__many,0.16333831022086714
+query_tfidf__surfaces,-0.1628946880532977
+query_tfidf__acute,-0.16288755440280772
+query_tfidf__cervical cancer,-0.16274901084808935
+query_tfidf__abnormal,-0.16160827311753348
+query_tfidf__patients,-0.16155168973771827
+query_tfidf__required,0.16086851530373686
+query_tfidf__enhances,-0.1606132989409437
+query_tfidf__to prevent,0.15966934000011077
+query_tfidf__colorectal,-0.15931065671457958
+query_tfidf__goji berries,-0.15871070129338719
+query_tfidf__goji,-0.15871070129338719
+query_tfidf__coronary,-0.15756731897031875
+query_tfidf__red,-0.1575524547687173
+query_tfidf__neuronal,-0.15742103246011527
+query_tfidf__carnitine,-0.15673061070366048
+query_tfidf__male,-0.15541430139636891
+query_tfidf__cross,-0.15517848387391783
+query_tfidf__improves,0.15510282440536757
+query_tfidf__type diabetes,-0.15496917106037894
+query_tfidf__not predictive,-0.15488899608255544
+query_tfidf__predictive,-0.15488899608255544
+query_tfidf__predictive of,-0.15488899608255544
+query_tfidf__been,0.15382959282690387
+query_tfidf__system,-0.153243870263352
+query_tfidf__crohn disease,-0.15289449744276207
+query_tfidf__of crohn,-0.15289449744276207
+query_tfidf__crohn,-0.15289449744276207
+query_tfidf__rapid,0.1528130016141656
+query_tfidf__long,-0.1526109572424889
+query_tfidf__cytokines,-0.15191785013160386
+query_tfidf__inflammatory cytokines,-0.15191785013160386
+query_tfidf__diversity,-0.15025645721562458
+query_tfidf__after transplantation,-0.15025645721562458
+query_tfidf__diversity after,-0.15025645721562458
+query_tfidf__tcr diversity,-0.15025645721562458
+query_tfidf__homozygous,-0.15014171002974638
+query_tfidf__should,-0.14985170671197148
+query_tfidf__greater,-0.14973061437606447
+query_tfidf__non,-0.14963690221471437
+query_tfidf__decreasing homelessness,0.1496210324746861
+query_tfidf__decreasing,0.1496210324746861
+query_tfidf__at decreasing,0.1496210324746861
+query_tfidf__homelessness,0.1496210324746861
+query_tfidf__uk,-0.14961535978523505
+query_tfidf__are there,0.14919445710841342
+query_tfidf__resistance to,-0.14902283139403558
+query_tfidf__avocados,0.14873109474577215
+query_tfidf__up,-0.14766946727053437
+query_tfidf__faster,-0.14695604291523634
+query_tfidf__arabidopsis,0.14652539816666338
+query_tfidf__require vps9a,0.14652539816666338
+query_tfidf__vps9a,0.14652539816666338
+query_tfidf__localization,0.14652539816666338
+query_tfidf__localization of,0.14652539816666338
+query_tfidf__pin1,0.14652539816666338
+query_tfidf__require,0.14652539816666338
+query_tfidf__of pin1,0.14652539816666338
+query_tfidf__not require,0.14652539816666338
+query_tfidf__pin1 in,0.14652539816666338
+numeric__bm25_top10_entropy,-0.1463875355245339
+query_tfidf__being,-0.14591707115162408
+query_tfidf__strand,-0.14543857760322348
+query_tfidf__make,-0.1453336134697428
+query_tfidf__relationship,-0.14439776168569357
+query_tfidf__relationship between,-0.14439776168569357
+query_tfidf__the expression,-0.1441724675700201
+query_tfidf__best,0.1433189821205375
+query_tfidf__uterine,-0.14329057543341264
+query_tfidf__suppresses,-0.14271810202451665
+query_tfidf__be,0.14213228191164848
+query_tfidf__risks,0.1420801603505514
+query_tfidf__the covid,-0.14159661812407062
+query_tfidf__accumulation,-0.1415427221022696
+query_tfidf__accumulation is,-0.1415427221022696
+query_tfidf__sugar,-0.14122410915683767
+query_tfidf__detect,0.1407736349871622
+query_tfidf__high levels,0.14060785775336773
+query_tfidf__cancers,-0.14026575832914395
+query_tfidf__origin,-0.13991735591848464
+query_tfidf__available,0.13986796601386675
+query_tfidf__that are,0.1397959612872717
+query_tfidf__the sars,-0.13793648033243563
+query_tfidf__bypass,-0.1373353723910492
+query_tfidf__help,0.13706739957551595
+query_tfidf__the activation,0.13694717471403284
+query_tfidf__postoperative,-0.13647170480391357
+query_tfidf__of postoperative,-0.13647170480391357
+query_tfidf__loss of,-0.13607976325861826
+query_tfidf__response to,-0.13583241738536989
+query_tfidf__ca2,0.13577586954776608
+query_tfidf__quality,-0.13560157923577662
+query_tfidf__of secondary,0.13559109501988945
+query_tfidf__there is,-0.1355443704938553
+query_tfidf__formation,-0.13415733332602178
+query_tfidf__where,-0.1330937183978471
+numeric__query_word_count,0.13263491635352864
+query_tfidf__stem cells,-0.13249168988659743
+query_tfidf__genomic,-0.13233864964513
+query_tfidf__effect,-0.13163870111274922
+query_tfidf__including,0.13141412701373126
+query_tfidf__interferon,0.1313892271747103
+query_tfidf__our,0.1313890351204222
+query_tfidf__aged,-0.13115156671497533
+query_tfidf__occupancy,0.13108431378079338
+query_tfidf__monocytes have,0.13089958108850133
+query_tfidf__inflammatory capacity,0.13089958108850133
+query_tfidf__lo,0.13089958108850133
+query_tfidf__ly6c hi,0.13089958108850133
+query_tfidf__ly6c lo,0.13089958108850133
+query_tfidf__hi,0.13089958108850133
+query_tfidf__hi monocytes,0.13089958108850133
+query_tfidf__lower inflammatory,0.13089958108850133
+query_tfidf__injury,0.13076515422228843
+query_tfidf__information,-0.13030973578968874
+query_tfidf__often,-0.13004978824359584
+query_tfidf__often do,-0.13004978824359584
+query_tfidf__lupus,-0.12976248204258342
+query_tfidf__transcription start,-0.12924255254011868
+query_tfidf__identifying,-0.12924255254011868
+query_tfidf__success identifying,-0.12924255254011868
+query_tfidf__identifying transcription,-0.12924255254011868
+query_tfidf__terminal cleavage,-0.12924255254011868
+query_tfidf__start sites,-0.12924255254011868
+query_tfidf__success,-0.12924255254011868
+query_tfidf__start,-0.12924255254011868
+query_tfidf__cleavage,-0.12924255254011868
+query_tfidf__interleukin,-0.1282683396090134
+query_tfidf__cardiovascular,-0.12716637822293364
+query_tfidf__chronic,0.12702484344327167
+query_tfidf__mirna,-0.12669869862425454
+query_tfidf__co ir,-0.12628019251064415
+query_tfidf__with co,-0.12628019251064415
+query_tfidf__co,-0.12628019251064415
+query_tfidf__adverse,-0.12628019251064415
+query_tfidf__autoimmune events,-0.12628019251064415
+query_tfidf__adverse autoimmune,-0.12628019251064415
+query_tfidf__blockade,-0.12628019251064415
+query_tfidf__ir blockade,-0.12628019251064415
+query_tfidf__cancer patients,-0.12628019251064415
+query_tfidf__active,0.12605696026398336
+query_tfidf__effects,-0.12583756080206918
+query_tfidf__have lower,0.12476562086896513
+query_tfidf__monocytes,0.12454969851427167
+query_tfidf__more likely,0.12406567701095836
+query_tfidf__for covid,0.12272291533807224
+query_tfidf__step,-0.12232776453367952
+query_tfidf__incidence,-0.12180792793287654
+query_tfidf__study,0.12175787317217522
+query_tfidf__cytoplasmic,-0.1212239325711704
+query_tfidf__those,-0.12071674374670542
+query_tfidf__blood,0.12035739243012336
+query_tfidf__linked,-0.12029718524160259
+query_tfidf__to covid,0.12023458228875315
+query_tfidf__up regulation,0.11976919669295678
+query_tfidf__from,0.11953338475556027
+query_tfidf__is determined,0.11946893690450228
+query_tfidf__determined,0.11946893690450228
+query_tfidf__reduced,-0.11935226676096955
+query_tfidf__plants,-0.11932827572542698
+query_tfidf__exposure to,-0.11910374381430473
+query_tfidf__phosphorylation,-0.11870407339585727
+query_tfidf__cells,0.11855043293728362
+query_tfidf__derived,-0.11848224111563689
+query_tfidf__milk,0.11843404495675837
+query_tfidf__activation of,-0.1184324791010474
+query_tfidf__toxic,0.11822723021017892
+query_tfidf__occurs,-0.11818798104229078
+query_tfidf__women,-0.11669974161895262
+query_tfidf__are more,0.11661390335810919
+query_tfidf__likely to,0.11637405964773982
+query_tfidf__via,0.1158469845062628
+query_tfidf__result in,-0.11566305640469642
+query_tfidf__effect on,-0.11561737331090842
+query_tfidf__no effect,-0.11561737331090842
+query_tfidf__female,0.11510232578710505
+query_tfidf__less,0.115029781364416
+query_tfidf__for,0.11249827445774974
+query_tfidf__through,0.11241960769586297
+query_tfidf__reduce,-0.11101946702791891
+query_tfidf__involvement,-0.10892173337139019
+query_tfidf__involvement in,-0.10892173337139019
+query_tfidf__alterations,-0.10802247678289055
+query_tfidf__the loss,-0.10801316022444798
+query_tfidf__induced,-0.10794780735219825
+query_tfidf__in human,0.10762264315074888
+query_tfidf__prevention,0.10734596774125499
+query_tfidf__plasma,0.1067809894159567
+query_tfidf__lymphotropic,-0.10635879769191119
+query_tfidf__lymphotropic virus,-0.10635879769191119
+query_tfidf__virus type,-0.10635879769191119
+query_tfidf__functions,-0.10627394481075904
+query_tfidf__chemotherapy,-0.10617045316024669
+query_tfidf__efficacy,-0.10617045316024669
+query_tfidf__important in,-0.10589337296941896
+query_tfidf__to the,0.10571823137815124
+query_tfidf__bleeding,-0.1056760703126363
+query_tfidf__cervical,-0.10505379324310017
+query_tfidf__myelopathy,-0.10491065148594085
+query_tfidf__more,0.10409342653400859
+query_tfidf__significantly,-0.10359043209779835
+query_tfidf__rate of,-0.10349204398607167
+query_tfidf__and treatment,0.10347476983631272
+query_tfidf__concentrations,0.10303701861750854
+query_tfidf__cov,-0.10161185479531464
+query_tfidf__sars cov,-0.10161185479531464
+query_tfidf__chenodeosycholic acid,0.10136757009904565
+query_tfidf__acid treatment,0.10136757009904565
+query_tfidf__chenodeosycholic,0.10136757009904565
+query_tfidf__energy expenditure,0.10136757009904565
+query_tfidf__expenditure,0.10136757009904565
+query_tfidf__whole body,0.10136757009904565
+query_tfidf__body energy,0.10136757009904565
+query_tfidf__of neutrophil,-0.10126205247174871
+query_tfidf__with breast,0.10119643236099393
+query_tfidf__probiotics,0.10088003783359852
+query_tfidf__lack,-0.10046061155343393
+numeric__doc_word_count_std,-0.10030459324310245
+query_tfidf__hnf4a mutations,-0.10015103244973789
+query_tfidf__hnf4a,-0.10015103244973789
+query_tfidf__along,-0.1000993467642447
+query_tfidf__use of,-0.10006181641775098
+query_tfidf__diabetes,0.09936400874763036
+query_tfidf__study is,-0.09826221951313979
+query_tfidf__availability of,-0.09826221951313979
+query_tfidf__of safe,-0.09826221951313979
+query_tfidf__the availability,-0.09826221951313979
+query_tfidf__safe places,-0.09826221951313979
+query_tfidf__places,-0.09826221951313979
+query_tfidf__places to,-0.09826221951313979
+query_tfidf__to study,-0.09826221951313979
+query_tfidf__generated,-0.09705165314401588
+query_tfidf__generated by,-0.09705165314401588
+query_tfidf__is generated,-0.09705165314401588
+query_tfidf__how long,-0.09672216184941805
+query_tfidf__parasites,0.09659152500361791
+query_tfidf__deletion of,-0.09642520398120724
+query_tfidf__deletion,-0.09642520398120724
+query_tfidf__populations,0.09553750318857093
+query_tfidf__cell transfusion,0.09550712835289188
+query_tfidf__red blood,0.09550712835289188
+query_tfidf__blood cell,0.09550712835289188
+query_tfidf__complications in,0.09550712835289188
+query_tfidf__infectious,0.09550712835289188
+query_tfidf__infectious complications,0.09550712835289188
+query_tfidf__leuko,0.09550712835289188
+query_tfidf__in red,0.09550712835289188
+query_tfidf__transfusion,0.09550712835289188
+query_tfidf__some,0.095297810975345
+query_tfidf__leukemia,-0.09471917189110449
+query_tfidf__cell survival,-0.09467324559742153
+query_tfidf__therapy,0.09427699169874272
+query_tfidf__healthiest,0.09354190133570794
+numeric__doc_word_count_mean,-0.0925454994821213
+query_tfidf__the cell,-0.09184481142666369
+query_tfidf__sex,-0.09150797994092828
+query_tfidf__and dna,-0.09142122633378427
+query_tfidf__airway,-0.09134633136241406
+query_tfidf__airway inflammation,-0.09134633136241406
+query_tfidf__of tuberculosis,-0.09100291681725411
+query_tfidf__are the,0.09072637179721617
+query_tfidf__for the,-0.09066642421583791
+query_tfidf__cells promotes,-0.09033746647181534
+query_tfidf__incidence of,0.09024704893065448
+query_tfidf__homeostasis,0.08983824054754275
+query_tfidf__the regulation,0.08983824054754275
+query_tfidf__mesenchymal,-0.08969436050950041
+query_tfidf__mesenchymal stem,-0.08969436050950041
+query_tfidf__function,-0.08791575197046544
+query_tfidf__raises,-0.08763397001860967
+query_tfidf__types,-0.08756212006928223
+query_tfidf__preventing the,-0.08697057100869365
+query_tfidf__subjects,0.08696848805154545
+query_tfidf__sequestration of,-0.0867446829002927
+query_tfidf__nf2 merlin,-0.0867446829002927
+query_tfidf__phosphorylation and,-0.0867446829002927
+query_tfidf__of yap,-0.0867446829002927
+query_tfidf__subsequent cytoplasmic,-0.0867446829002927
+query_tfidf__subsequent,-0.0867446829002927
+query_tfidf__in drosophila,-0.0867446829002927
+query_tfidf__yap,-0.0867446829002927
+query_tfidf__nf2,-0.0867446829002927
+query_tfidf__sequestration,-0.0867446829002927
+query_tfidf__merlin,-0.0867446829002927
+query_tfidf__and subsequent,-0.0867446829002927
+query_tfidf__drosophila,-0.0867446829002927
+query_tfidf__yap in,-0.0867446829002927
+query_tfidf__cytoplasmic sequestration,-0.0867446829002927
+query_tfidf__antibodies,0.08591471248646547
+query_tfidf__body,-0.08542163705092297
+query_tfidf__prone,-0.08541785941873227
+query_tfidf__one,0.08528561880198829
+query_tfidf__individuals,-0.08524975083196114
+query_tfidf__expression,-0.08511634582531413
+query_tfidf__cov genome,0.08496804540877692
+query_tfidf__is important,0.08478191311438837
+query_tfidf__important,0.08478191311438837
+query_tfidf__responses,-0.08453620187896085
+query_tfidf__dexamethasone,0.08395332453353346
+numeric__query_punctuation_ratio,0.08307824387954015
+query_tfidf__activated,-0.08288096745970557
+query_tfidf__repair,-0.08267235681737965
+query_tfidf__decrease,0.08229286203530571
+query_tfidf__sexual,-0.08227329077565698
+query_tfidf__sexual dysfunction,-0.08227329077565698
+query_tfidf__cause,-0.08197788395621129
+numeric__query_digit_ratio,-0.0814017589866482
+query_tfidf__hematopoietic,0.08132568903354465
+query_tfidf__transplanted human,0.08126574935463747
+query_tfidf__glial,0.08126574935463747
+query_tfidf__human glial,0.08126574935463747
+query_tfidf__host,0.08126574935463747
+query_tfidf__transplanted,0.08126574935463747
+query_tfidf__used to,0.08120832781979782
+query_tfidf__used,0.08120832781979782
+query_tfidf__is used,0.08120832781979782
+query_tfidf__neurons,0.08053762506628201
+query_tfidf__ligand,-0.08037634446668554
+query_tfidf__the mechanism,-0.07957472857434603
+query_tfidf__mechanism of,-0.07957472857434603
+query_tfidf__radiation,0.079565344298929
+query_tfidf__varenicline,-0.07903212051624199
+query_tfidf__up to,-0.07902815120420423
+query_tfidf__is effective,0.07855387459347783
+query_tfidf__about,0.0783966553638171
+query_tfidf__is the,0.07765319714632254
+query_tfidf__the effects,0.07755295027126463
+query_tfidf__effects of,0.07755295027126463
+query_tfidf__models,-0.07721207277833773
+query_tfidf__are not,0.07577048764621701
+query_tfidf__il 10,-0.07528185531154705
+query_tfidf__mutation,-0.07504787061858302
+query_tfidf__impacted,0.0738367128189276
+query_tfidf__has the,0.0738367128189276
+query_tfidf__pandemic impacted,0.0738367128189276
+query_tfidf__19 pandemic,-0.07229656290970776
+query_tfidf__pandemic,-0.07229656290970776
+query_tfidf__tumors,-0.0699124577417278
+query_tfidf__fibrosis,0.06989836594558531
+query_tfidf__long term,-0.06983591340170686
+query_tfidf__delivery,0.06973791024455503
+query_tfidf__activity,0.06931844033508716
+query_tfidf__diabetes in,-0.0682385219642549
+query_tfidf__symptoms of,0.0681109279324927
+query_tfidf__the,0.06788574626191732
+query_tfidf__inflammatory,-0.0678777870380486
+query_tfidf__inflammation,0.06784964169007451
+query_tfidf__risk for,0.06731567694988455
+query_tfidf__from covid,0.06675420787196673
+query_tfidf__structure,0.06673856652254344
+query_tfidf__result,0.06644256178525987
+query_tfidf__induction,-0.06605697610058885
+query_tfidf__10,-0.06562889584361836
+query_tfidf__epilepsy,-0.06448410571364864
+query_tfidf__febrile seizures,-0.06448410571364864
+query_tfidf__for development,-0.06448410571364864
+query_tfidf__seizures,-0.06448410571364864
+query_tfidf__febrile,-0.06448410571364864
+query_tfidf__threshold,-0.06448410571364864
+query_tfidf__threshold for,-0.06448410571364864
+query_tfidf__of epilepsy,-0.06448410571364864
+query_tfidf__the threshold,-0.06448410571364864
+query_tfidf__related,0.06396383228598528
+query_tfidf__incrnas,-0.06380490127320707
+query_tfidf__by incrnas,-0.06380490127320707
+query_tfidf__of ribosomes,-0.06380490127320707
+query_tfidf__occupancy of,-0.06380490127320707
+query_tfidf__ribosomes,-0.06380490127320707
+query_tfidf__ribosomes by,-0.06380490127320707
+query_tfidf__weight gain,0.06344453662390165
+query_tfidf__gain,0.06344453662390165
+query_tfidf__is more,-0.06260582433170092
+query_tfidf__venules have,0.06169660965346416
+query_tfidf__src,0.06107878589232356
+query_tfidf__do not,-0.06027748936791743
+query_tfidf__with covid,-0.060178723463098764
+query_tfidf__survival,-0.05976437584583615
+query_tfidf__intestinal,-0.05970021742207256
+query_tfidf__residues,0.05883425120055903
+numeric__query_unique_ratio,0.058580739210518276
+query_tfidf__more than,0.057518205415699235
+query_tfidf__longer,-0.056851003524809846
+query_tfidf__of inflammatory,-0.05555163012180373
+query_tfidf__single,-0.055486055077649477
+query_tfidf__determination in,-0.05503183823643564
+query_tfidf__in somatic,-0.05503183823643564
+query_tfidf__determination,-0.05503183823643564
+query_tfidf__somatic cells,-0.05503183823643564
+query_tfidf__sex determination,-0.05503183823643564
+query_tfidf__somatic,-0.05503183823643564
+query_tfidf__autonomous,-0.05503183823643564
+query_tfidf__cell autonomous,-0.05503183823643564
+query_tfidf__autonomous sex,-0.05503183823643564
+query_tfidf__dendritic cells,-0.05373600502376677
+query_tfidf__dendritic,-0.05373600502376677
+query_tfidf__data,-0.05280349466097163
+query_tfidf__enzyme inhibitors,-0.052741901549942675
+query_tfidf__angiotensin converting,-0.052741901549942675
+query_tfidf__converting,-0.052741901549942675
+query_tfidf__converting enzyme,-0.052741901549942675
+query_tfidf__angiotensin,-0.052741901549942675
+query_tfidf__acid,-0.051433230446838965
+query_tfidf__tcr,-0.05120073497110322
+query_tfidf__ten,0.05058284524497591
+query_tfidf__secondary,0.05050376416005422
+query_tfidf__are associated,0.050274445393531104
+query_tfidf__activity of,-0.0498988653892542
+query_tfidf__bipolar,-0.0498988653892542
+query_tfidf__bypass thrombosis,-0.049602294364567624
+query_tfidf__femoropopliteal bypass,-0.049602294364567624
+query_tfidf__of femoropopliteal,-0.049602294364567624
+query_tfidf__femoropopliteal,-0.049602294364567624
+query_tfidf__hyperfibrinogenemia,-0.049602294364567624
+query_tfidf__cow,-0.04916707768810723
+query_tfidf__infected with,-0.04913874729331588
+query_tfidf__when,-0.048888175797740845
+query_tfidf__cancer risk,0.0481846761393031
+query_tfidf__stromal,-0.04791931559771319
+query_tfidf__constipation,-0.047765249016529274
+query_tfidf__thrombosis,-0.047500270402770016
+query_tfidf__is there,0.047275260316944616
+query_tfidf__what evidence,0.047275260316944616
+query_tfidf__evidence is,0.047275260316944616
+query_tfidf__with varenicline,-0.046677643517148475
+query_tfidf__replacement therapies,-0.046677643517148475
+query_tfidf__or bupropion,-0.046677643517148475
+query_tfidf__combination nicotine,-0.046677643517148475
+query_tfidf__weeks,-0.046677643517148475
+query_tfidf__therapies,-0.046677643517148475
+query_tfidf__bupropion,-0.046677643517148475
+query_tfidf__nicotine,-0.046677643517148475
+query_tfidf__nicotine replacement,-0.046677643517148475
+query_tfidf__therapies with,-0.046677643517148475
+query_tfidf__monotherapy,-0.046677643517148475
+query_tfidf__varenicline monotherapy,-0.046677643517148475
+query_tfidf__varenicline or,-0.046677643517148475
+query_tfidf__is an,-0.04597492738384655
+query_tfidf__which,-0.045947031254057094
+query_tfidf__infarction,-0.04493774941326609
+query_tfidf__macrolides,-0.04493774941326609
+query_tfidf__myocardial infarction,-0.04493774941326609
+query_tfidf__against myocardial,-0.04493774941326609
+query_tfidf__growth,0.04487323264021644
+query_tfidf__the spread,-0.04452295324634357
+query_tfidf__spread of,-0.04452295324634357
+query_tfidf__spread,-0.04452295324634357
+query_tfidf__pork,-0.044492626463195274
+query_tfidf__adenovirus 36,-0.04428763142494628
+query_tfidf__36,-0.04428763142494628
+query_tfidf__adenovirus,-0.04428763142494628
+query_tfidf__species,0.044266382899407986
+query_tfidf__by,0.04399533974182403
+query_tfidf__from the,0.04370622390193207
+query_tfidf__on the,-0.04345167136616046
+query_tfidf__beta,-0.043007643553195606
+query_tfidf__regulatory,-0.04244917584349504
+query_tfidf__regulatory cells,-0.04244917584349504
+query_tfidf__phenotype,-0.042443450852226595
+query_tfidf__association,-0.04179847096608332
+query_tfidf__mental,-0.04124073079358357
+query_tfidf__triggered,0.03947784621993081
+query_tfidf__the inner,0.0387160907428982
+query_tfidf__inner,0.0387160907428982
+query_tfidf__due to,0.03779551577267673
+query_tfidf__due,0.03779551577267673
+query_tfidf__higher rate,-0.03774779446762158
+query_tfidf__dementia,0.0375213735209847
+query_tfidf__αvβ8,-0.035079502143645504
+query_tfidf__availability,0.03501064840007156
+query_tfidf__good,0.03490677477458314
+query_tfidf__infection,0.03431030273793118
+query_tfidf__two,-0.03408836093780608
+query_tfidf__true,-0.03344747356953866
+query_tfidf__factors,0.032621528310957965
+query_tfidf__anti interleukin,-0.0326023401904807
+query_tfidf__of mesenchymal,-0.0326023401904807
+query_tfidf__interleukin receptor,-0.0326023401904807
+query_tfidf__than induction,-0.0326023401904807
+query_tfidf__induction therapy,-0.0326023401904807
+query_tfidf__with anti,-0.0326023401904807
+query_tfidf__receptor antibodies,-0.0326023401904807
+query_tfidf__autologous transplantation,-0.0326023401904807
+query_tfidf__therapy with,-0.0326023401904807
+query_tfidf__transplantation of,-0.0326023401904807
+query_tfidf__autologous,-0.0326023401904807
+query_tfidf__have been,-0.03239897605842767
+query_tfidf__hypertension,-0.03190027340633105
+query_tfidf__public,0.03147825189124029
+query_tfidf__carriers of,0.031234024449601102
+query_tfidf__animal,0.0309730174919686
+query_tfidf__impact,-0.030772849609603393
+query_tfidf__in patients,-0.030653256531106107
+query_tfidf__transmission,0.03060612133906365
+query_tfidf__conventional,0.030509330377561723
+query_tfidf__ligase,-0.029860964374169695
+query_tfidf__recover,-0.0298488465101579
+query_tfidf__recover from,-0.0298488465101579
+query_tfidf__who recover,-0.0298488465101579
+query_tfidf__increase the,-0.02908001989389666
+query_tfidf__than,-0.02886651287932481
+query_tfidf__symptoms,-0.028496056217185258
+query_tfidf__kidney,-0.028359129775563065
+query_tfidf__gene,-0.027947547892382785
+query_tfidf__effective at,0.027717892494171507
+query_tfidf__develop,-0.02763768930228755
+query_tfidf__regulates,-0.027353291177501758
+query_tfidf__prevent,0.02730101541217059
+query_tfidf__gene cluster,0.02679213061401365
+query_tfidf__cluster,0.02679213061401365
+query_tfidf__the ureabiefgh,0.02679213061401365
+query_tfidf__ureabiefgh gene,0.02679213061401365
+query_tfidf__ureabiefgh,0.02679213061401365
+query_tfidf__with higher,-0.02651068561390687
+query_tfidf__this,-0.02463448197846099
+query_tfidf__opportunistic,-0.02433680639748043
+query_tfidf__infections than,-0.02433680639748043
+query_tfidf__opportunistic infections,-0.02433680639748043
+query_tfidf__cells causes,-0.02433680639748043
+query_tfidf__guidelines,-0.023941017779131046
+query_tfidf__cytosol,-0.023408562458581715
+query_tfidf__had,0.022468661179892702
+query_tfidf__capacity,0.020537191151956756
+query_tfidf__if,-0.02039058366706952
+query_tfidf__any,0.02021140667761206
+query_tfidf__lack of,-0.019225849962653106
+query_tfidf__stem cell,-0.01798941629212842
+query_tfidf__infected,0.01783983198280869
+query_tfidf__dependent,0.01651088704873036
+query_tfidf__cytology to,0.016330637737785796
+query_tfidf__cytology,0.016330637737785796
+query_tfidf__to detect,0.016330637737785796
+query_tfidf__carriers,-0.015809103793539364
+query_tfidf__known about,-0.015719394480702007
+query_tfidf__is known,-0.015719394480702007
+query_tfidf__known,-0.015719394480702007
+query_tfidf__of acute,-0.015650579560950742
+query_tfidf__genome,-0.01564427292924825
+query_tfidf__increased,0.014902544240634568
+query_tfidf__by activating,-0.014877068715417264
+query_tfidf__activating,-0.014877068715417264
+query_tfidf__treat,0.014716863065734182
+query_tfidf__to treat,0.014716863065734182
+query_tfidf__control of,-0.014237551335573926
+query_tfidf__iron,0.013758841563255032
+query_tfidf__visual,-0.013742083462300119
+query_tfidf__neural,0.01331379249508228
+query_tfidf__screening,0.01313066388099151
+query_tfidf__dragon,0.012625978180574407
+query_tfidf__carries,0.011698566069707726
+query_tfidf__phenotype in,-0.011333147977930355
+query_tfidf__regulation of,-0.01084268132637345
+query_tfidf__curcumin,0.010643992655550093
+query_tfidf__methylation,0.009503531881458025
+query_tfidf__lead to,-0.009033512260646956
+query_tfidf__calcium,-0.008901171086299193
+query_tfidf__in elderly,-0.008795853062135138
+query_tfidf__elderly,-0.008795853062135138
+query_tfidf__suppressing,-0.008081841774933143
+numeric__bm25_score_mean,-0.00797711321332242
+query_tfidf__that,-0.007915310555503331
+query_tfidf__outcomes,-0.007690724105359078
+query_tfidf__related to,0.007391389925627319
+query_tfidf__assembly of,0.007247008435029486
+query_tfidf__what is,0.006380414120533735
+query_tfidf__take,-0.006358815622107507
+query_tfidf__assembly,0.006324813024552191
+query_tfidf__expression in,-0.006169045249061413
+query_tfidf__alphabeta,-0.006169045249061413
+query_tfidf__alphabeta production,-0.006169045249061413
+query_tfidf__production and,-0.006169045249061413
+query_tfidf__in ipsc,-0.006169045249061413
+query_tfidf__increases alphabeta,-0.006169045249061413
+query_tfidf__tau phosphorylation,-0.006169045249061413
+query_tfidf__gaba neuron,-0.006169045249061413
+query_tfidf__gaba,-0.006169045249061413
+query_tfidf__degeneration,-0.006169045249061413
+query_tfidf__derived neurons,-0.006169045249061413
+query_tfidf__apoe4 expression,-0.006169045249061413
+query_tfidf__ipsc,-0.006169045249061413
+query_tfidf__neuron degeneration,-0.006169045249061413
+query_tfidf__and tau,-0.006169045249061413
+query_tfidf__ipsc derived,-0.006169045249061413
+query_tfidf__neuron,-0.006169045249061413
+query_tfidf__tau,-0.006169045249061413
+query_tfidf__neurons increases,-0.006169045249061413
+query_tfidf__access,-0.005105996053021409
+query_tfidf__access format,-0.005105996053021409
+query_tfidf__published in,-0.005105996053021409
+query_tfidf__published,-0.005105996053021409
+query_tfidf__format are,-0.005105996053021409
+query_tfidf__format,-0.005105996053021409
+query_tfidf__open access,-0.005105996053021409
+query_tfidf__cited than,-0.005105996053021409
+query_tfidf__traditional journals,-0.005105996053021409
+query_tfidf__journals,-0.005105996053021409
+query_tfidf__traditional,-0.005105996053021409
+query_tfidf__open,-0.005105996053021409
+query_tfidf__cited,-0.005105996053021409
+query_tfidf__be cited,-0.005105996053021409
+query_tfidf__than traditional,-0.005105996053021409
+query_tfidf__in open,-0.005105996053021409
+query_tfidf__articles,-0.005105996053021409
+query_tfidf__to be,-0.005105996053021409
+query_tfidf__articles published,-0.005105996053021409
+query_tfidf__produce,-0.0048446405746440414
+query_tfidf__they,-0.001748703815804602
+query_tfidf__benefits,0.0010353181567244287
+query_tfidf__stroke,-0.0005951855336625815
+query_tfidf__hospital,-0.00040404508039438485

@@ -1,0 +1,4 @@
+dataset,dataset_slug,num_documents,num_queries,num_qrels_queries,avg_doc_tokens,median_doc_tokens,avg_query_tokens,median_query_tokens,avg_relevant_docs_per_query,median_relevant_docs_per_query,max_relevant_docs_per_query
+SciFact,scifact,5183,300,300,225.32510129268763,213.0,13.066666666666666,12.0,1.13,1.0,5
+TREC-COVID,trec_covid,171332,50,50,169.4208845983237,176.0,11.72,11.0,493.46,478.0,1266
+NF-Corpus,nfcorpus,3633,323,323,245.79245802367188,250.0,3.3529411764705883,2.0,38.18575851393189,16.0,475

@@ -1,0 +1,30 @@
+{
+  "target": "delta_nDCG@10 > 0",
+  "decision_threshold": 0.5,
+  "numeric_features": [
+    "query_char_count",
+    "query_word_count",
+    "query_unique_ratio",
+    "query_avg_word_length",
+    "query_digit_ratio",
+    "query_punctuation_ratio",
+    "bm25_score_max",
+    "bm25_score_mean",
+    "bm25_score_std",
+    "bm25_score_range",
+    "bm25_top1_top2_margin",
+    "bm25_top1_top5_margin",
+    "bm25_top10_std",
+    "bm25_top10_entropy",
+    "bm25_top1_mean_ratio",
+    "bm25_score_slope",
+    "lexical_coverage_top1",
+    "lexical_coverage_mean",
+    "lexical_coverage_max",
+    "lexical_coverage_std",
+    "lexical_coverage_top3_mean",
+    "doc_word_count_mean",
+    "doc_word_count_std"
+  ],
+  "important_constraint": "Todas as features existem antes do rerankeamento."
+}

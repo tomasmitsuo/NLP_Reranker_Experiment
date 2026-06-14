@@ -1,0 +1,10 @@
+dataset,movement,num_relevant_docs
+NF-Corpus,caiu,542
+NF-Corpus,igual,145
+NF-Corpus,subiu,547
+SciFact,caiu,43
+SciFact,igual,167
+SciFact,subiu,76
+TREC-COVID,caiu,440
+TREC-COVID,igual,8
+TREC-COVID,subiu,522
