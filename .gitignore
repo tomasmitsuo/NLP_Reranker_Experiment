@@ -41,3 +41,8 @@ htmlcov/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Python package builds
+*.egg-info/
+build/
+dist/

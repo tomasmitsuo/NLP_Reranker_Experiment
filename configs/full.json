@@ -1,0 +1,16 @@
+{
+  "project_root": "..",
+  "datasets": [
+    "scifact",
+    "trec_covid",
+    "nfcorpus"
+  ],
+  "output_dir": "results/query_expansion/full",
+  "prepared_dir": ".cache/prepared",
+  "checkpoint_dir": ".cache/qexp_checkpoints",
+  "qexp": {
+    "max_queries_per_dataset": null,
+    "model_device": "auto",
+    "cache_dir": ".cache/query_expansion"
+  }
+}

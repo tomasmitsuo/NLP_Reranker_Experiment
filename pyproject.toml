@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pln-experiments"
+version = "0.1.0"
+description = "Experimentos BEIR: expansão de consultas e reranqueamento seletivo"
+requires-python = ">=3.10"
+dependencies = [
+  "ir-datasets", "rank-bm25", "numpy", "pandas", "torch", "transformers",
+  "accelerate", "scipy", "scikit-learn", "tqdm", "tabulate", "rich>=13",
+]
+
+[project.optional-dependencies]
+colab = ["google-colab-cli>=0.7.4"]
+notebooks = ["matplotlib", "seaborn", "jupyter", "sentence-transformers", "joblib"]
+legacy = ["matplotlib", "seaborn", "plotly", "faiss-cpu", "sentence-transformers", "joblib"]
+
+[project.scripts]
+qexp = "qexp.cli:main"
+qexp-colab = "qexp.colab:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

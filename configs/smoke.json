@@ -1,0 +1,14 @@
+{
+  "project_root": "..",
+  "datasets": [
+    "scifact"
+  ],
+  "output_dir": "results/query_expansion/smoke",
+  "prepared_dir": ".cache/prepared",
+  "checkpoint_dir": ".cache/qexp_checkpoints",
+  "qexp": {
+    "max_queries_per_dataset": 3,
+    "model_device": "auto",
+    "cache_dir": ".cache/query_expansion"
+  }
+}
