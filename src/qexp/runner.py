@@ -5,22 +5,37 @@ import time
 from importlib.metadata import version as package_version
 import pandas as pd
 from tqdm.auto import tqdm
-from .config import QEXP_PIPELINES
+from .config import QEXP_PIPELINES, QEXP_CONFIG, pipeline_ids, CONTROLLED_METHODS
 from .metrics import ndcg_at_k, mrr_at_k, recall_at_k, average_precision_at_k
 from .retrieval import retrieve_bm25, tokenize, qexp_multi_candidates, qexp_rm3_weights, qexp_weighted_bm25
 from .selection import qexp_validate_config, qexp_difficulty_signals, qexp_rank_divergence, qexp_should_expand
 from .timing import qexp_timed
 from .progress import report, active
+from .selector_features import lexical_features, bge_features, CorpusStatistics, uses_bge, uses_rarity
+from .feedback import bert_qe_rerank, keyword_rerank, controlled_rerank
 
 def run_qexp_experiment(experiments, config, expansion_cache, rerank_fn):
     """Reavalia A–F sobre as mesmas queries; métricas antigas continuam independentes."""
+    from .naming import normalize_config, public_id
+    config = normalize_config({**QEXP_CONFIG, **config})
     qexp_validate_config(config)
+    enabled = pipeline_ids(config)
+    selector = None
+    if "L" in enabled:
+        from .learned_selection import LearnedSelector
+        selector = LearnedSelector.load(config["selector_model_path"])
+        selector.validate_protocol(config)
     metric_rows, ranking_records, decision_rows, artifact_rows, dataset_records = [], [], [], [], []
     experiment_start = time.perf_counter()
     n, k = config["candidate_n"], config["eval_k"]
 
     for case in experiments.values():
         dataset = case["config"]["name"]
+        corpus_statistics = None
+        if config["collect_query_statistics"]:
+            if not hasattr(case["bm25"], "_qexp_corpus_statistics"):
+                case["bm25"]._qexp_corpus_statistics = CorpusStatistics(case["bm25"])
+            corpus_statistics = case["bm25"]._qexp_corpus_statistics
         queries = list(case["queries"].items())
         if config["max_queries_per_dataset"] is not None:
             queries = queries[:config["max_queries_per_dataset"]]
@@ -33,12 +48,22 @@ def run_qexp_experiment(experiments, config, expansion_cache, rerank_fn):
 
         for query_id, query in tqdm(queries, desc=f"{dataset} | expansão A–F", disable=active()):
             query_id = str(query_id)
-            report("A: recuperação BM25", dataset=dataset, query_id=query_id)
+            if selector:
+                selector.check_unseen(dataset, query_id, query)
+            query_wall_start = time.perf_counter()
+            shared_generations = {}
+
+            def generation_for(kind):
+                if kind not in shared_generations:
+                    shared_generations[kind] = expansion_cache.get(query, kind)
+                return shared_generations[kind]
+
+            report("t1: recuperação BM25", dataset=dataset, query_id=query_id)
             initial, initial_sec = qexp_timed(retrieve_bm25, query, case["bm25"], case["doc_ids"], top_k=n)
 
             def record_result(pipeline_id, candidates, final, *, retrieval_sec, rerank_sec=0.0,
                               decision_sec=0.0, initial_rerank_sec=0.0, generation=None,
-                              expansion_requested=False, expansion_applied=False, rerank_query=None):
+                              expansion_requested=False, expansion_applied=False, rerank_query=None, extra=None, policy_wall_sec=None):
                 # Qrels entram apenas aqui, após decidir/recuperar/reranquear.
                 relevant = case["qrels"].get(query_id, {})
                 candidate_ids = [item["doc_id"] for item in candidates]
@@ -70,6 +95,7 @@ def run_qexp_experiment(experiments, config, expansion_cache, rerank_fn):
                     # mesmo se A/B já os calcularam. Cache não torna a geração gratuita na comparação.
                     "estimated_uncached_sec": other_sec + generation_sec,
                     "composed_observed_sec": other_sec + generation_lookup_sec,
+                    "policy_wall_sec": policy_wall_sec,
                 })
                 for stage, ranking in (("candidates", candidates), ("final", final[:k])):
                     for rank, item in enumerate(ranking, start=1):
@@ -84,101 +110,173 @@ def run_qexp_experiment(experiments, config, expansion_cache, rerank_fn):
                     "reranker_query": rerank_query if rerank_query is not None else query,
                     "cache_key": generation["cache_key"] if generation else None,
                     "expansions": generation["expansions"] if generation else [],
+                    **(extra or {}),
                 })
 
-            record_result("A", initial, initial, retrieval_sec=initial_sec)
-            report("B: reranqueamento BGE original")
-            base_final, base_rerank_sec = qexp_timed(rerank_fn, query, initial, case["documents"])
-            record_result("B", initial, base_final, retrieval_sec=initial_sec, rerank_sec=base_rerank_sec)
+            signals, signal_sec = qexp_timed(qexp_difficulty_signals, query, initial, case["documents"], config)
+            features, lexical_sec = qexp_timed(lexical_features, query, signals)
+            feature_sec = signal_sec + lexical_sec
+            corpus_feature_sec = 0.
+            if corpus_statistics:
+                corpus_features, corpus_feature_sec = qexp_timed(corpus_statistics.features, query)
+                features.update(corpus_features)
+            bge_feature_sec = 0.0
+            outcomes = {"A": dict(candidates=initial, final=initial, retrieval_sec=initial_sec)}
 
-            # C: o pseudo-documento modifica somente a busca lexical.
-            report("C: expansão Query2doc")
-            generated = expansion_cache.get(query, "query2doc")
-            expanded_query = (" ".join([query] * config["query_repetitions"] + generated["expansions"])
-                              if generated["expansions"] else query)
-            report("C: recuperação expandida")
-            candidates_c, retrieve_c_sec = qexp_timed(
-                retrieve_bm25, expanded_query, case["bm25"], case["doc_ids"], top_k=n
-            )
-            report("C: reranqueamento BGE")
-            final_c, rerank_c_sec = qexp_timed(rerank_fn, query, candidates_c, case["documents"])
-            record_result("C", candidates_c, final_c, retrieval_sec=retrieve_c_sec,
-                          rerank_sec=rerank_c_sec, generation=generated, expansion_requested=True,
-                          expansion_applied=bool(generated["expansions"]))
-            if config["run_h4"]:
-                # H4 isola o texto usado pelo BGE: nenhum candidato é adicionado/removido.
-                report("C_H4: BGE com query expandida")
-                final_h4, rerank_h4_sec = qexp_timed(rerank_fn, expanded_query, candidates_c, case["documents"])
-                record_result("C_H4", candidates_c, final_h4, retrieval_sec=retrieve_c_sec,
-                              rerank_sec=rerank_h4_sec, generation=generated, expansion_requested=True,
-                              expansion_applied=bool(generated["expansions"]), rerank_query=expanded_query)
+            def baseline():
+                nonlocal bge_feature_sec
+                if "B" not in outcomes:
+                    report("t2: reranqueamento BGE original")
+                    final, elapsed = qexp_timed(rerank_fn, query, initial, case["documents"])
+                    extra_features, bge_feature_sec = qexp_timed(bge_features, initial, final, config["signal_top_k"])
+                    features.update(extra_features)
+                    outcomes["B"] = dict(candidates=initial, final=final, retrieval_sec=initial_sec,
+                                         rerank_sec=elapsed, extra={"selector_features": dict(features),
+                                         "feature_lexical_sec": feature_sec, "feature_bge_sec": bge_feature_sec,
+                                         "feature_corpus_sec": corpus_feature_sec,
+                                         "corpus_statistics_setup_sec": corpus_statistics.setup_sec if corpus_statistics else 0.})
+                return outcomes["B"]
 
-            signals, feature_sec = qexp_timed(qexp_difficulty_signals, query, initial, case["documents"], config)
-            multi_result = None
-            multi_generation = None
-            policies = ["E"] + (["E_RA"] if config["run_reranker_aware"] else []) + ["D"]
-            for pipeline_id in policies:
-                report(f"{pipeline_id}: decisão e expansão Multi-query")
-                divergence, divergence_sec = None, 0.0
-                initial_bge_sec = 0.0
-                if pipeline_id == "E_RA":
-                    divergence, divergence_sec = qexp_timed(
-                        qexp_rank_divergence, initial, base_final, config["signal_top_k"]
-                    )
-                    initial_bge_sec = base_rerank_sec
-                if pipeline_id == "D":
-                    expand, reason, decision_sec = True, "always", 0.0
+            def compute(method):
+                if method in outcomes:
+                    return outcomes[method]
+                report(f"{public_id(method)}: recuperação e reranqueamento")
+                if method == "B":
+                    return baseline()
+                if method in {"C", "C_H4"}:
+                    if method == "C_H4":
+                        source = compute("C")
+                        expanded_query = source["extra"]["expanded_query"]
+                        final, elapsed = qexp_timed(rerank_fn, expanded_query, source["candidates"], case["documents"])
+                        outcome = {**source, "final": final, "rerank_sec": elapsed, "rerank_query": expanded_query}
+                        outcome["initial_rerank_sec"] = source.get("initial_rerank_sec", 0.) + source["rerank_sec"]
+                    else:
+                        generation = expansion_cache.get(query, "query2doc")
+                        expanded_query = " ".join([query] * config["query_repetitions"] + generation["expansions"])
+                        if generation["expansions"]:
+                            candidates, elapsed = qexp_timed(retrieve_bm25, expanded_query, case["bm25"], case["doc_ids"], top_k=n)
+                            final, rerank_sec = qexp_timed(rerank_fn, query, candidates, case["documents"])
+                            outcome = dict(candidates=candidates, final=final, retrieval_sec=elapsed, rerank_sec=rerank_sec)
+                        else:
+                            outcome = dict(baseline())
+                            expanded_query = query
+                        outcome.update(generation=generation, expansion_requested=True,
+                                       expansion_applied=bool(generation["expansions"]), extra={"expanded_query": expanded_query})
+                elif method == "D":
+                    generation = expansion_cache.get(query, "multi")
+                    if generation["expansions"]:
+                        candidates, elapsed = qexp_timed(qexp_multi_candidates, query, generation["expansions"], initial, case, config)
+                        final, rerank_sec = qexp_timed(rerank_fn, query, candidates, case["documents"])
+                        outcome = dict(candidates=candidates, final=final, retrieval_sec=initial_sec + elapsed, rerank_sec=rerank_sec)
+                    else:
+                        outcome = dict(baseline())
+                    outcome.update(generation=generation, expansion_requested=True,
+                                   expansion_applied=bool(generation["expansions"]))
+                elif method == "F":
+                    weights, feedback_sec = qexp_timed(qexp_rm3_weights, query, initial, case["documents"], config)
+                    candidates, elapsed = qexp_timed(qexp_weighted_bm25, weights, case["bm25"], case["doc_ids"], n)
+                    final, rerank_sec = qexp_timed(rerank_fn, query, candidates, case["documents"])
+                    outcome = dict(candidates=candidates, final=final, retrieval_sec=initial_sec + feedback_sec + elapsed,
+                                   rerank_sec=rerank_sec, expansion_requested=True,
+                                   expansion_applied=bool(set(weights) - set(tokenize(query))), extra={"rm3_term_weights": weights})
+                elif method in {"G", "K"}:
+                    base = baseline()
+                    if method == "G":
+                        (final, chunks), elapsed = qexp_timed(bert_qe_rerank, query, initial, base["final"], case["documents"], config, rerank_fn)
+                        outcome = dict(final=final, rerank_sec=elapsed, expansion_applied=bool(chunks), extra={"feedback_chunks": chunks})
+                    else:
+                        generation = generation_for("keywords")
+                        if generation["expansions"]:
+                            (final, expanded_queries), elapsed = qexp_timed(keyword_rerank, query, generation["expansions"], initial,
+                                                                           base["final"], case["documents"], config, rerank_fn)
+                        else:
+                            final, expanded_queries, elapsed = base["final"], [], 0.0
+                        outcome = dict(final=final, rerank_sec=elapsed, generation=generation,
+                                       expansion_applied=bool(expanded_queries), extra={"reranker_queries": [query, *expanded_queries]})
+                    outcome.update(candidates=initial, retrieval_sec=initial_sec, initial_rerank_sec=base["rerank_sec"], expansion_requested=True)
+                elif method in CONTROLLED_METHODS:
+                    base = baseline()
+                    generation = generation_for("keywords")
+                    expansion = "; ".join(generation["expansions"])
+                    if expansion:
+                        (final, input_query), elapsed = qexp_timed(
+                            controlled_rerank, query, expansion, initial, base["final"],
+                            case["documents"], config, rerank_fn, method)
+                    else:
+                        final, input_query, elapsed = base["final"], query, 0.0
+                    outcome = dict(candidates=initial, final=final, retrieval_sec=initial_sec,
+                                   initial_rerank_sec=base["rerank_sec"], rerank_sec=elapsed,
+                                   generation=generation, expansion_requested=True,
+                                   expansion_applied=bool(expansion), rerank_query=input_query,
+                                   extra={"controlled_expansion": expansion, "incorporation": method,
+                                          "reranker_queries": [query, input_query]})
+                elif method in {"E", "E_RA", "L", "R"}:
+                    needs_bge = method == "E_RA" or (method == "L" and uses_bge(selector.artifact["feature_set"]))
+                    if needs_bge or config["selector_baseline_first"]:
+                        baseline()
+                    probability = None
+                    benefit_score = None
+                    target = config["heuristic_method"] if method in {"E", "E_RA"} else config["selective_method"]
+                    start = time.perf_counter()
+                    if method == "L":
+                        target, benefit_score = selector.choose(features)
+                        expand = target != "B"
+                        if selector.artifact["schema"] == 1:
+                            probability = benefit_score
+                        reason = ("learned_utility" if expand else "utility_fallback") if selector.artifact["schema"] == 3 else ("learned_benefit" if expand else "learned_no_benefit")
+                        if selector.artifact["schema"] == 4:
+                            reason = "learned_neural_utility" if expand else "neural_utility_fallback"
+                    elif method == "R":
+                        # Determinístico por query; independente de ordem, qrels e resultados expandidos.
+                        value = hashlib.sha256(json.dumps([config["seed"], dataset, query_id]).encode()).hexdigest()
+                        expand = int(value[:16], 16) / 2**64 < config["random_expansion_rate"]
+                        reason = "random"
+                    else:
+                        expand, reason = qexp_should_expand(signals, config, features.get("rank_divergence") if method == "E_RA" else None)
+                    decision_sec = time.perf_counter() - start
+                    if method != "R":
+                        decision_sec += feature_sec + (bge_feature_sec if needs_bge else 0.0)
+                        if method == "L" and uses_rarity(selector.artifact["feature_set"]):
+                            decision_sec += corpus_feature_sec
+                    decision_rows.append({"dataset": dataset, "query_id": query_id, "pipeline_id": method,
+                                          **signals, "rank_divergence": features.get("rank_divergence") if needs_bge else None,
+                                          "expand": expand and target not in {"A", "B"}, "reason": reason, "selected_method": target if expand else "B",
+                                          "benefit_probability": probability, "benefit_score": benefit_score})
+                    # Só materializa a expansão depois da decisão; referências podem solicitá-la separadamente.
+                    outcome = dict(compute(target) if expand else baseline())
+                    if config["selector_baseline_first"] and expand:
+                        base = baseline()
+                        if target in {"C", "C_H4"} and outcome.get("expansion_applied"):
+                            outcome["retrieval_sec"] += initial_sec
+                        if target in {"A", "C", "C_H4", "D", "F"} and outcome["final"] is not base["final"]:
+                            outcome["initial_rerank_sec"] = outcome.get("initial_rerank_sec", 0) + base["rerank_sec"]
+                    outcome["extra"] = {**outcome.get("extra", {}), "selected_method": target if expand else "B"}
+                    outcome["decision_sec"] = decision_sec
+                    if not config["selector_baseline_first"] and method != "R" and target == "C" and expand and outcome.get("expansion_applied"):
+                        outcome["retrieval_sec"] += initial_sec  # Features dependem da busca original.
+                    if needs_bge and not outcome.get("initial_rerank_sec", 0):
+                        base = baseline()
+                        outcome["initial_rerank_sec"] = base["rerank_sec"]
+                        if outcome["final"] is base["final"]:
+                            outcome["rerank_sec"] = 0.0
+                    outcome["expansion_requested"] = expand and target not in {"A", "B"}
                 else:
-                    (expand, reason), rule_sec = qexp_timed(qexp_should_expand, signals, config, divergence)
-                    decision_sec = feature_sec + divergence_sec + rule_sec
-                    decision_rows.append({
-                        "dataset": dataset, "query_id": query_id, "pipeline_id": pipeline_id,
-                        **signals, "rank_divergence": divergence, "expand": expand, "reason": reason,
-                    })
-                # A decisão antecede o acesso ao gerador. Uma query fácil em E não chama o LLM.
-                generation = None
-                if expand:
-                    if multi_generation is None:
-                        multi_generation = expansion_cache.get(query, "multi")
-                    generation = multi_generation
-                applied = bool(generation and generation["expansions"])
-                candidates, retrieval_sec = initial, initial_sec
-                final, final_sec = base_final, base_rerank_sec
-                if applied:
-                    if multi_result is None:
-                        report(f"{pipeline_id}: recuperação Multi-query/RRF")
-                        candidates, multi_sec = qexp_timed(
-                            qexp_multi_candidates, query, generation["expansions"], initial, case, config
-                        )
-                        report(f"{pipeline_id}: reranqueamento BGE Multi-query")
-                        final, final_sec = qexp_timed(rerank_fn, query, candidates, case["documents"])
-                        multi_result = candidates, multi_sec, final, final_sec
-                    candidates, multi_sec, final, final_sec = multi_result
-                    retrieval_sec += multi_sec
-                elif pipeline_id == "E_RA":
-                    # BGE inicial já é o ranking final: não contabilizar a mesma chamada duas vezes.
-                    final_sec = 0.0
-                record_result(pipeline_id, candidates, final, retrieval_sec=retrieval_sec,
-                              rerank_sec=final_sec, initial_rerank_sec=initial_bge_sec,
-                              decision_sec=decision_sec, generation=generation,
-                              expansion_requested=expand, expansion_applied=applied)
+                    raise ValueError(f"Pipeline desconhecido: {method}")
+                outcomes[method] = outcome
+                return outcome
 
-            # F: feedback lexical clássico, sem geração neural nem qrels.
-            report("F: feedback RM3 e recuperação")
-            weights, feedback_sec = qexp_timed(qexp_rm3_weights, query, initial, case["documents"], config)
-            candidates_f, retrieval_f_sec = qexp_timed(
-                qexp_weighted_bm25, weights, case["bm25"], case["doc_ids"], n
-            )
-            report("F: reranqueamento BGE")
-            final_f, rerank_f_sec = qexp_timed(rerank_fn, query, candidates_f, case["documents"])
-            record_result("F", candidates_f, final_f, retrieval_sec=initial_sec + feedback_sec + retrieval_f_sec,
-                          rerank_sec=rerank_f_sec, expansion_requested=True,
-                          expansion_applied=bool(set(weights) - set(tokenize(query))))
-            artifact_rows[-1]["rm3_term_weights"] = weights
+            # As políticas decidem antes das referências de expansão incondicional.
+            ordered = [m for m in ["A", "B", "L", "E", "E_RA", "R", "C", "C_H4", "D", "F", "G", "K", *CONTROLLED_METHODS] if m in enabled]
+            for method in ordered:
+                outcome = compute(method)
+                if method == "L" or (config["selector_baseline_first"] and method in {"E", "E_RA", "R"}):
+                    outcome = {**outcome, "policy_wall_sec": time.perf_counter() - query_wall_start}
+                record_result(method, **outcome)
 
     if not metric_rows:
         raise ValueError("Nenhuma query disponível em experiment_cache.")
     metrics = pd.DataFrame(metric_rows)
+    metrics["policy_wall_sec"] = pd.to_numeric(metrics["policy_wall_sec"], errors="raise").astype(float)
     metric_names = [f"ndcg@{k}", f"mrr@{k}", f"recall@{k}", f"map@{k}", f"candidate_recall@{n}"]
     aggregations = {name: (name, "mean") for name in metric_names}
     aggregations.update({
@@ -188,9 +286,13 @@ def run_qexp_experiment(experiments, config, expansion_cache, rerank_fn):
         "avg_composed_observed_sec": ("composed_observed_sec", "mean"),
     })
     summary = metrics.groupby(["dataset", "pipeline_id", "pipeline"], as_index=False).agg(**aggregations)
+    decisions = pd.DataFrame(decision_rows)
+    for column in ("benefit_probability", "benefit_score", "rank_divergence"):
+        if column in decisions:
+            decisions[column] = pd.to_numeric(decisions[column], errors="raise").astype(float)
     return {
         "metrics": metrics, "summary": summary, "rankings": pd.DataFrame(ranking_records),
-        "decisions": pd.DataFrame(decision_rows), "artifacts": artifact_rows,
+        "decisions": decisions, "artifacts": artifact_rows,
         "generations": expansion_cache.records,
         "metadata": {
             "config": dict(config), "datasets": dataset_records,
@@ -204,7 +306,11 @@ def run_qexp_experiment(experiments, config, expansion_cache, rerank_fn):
             "llm_resolved_commit": getattr(getattr(getattr(expansion_cache.generator, "model", None), "config", None), "_commit_hash", None),
             "experiment_wall_sec": time.perf_counter() - experiment_start,
             "time_protocol": "Custos compostos por política; estimated_uncached_sec inclui geração histórica do cache. Setup separado. Não é latência end-to-end medida em produção.",
-            "selector_protocol": "Regras fixas, sem qrels; nenhuma calibração/seleção de limiar nas queries de teste.",
+            "selector_protocol": "E/E_RA: regras fixas. L: modelo e limiar ajustados em treino/validação externos; BGE em ambos os caminhos.",
+            "enabled_pipelines": enabled,
+            "selector_model": selector.artifact if selector else None,
+            "policy_wall_protocol": "L: tempo observado desde início da consulta até a política, incluindo A/B, atributos, decisão e bookkeeping anterior. Pode incluir setup/cache; medir com sessão nova e registrar condição. Não soma execução de alternativas posteriores.",
+            "feedback_protocol": "G: adaptação BERT-QE sem fine-tuning. K: keywords individuais e RRF dos rankings BGE. Candidatos fixos de B.",
             "rm3_protocol": "RM1 unigram de feedback com softmax(scores BM25), top termos normalizados, interpolação com query e BM25 ponderado; não é reprodução exata do Anserini.",
         },
     }

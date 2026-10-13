@@ -12,6 +12,7 @@ import zipfile
 
 from .cli import load_settings
 from .config import DATASETS
+from .session_analysis import analyze_session, require_plotting
 
 
 def remote_config(settings):
@@ -20,7 +21,9 @@ def remote_config(settings):
         "project_root": "..", "datasets": settings.get("datasets", [d["slug"] for d in DATASETS]),
         "output_dir": "outputs", "prepared_dir": "state/prepared",
         "checkpoint_dir": "state/checkpoints",
-        "qexp": {**settings["qexp"], "model_device": "cuda", "cache_dir": "state/generations"},
+        "query_filter": settings.get("query_filter"),
+        "qexp": {**settings["qexp"], "model_device": "cuda", "cache_dir": "state/generations",
+                 "selector_model_path": "models/selector.json" if settings["qexp"].get("selector_model_path") else None},
     }
 
 
@@ -35,6 +38,11 @@ def build_bundle(project, settings, destination):
                 raise ValueError(f"Arquivo fora do projeto: {path}")
             archive.write(path, path.relative_to(project).as_posix())
         archive.writestr("configs/remote.json", json.dumps(remote_config(settings), indent=2))
+        if settings["qexp"].get("selector_model_path"):
+            from .learned_selection import LearnedSelector
+            selector = LearnedSelector.load(settings["qexp"]["selector_model_path"])
+            selector.validate_protocol(settings["qexp"])
+            archive.writestr("models/selector.json", json.dumps(selector.artifact, allow_nan=False))
     return Path(destination)
 
 
@@ -49,14 +57,22 @@ root = Path({('/content/' + job)!r})
 root.mkdir(parents=True, exist_ok=True)
 with zipfile.ZipFile({('/content/' + job + '-source.zip')!r}) as archive:
     archive.extractall(root)
-command = [sys.executable, str(root / 'src/qexp/remote_worker.py'),
+command = [sys.executable, '-u', str(root / 'src/qexp/remote_worker.py'),
            '--root', str(root), '--stage', {stage!r},
            '--archive', {('/content/' + job + '-results.zip')!r}]
 if {restore!r}:
     command += ['--restore', {('/content/' + job + '-restore.zip')!r}]
 if not {resume!r}:
     command.append('--no-resume')
-subprocess.run(command, check=True)
+# O kernel publica sys.stdout no IOPub, mas nao os descritores herdados
+# pelo subprocesso. Reemita a saida no Python do notebook para a CLI.
+with subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                      text=True, encoding='utf-8', errors='replace', bufsize=1) as process:
+    for line in process.stdout:
+        print(line, end='', flush=True)
+    returncode = process.wait()
+if returncode:
+    raise subprocess.CalledProcessError(returncode, command)
 '''
 
 
@@ -79,6 +95,21 @@ def execute_remote(config_path, *, project=None, gpu="A100", stage="run", sessio
     # Valida antes de alocar recursos pagos.
     from .selection import qexp_validate_config
     qexp_validate_config(settings["qexp"])
+    matrix_options = settings.get("matrix_study")
+    if matrix_options:
+        import inspect
+        from .matrix_study import validate_options, run_matrix_study
+        allowed = set(inspect.signature(run_matrix_study).parameters)-{"run", "output"}
+        if not isinstance(matrix_options, dict) or set(matrix_options)-allowed:
+            raise ValueError("Opções desconhecidas em matrix_study.")
+        validate_options(**matrix_options)
+        from .config import pipeline_ids
+        from .naming import internal_id
+        from .matrix_study import TECHNIQUES
+        if not set(map(internal_id, matrix_options.get("methods", TECHNIQUES))) <= set(pipeline_ids(settings["qexp"])):
+            raise ValueError("A coleta deve incluir todas as técnicas solicitadas na matriz.")
+    if stage == "run" and not dry_run:
+        require_plotting()  # Falha antes de alocar GPU se os gráficos não puderem ser gerados.
     if not settings.get("datasets") or set(settings["datasets"]) - {d["slug"] for d in DATASETS}:
         raise ValueError("Datasets inválidos")
     if restore is not None:
@@ -114,6 +145,8 @@ def execute_remote(config_path, *, project=None, gpu="A100", stage="run", sessio
                 created = True
             else:
                 call("status", "-s", session_name)
+            print("Para consultar a VM em outro terminal: "
+                  + shlex.join([*prefix, "status", "-s", session_name]), flush=True)
             call("upload", "-s", session_name, bundle, f"content/{job}-source.zip")
             if restore is not None:
                 call("upload", "-s", session_name, restore, f"content/{job}-restore.zip")
@@ -152,6 +185,26 @@ def execute_remote(config_path, *, project=None, gpu="A100", stage="run", sessio
                 print(f"Sessão preservada: {session_name}. Para encerrar: "
                       + shlex.join([*prefix, "stop", "-s", session_name]))
                 print(f"Arquivo remoto de recuperação, quando concluído: content/{job}-results.zip")
+    if stage == "run":
+        if dry_run:
+            print(f"Após o download: análise local e gráficos em {output / 'images'}")
+            if matrix_options:
+                print(f"Após a análise: matriz de técnicas e seletores em {output / 'matrix'}")
+        else:
+            # A sessão própria já foi encerrada: gráficos não mantêm a GPU alocada.
+            try:
+                analyze_session(output)
+            except Exception as error:
+                recovery = shlex.join([sys.executable, "-m", "qexp.session_analysis", "--session", str(output)])
+                raise RuntimeError(f"Resultados da GPU salvos em {output}; falhou a análise local. "
+                                   f"Para refazer sem GPU: {recovery}") from error
+            if matrix_options:
+                from .matrix_study import run_matrix_study
+                try:
+                    run_matrix_study(output/"outputs/qexp_run.json", output/"matrix", **matrix_options)
+                except Exception as error:
+                    raise RuntimeError(f"Resultados e análise preservados em {output}; falhou a matriz local: {error}. "
+                                       "Reexecute qexp.matrix_study com a mesma configuração e uma pasta nova.") from error
     return output
 
 

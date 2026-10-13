@@ -1,0 +1,24 @@
+{
+  "project_root": "..",
+  "datasets": [
+    "scifact"
+  ],
+  "output_dir": "results/query_expansion/extensions_smoke",
+  "prepared_dir": ".cache/prepared",
+  "checkpoint_dir": ".cache/qexp_extensions_checkpoints",
+  "qexp": {
+    "max_queries_per_dataset": 3,
+    "pipelines": [
+      "t3",
+      "t4",
+      "t5",
+      "s1",
+      "s2",
+      "t6",
+      "t7",
+      "t8"
+    ],
+    "generation_format": "numbered",
+    "cache_dir": ".cache/query_expansion_extensions"
+  }
+}

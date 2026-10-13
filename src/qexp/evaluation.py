@@ -60,24 +60,30 @@ def qexp_hypothesis_tables(metrics, config):
                     "generation_status": frame.loc[query_id, "generation_status"],
                 })
         for method in ("E", "E_RA"):
-            if method not in methods:
+            if method not in methods or "D" not in methods:
                 continue
             selective, always = methods[method], methods["D"]
             selective_harm = (selective[ndcg] < base[ndcg] - 1e-12).astype(int)
             always_harm = (always[ndcg] < base[ndcg] - 1e-12).astype(int)
             paired("H3", dataset, method, "D", "degradation_rate_vs_B", selective_harm - always_harm)
             paired("H3", dataset, method, "D", ndcg, selective[ndcg] - always[ndcg])
-        if "C_H4" in methods:
+        if "C_H4" in methods and "C" in methods:
             for metric in (ndcg, mrr):
                 paired("H4", dataset, "C", "C_H4", metric, methods["C"][metric] - methods["C_H4"][metric])
+        target = config.get("selective_method", "D")
+        for method in ("L", "R"):
+            if method in methods and target in methods:
+                paired("Selection", dataset, method, target, ndcg, methods[method][ndcg] - methods[target][ndcg])
 
-    comparisons = pd.DataFrame(comparisons)
+    comparisons = pd.DataFrame(comparisons, columns=["hypothesis", "dataset", "method", "reference",
+        "metric", "num_pairs", "mean_delta", "ci95_low", "ci95_high", "positive", "ties", "negative", "p_value"])
     # Holm controla as múltiplas comparações desta tabela; intervalos bootstrap são marginais.
     order = np.argsort(comparisons["p_value"].to_numpy())
     adjusted = np.maximum.accumulate(comparisons["p_value"].to_numpy()[order] * np.arange(len(order), 0, -1))
     comparisons["p_value_holm"] = np.nan
     comparisons.loc[comparisons.index[order], "p_value_holm"] = np.minimum(adjusted, 1.0)
-    deltas = pd.DataFrame(query_deltas)
+    deltas = pd.DataFrame(query_deltas, columns=["dataset", "query_id", "pipeline_id", "query_text",
+        "delta_candidate_recall", "delta_ndcg", "delta_mrr", "degraded_vs_B", "expansion_requested", "generation_status"])
     degradation = deltas.groupby(["dataset", "pipeline_id"], as_index=False).agg(
         num_queries=("query_id", "size"), degradation_rate=("degraded_vs_B", "mean"),
         mean_delta_ndcg=("delta_ndcg", "mean"), mean_delta_candidate_recall=("delta_candidate_recall", "mean"),
@@ -87,24 +93,40 @@ def qexp_hypothesis_tables(metrics, config):
 
 
 def qexp_export(result, config, output_dir="."):
+    from .naming import rename_table, rename_records, public_config, normalize_config
+    config = normalize_config(config)
+    public = config.get("id_scheme") == "technique_selector"
     output = Path(output_dir)
     output.mkdir(parents=True, exist_ok=True)
     result.update(qexp_hypothesis_tables(result["metrics"], config))
     for name in ("metrics", "summary", "rankings", "decisions", "hypotheses",
                  "h2_associations", "query_deltas", "degradation"):
-        result[name].to_csv(output / f"qexp_{name}.csv", index=False)
+        (rename_table(result[name]) if public else result[name]).to_csv(output / f"qexp_{name}.csv", index=False)
     # Exporta prompts e saídas brutas para auditoria de drift e inspeção dos piores casos.
     for name in ("metadata", "artifacts", "generations"):
+        value = result[name]
+        if public and name == "metadata":
+            value = {**value, "config": public_config(value["config"])}
+        elif public and name == "artifacts":
+            value = rename_records(value)
         (output / f"qexp_{name}.json").write_text(
-            json.dumps(result[name], ensure_ascii=False, indent=2, allow_nan=False), encoding="utf-8"
+            json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False), encoding="utf-8"
         )
+    features = [{"dataset": a["dataset"], "query_id": a["query_id"],
+                 "query_text": a["original_query"], **a["selector_features"]}
+                for a in result["artifacts"] if a["pipeline_id"] == "B" and "selector_features" in a]
+    if features:
+        pd.DataFrame(features).to_csv(output / "qexp_selector_features.csv", index=False)
     lines = [
         "# Expansão seletiva de consultas para reranqueamento neural",
         "", "## Protocolo", "",
         f"Candidatos: {config['candidate_n']}; avaliação: @{config['eval_k']}; reformulações: {config['num_reformulations']}.",
-        "Query original no BGE em B–F; C_H4 modifica apenas o texto da query, mantendo os candidatos de C.",
+        "B/C/D/E/E_RA/F usam query original no BGE; C_H4 usa query expandida e candidatos de C.",
+        "Quando habilitados, G usa feedback por trechos e K combina rankings BGE com expansões curtas, nos candidatos de B.",
+        "L seleciona a expansão pelo benefício previsto; R é controle aleatório com taxa configurada. BGE sempre executa.",
         "E usa regras lexicais fixas; E_RA acrescenta divergência dos prefixos BM25–BGE.",
-        "Qrels são usados somente nas métricas. Limiares são heurísticos, não calibrados no teste.",
+        "Qrels são usados somente nas métricas desta execução; no treino separado de L, métricas supervisionam o benefício.",
+        "E/E_RA têm limiares heurísticos. L tem limiar escolhido em validação; treino/validação são bloqueados na inferência.",
         "", "## Qualidade e custo", "", result["summary"].to_markdown(index=False),
         "", result["metadata"]["time_protocol"],
         "Os tempos históricos do cache podem vir de outro hardware: consulte qexp_generations.json.",
@@ -121,10 +143,14 @@ def qexp_export(result, config, output_dir="."):
         "Consulte qexp_decisions.csv (sinais/motivos), qexp_query_deltas.csv (ganhos/perdas),",
         "qexp_rankings.csv (candidatos e ranking final), qexp_artifacts.json (queries/pesos RM3) e qexp_generations.json (prompts/gerações/falhas).",
         "Candidate Recall usa apenas relevância julgada; documentos não julgados são tratados como não relevantes pelas métricas existentes.",
-        "Query2doc é uma adaptação zero-shot com LLM local, não uma reprodução do modelo/prompt few-shot do artigo.",
+        "Query2doc usa LLM local e exemplos opcionais; configuração padrão zero-shot. Não é reprodução integral do artigo.",
+        "G adapta BERT-QE sem fine-tuning; K é um controle de expansão curta com RRF, não uma reprodução de Li et al.",
         result["metadata"]["rm3_protocol"],
         "Erros de formato do LLM conservam o ranking original e contam como falhas, não como expansões bem-sucedidas.",
         "As saídas do LLM são hipóteses para busca, não afirmações científicas verificadas.",
     ]
+    if public:
+        from .naming import public_text
+        lines = [public_text(line) for line in lines]
     (output / "qexp_report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     return result

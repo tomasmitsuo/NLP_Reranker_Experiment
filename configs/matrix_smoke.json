@@ -1,0 +1,70 @@
+{
+  "project_root": "..",
+  "datasets": [
+    "scifact"
+  ],
+  "output_dir": "results/query_expansion/matrix_smoke",
+  "prepared_dir": ".cache/prepared",
+  "checkpoint_dir": ".cache/matrix_smoke_checkpoints",
+  "qexp": {
+    "pipelines": [
+      "t1",
+      "t2",
+      "t3",
+      "t4",
+      "t5",
+      "t6",
+      "t7",
+      "t8",
+      "Q_CONCAT",
+      "Q_REPLACE",
+      "Q_SCORE",
+      "Q_RRF"
+    ],
+    "keyword_prompt_version": 2,
+    "keyword_retries": 1,
+    "generation_format": "strict_json",
+    "cache_dir": ".cache/query_expansion_controlled_v2",
+    "controlled_alpha": 0.5,
+    "max_queries_per_dataset": 12,
+    "collect_query_statistics": true
+  },
+  "matrix_study": {
+    "methods": [
+      "t1",
+      "t2",
+      "t3",
+      "t4",
+      "t5",
+      "t6",
+      "t7",
+      "t8",
+      "Q_CONCAT",
+      "Q_REPLACE",
+      "Q_SCORE",
+      "Q_RRF"
+    ],
+    "selectors": [
+      "s1",
+      "s2",
+      "s3",
+      "s4"
+    ],
+    "estimators": [
+      "logistic",
+      "weighted_logistic",
+      "gain",
+      "utility",
+      "neural"
+    ],
+    "neural_seeds": [
+      42,
+      43,
+      44
+    ],
+    "neural_max_epochs": 8,
+    "neural_patience": 3,
+    "resamples": 20,
+    "permutations": 31
+  }
+}

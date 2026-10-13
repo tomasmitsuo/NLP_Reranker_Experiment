@@ -11,6 +11,7 @@ import pandas as pd
 from .runner import run_qexp_experiment
 from .selection import qexp_validate_config
 from .progress import report
+from .config import QEXP_CONFIG, pipeline_ids
 
 TABLES = ("metrics", "rankings", "decisions")
 
@@ -20,8 +21,13 @@ def digest(value):
 
 
 def save_result(result, path):
+    from .naming import rename_table, rename_records, public_config
     payload = {key: value for key, value in result.items() if key not in (*TABLES, "summary")}
-    payload["tables"] = {name: result[name].to_json(orient="table", index=False, double_precision=15) for name in TABLES}
+    public = result["metadata"]["config"].get("id_scheme") == "technique_selector"
+    payload["tables"] = {name: (rename_table(result[name]) if public else result[name]).to_json(orient="table", index=False, double_precision=15) for name in TABLES}
+    if public:
+        payload["metadata"] = {**result["metadata"], "config": public_config(result["metadata"]["config"])}
+        payload["artifacts"] = rename_records(result["artifacts"])
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_suffix(".tmp")
@@ -30,9 +36,14 @@ def save_result(result, path):
 
 
 def load_result(path):
+    from .naming import rename_table, rename_records, normalize_config
     result = json.loads(Path(path).read_text(encoding="utf-8"))
     tables = result.pop("tables")
     result.update({name: pd.read_json(io.StringIO(value), orient="table") for name, value in tables.items()})
+    for name in TABLES:
+        result[name] = rename_table(result[name], public=False)
+    result["artifacts"] = rename_records(result["artifacts"], public=False)
+    result["metadata"]["config"] = normalize_config(result["metadata"]["config"])
     result["summary"] = summarize(result["metrics"], result["metadata"]["config"])
     return result
 
@@ -56,11 +67,20 @@ def run_with_checkpoints(experiments, config, expansion_cache, rerank_fn, checkp
 
     Ao injetar outro gerador/reranker, altere checkpoint_tag para identificá-lo.
     """
+    from .naming import normalize_config
+    config = normalize_config({**QEXP_CONFIG, **config})
     qexp_validate_config(config)
+    selector = None
+    if "L" in pipeline_ids(config):
+        from .learned_selection import LearnedSelector
+        selector = LearnedSelector.load(config["selector_model_path"])
+        selector.validate_protocol(config)
     start = time.perf_counter()
     code_hash = digest({p.name: p.read_text() for p in sorted(Path(__file__).parent.glob("*.py"))})
-    runtime = {name: version(name) for name in ("torch", "transformers", "rank-bm25", "numpy", "pandas", "scipy")}
+    runtime = {name: version(name) for name in ("torch", "transformers", "rank-bm25", "numpy", "pandas", "scipy", "scikit-learn")}
     parameters = {key: value for key, value in config.items() if key not in {"cache_dir", "max_queries_per_dataset"}}
+    if selector:
+        parameters["selector_content_sha256"] = digest(selector.artifact)
     pieces, dataset_records = [], []
     reused = executed = 0
     limit = config["max_queries_per_dataset"]
@@ -78,6 +98,8 @@ def run_with_checkpoints(experiments, config, expansion_cache, rerank_fn, checkp
                                 "queries_sha256": digest(queries), "corpus_sha256": corpus_key,
                                 "bm25_k1": case["bm25"].k1, "bm25_b": case["bm25"].b})
         for qid, query in queries:
+            if selector:
+                selector.check_unseen(case["config"]["name"], qid, query)
             report("Verificando checkpoint", query_id=str(qid))
             key = digest({"code": code_hash, "runtime": runtime, "config": parameters,
                           "corpus": corpus_key, "qid": str(qid), "query": query,

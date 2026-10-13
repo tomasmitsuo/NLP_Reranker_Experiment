@@ -1,0 +1,27 @@
+{
+  "project_root": "..",
+  "datasets": [
+    "scifact",
+    "trec_covid",
+    "nfcorpus"
+  ],
+  "output_dir": "results/query_expansion/learned_test",
+  "prepared_dir": ".cache/prepared",
+  "checkpoint_dir": ".cache/qexp_extensions_checkpoints",
+  "query_split_file": "results/query_expansion/selector_splits/splits.csv",
+  "query_split": "test",
+  "qexp": {
+    "pipelines": [
+      "t5",
+      "s1",
+      "s2",
+      "s3",
+      "s4"
+    ],
+    "selective_method": "t5",
+    "selector_model_path": "results/query_expansion/selector_D/selector.json",
+    "random_expansion_rate": 0.5,
+    "generation_format": "numbered",
+    "cache_dir": ".cache/query_expansion_extensions"
+  }
+}

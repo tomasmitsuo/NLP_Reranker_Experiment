@@ -1,0 +1,26 @@
+{
+  "project_root": "..",
+  "datasets": [
+    "scifact",
+    "trec_covid",
+    "nfcorpus"
+  ],
+  "output_dir": "results/query_expansion/query2doc_ablation/base",
+  "prepared_dir": ".cache/prepared",
+  "checkpoint_dir": ".cache/qexp_extensions_checkpoints",
+  "qexp": {
+    "pipelines": [
+      "t3",
+      "t4"
+    ],
+    "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+    "model_revision": "main",
+    "query2doc_words": [
+      80,
+      120
+    ],
+    "query2doc_examples": [],
+    "query_repetitions": 1,
+    "cache_dir": ".cache/query2doc_ablation/base"
+  }
+}
